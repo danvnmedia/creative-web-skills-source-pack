@@ -36,13 +36,16 @@ jobs:
         run: npm run build
         working-directory: showcase-apps/asme-hero
 
+      - name: Build Pages portal and skill routes
+        run: node scripts/build-pages-site.mjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
       - name: Upload showcase artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: showcase-sites
+          path: .pages-dist
 
   deploy:
     environment:
@@ -54,4 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

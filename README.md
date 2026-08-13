@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-f2c94c.svg)](LICENSE)
 ![Skills](https://img.shields.io/badge/skills-6-7c3aed.svg)
 ![Showcases](https://img.shields.io/badge/showcases-4-0f766e.svg)
+[![Live showcase](https://img.shields.io/badge/live-showcase-d7ff3f.svg)](https://danvnmedia.github.io/creative-web-skills-source-pack/)
 
 A focused collection of agent skills for art-directed websites: cinematic motion, interactive 3D, shaders, reference-led rebuilds, and production performance QA.
 
@@ -12,14 +13,14 @@ The pack is designed for ChatGPT and Codex workflows that need a coherent creati
 
 ## What is included
 
-| Skill | Use it for |
-|---|---|
-| [`creative-web-studio`](creative-web-studio/) | End-to-end art direction, scene planning, stack selection, prompts, architecture, budgets, and acceptance criteria. |
-| [`motion-choreographer`](motion-choreographer/) | GSAP, Motion, Lenis, native CSS/WAAPI, scroll choreography, page transitions, and interaction polish. |
-| [`immersive-3d-web`](immersive-3d-web/) | Three.js, React Three Fiber/Drei, glTF, Spline, Theatre.js, product viewers, and 3D performance. |
-| [`shader-web-art`](shader-web-art/) | GLSL/WebGL, image effects, particles, displacement, refraction, DOM-to-canvas sync, and optional WebGPU. |
-| [`creative-site-rebuilder`](creative-site-rebuilder/) | Analyze a URL, screenshot, recording, or existing frontend and rebuild its principles into an original implementation. |
-| [`motion-performance-auditor`](motion-performance-auditor/) | Audit motion, WebGL, accessibility, responsiveness, Core Web Vitals risk, cleanup, and mobile behavior. |
+| Skill | Use it for | Live page |
+|---|---|---|
+| [`creative-web-studio`](creative-web-studio/) | End-to-end art direction, scene planning, stack selection, prompts, architecture, budgets, and acceptance criteria. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/creative-web-studio/) |
+| [`motion-choreographer`](motion-choreographer/) | GSAP, Motion, Lenis, native CSS/WAAPI, scroll choreography, page transitions, and interaction polish. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/motion-choreographer/) |
+| [`immersive-3d-web`](immersive-3d-web/) | Three.js, React Three Fiber/Drei, glTF, Spline, Theatre.js, product viewers, and 3D performance. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/immersive-3d-web/) |
+| [`shader-web-art`](shader-web-art/) | GLSL/WebGL, image effects, particles, displacement, refraction, DOM-to-canvas sync, and optional WebGPU. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/shader-web-art/) |
+| [`creative-site-rebuilder`](creative-site-rebuilder/) | Analyze a URL, screenshot, recording, or existing frontend and rebuild its principles into an original implementation. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/creative-site-rebuilder/) |
+| [`motion-performance-auditor`](motion-performance-auditor/) | Audit motion, WebGL, accessibility, responsiveness, Core Web Vitals risk, cleanup, and mobile behavior. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/motion-performance-auditor/) |
 
 Use the narrowest skill that owns the task. Start with `creative-web-studio` when a request spans concept, implementation, motion, 3D, and QA.
 
@@ -107,10 +108,10 @@ The repository includes four original field tests that exercise the pack's princ
 
 | Showcase | Demonstrates | Intentional fallback |
 |---|---|---|
-| **Morrow Archive** | Editorial composition, image choreography, keyboard navigation, restrained reveals | Complete still layout with all content visible under reduced motion |
-| **Pelagic Signals** | Semantic content over an interactive WebGL contour field | CSS field and fully readable content when WebGL is unavailable |
-| **Kern One** | Three.js product assembly, drag, exploded view, adaptive DPR | Product-specific static poster and explicit 3D status |
-| **Asme** | React/TypeScript video hero, cancellable RAF fades, liquid-glass controls | Readable cinematic composition if video playback is unavailable |
+| [**Morrow Archive**](https://danvnmedia.github.io/creative-web-skills-source-pack/morrow-archive/) | Editorial composition, image choreography, keyboard navigation, restrained reveals | Complete still layout with all content visible under reduced motion |
+| [**Pelagic Signals**](https://danvnmedia.github.io/creative-web-skills-source-pack/pelagic-signals/) | Semantic content over an interactive WebGL contour field | CSS field and fully readable content when WebGL is unavailable |
+| [**Kern One**](https://danvnmedia.github.io/creative-web-skills-source-pack/kern-one/) | Three.js product assembly, drag, exploded view, adaptive DPR | Product-specific static poster and explicit 3D status |
+| [**Asme**](https://danvnmedia.github.io/creative-web-skills-source-pack/asme-hero/) | React/TypeScript video hero, cancellable RAF fades, liquid-glass controls | Readable cinematic composition if video playback is unavailable |
 
 See [`SHOWCASE-INDEX.md`](SHOWCASE-INDEX.md) for the complete reference index and [`showcase-sites/README.md`](showcase-sites/README.md) for the interaction checklist.
 
@@ -141,7 +142,7 @@ Open `http://localhost:4173`.
 
 ### Publish with GitHub Pages
 
-The included [Pages workflow](.github/workflows/pages.yml) rebuilds Asme and publishes `showcase-sites/` on every push to `main`.
+The included [Pages workflow](.github/workflows/pages.yml) rebuilds Asme, generates browsable pages for all six skills, and publishes the complete portal on every push to `main`.
 
 After pushing the repository:
 
