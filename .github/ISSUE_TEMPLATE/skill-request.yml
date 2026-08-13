@@ -1,0 +1,48 @@
+name: Skill improvement
+description: Propose a focused addition or improvement to one of the skills.
+title: "[Skill]: "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Owning skill
+      options:
+        - Creative Web Studio
+        - Motion Choreographer
+        - Immersive 3D Web
+        - Shader Web Art
+        - Creative Site Rebuilder
+        - Motion Performance Auditor
+        - New skill proposal
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: User problem
+      description: Describe the real task this change should help a user complete.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain inputs, expected outputs, boundaries, and acceptance criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
+      description: Link only to material you are allowed to share.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I checked that an existing skill does not already cover this request.
+          required: true
+        - label: The proposal does not require copying proprietary prompts, source, or assets.
+          required: true
+

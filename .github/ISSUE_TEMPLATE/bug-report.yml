@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible problem in a skill, script, or showcase.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve the Creative Web Skills Pack.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Creative Web Studio
+        - Motion Choreographer
+        - Immersive 3D Web
+        - Shader Web Art
+        - Creative Site Rebuilder
+        - Motion Performance Auditor
+        - Showcase website
+        - Build or deployment
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open...
+        2. Run...
+        3. Observe...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Codex version, and relevant framework versions.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Remove credentials and other sensitive information before posting.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: This report does not contain secrets or private data.
+          required: true
+

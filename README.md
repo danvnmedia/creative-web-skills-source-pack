@@ -196,13 +196,15 @@ The scanner discovers review candidates; it does not replace browser profiling, 
 
 ## Contributing
 
-Issues and pull requests are welcome. Keep contributions focused and reviewable:
+Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the complete fork, branch, validation, and review workflow. Keep contributions focused and reviewable:
 
 1. Preserve the scope boundary of each skill.
 2. Add or update examples when introducing a new pattern.
 3. Include mobile, reduced-motion, accessibility, and fallback considerations.
 4. Do not commit credentials, generated builds, dependency folders, or copyrighted third-party assets.
 5. Build the showcase and run relevant checks before opening a pull request.
+
+All changes to `main` go through pull requests and required CI checks. Please follow the [Code of Conduct](CODE_OF_CONDUCT.md), and report vulnerabilities privately through the [Security Policy](SECURITY.md).
 
 ## Third-party services and media
 
