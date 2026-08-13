@@ -1,0 +1,3 @@
+interface:
+  display_name: "Motion Performance Auditor"
+  short_description: "Audit motion, WebGL, accessibility and Core Web Vitals"

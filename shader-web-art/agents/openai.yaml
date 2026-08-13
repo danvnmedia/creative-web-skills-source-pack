@@ -1,0 +1,3 @@
+interface:
+  display_name: "Shader Web Art"
+  short_description: "Create shaders, particles and DOM-WebGL visual effects"

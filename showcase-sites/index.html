@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Four original sites built to demonstrate the Creative Web Skills Pack.">
+  <meta name="theme-color" content="#0c0c0b">
+  <meta property="og:title" content="Creative Web Skills — Field Tests">
+  <meta property="og:description" content="Four original field tests for story, motion, GPU, and production QA.">
+  <meta property="og:type" content="website">
+  <title>Creative Web Skills — Field Tests</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./hub.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Creative Web Skills showcase home">
+      <span>CW</span><span>Skills / 01</span>
+    </a>
+    <p>Four original field tests<br>for story, motion, GPU, and QA.</p>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="kicker">First-party showcase / 2026</p>
+      <h1 id="page-title">Ideas that survive<br><em>implementation.</em></h1>
+      <p class="intro-copy">Each project starts with a different subject and spends complexity only where the idea earns it. Open a field test, interact with it, resize it, and try reduced motion.</p>
+    </section>
+
+    <section class="projects" aria-label="Showcase projects">
+      <article class="project project--morrow">
+        <a href="./morrow-archive/" class="project-link" aria-label="Open Morrow Archive showcase">
+          <div class="project-art" aria-hidden="true">
+            <span class="art-number">01</span>
+            <div class="art-photo"></div>
+            <span class="art-caption">Light / cloth / memory</span>
+          </div>
+          <div class="project-meta">
+            <div><p>Editorial motion</p><h2>Morrow Archive</h2></div>
+            <span class="open-mark">↗</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="project project--pelagic">
+        <a href="./pelagic-signals/" class="project-link" aria-label="Open Pelagic Signals showcase">
+          <div class="project-art" aria-hidden="true">
+            <canvas id="field-preview"></canvas>
+            <span class="art-number">02</span>
+            <span class="art-caption">Current / signal / depth</span>
+          </div>
+          <div class="project-meta">
+            <div><p>Shader data art</p><h2>Pelagic Signals</h2></div>
+            <span class="open-mark">↗</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="project project--kern">
+        <a href="./kern-one/" class="project-link" aria-label="Open Kern One showcase">
+          <div class="project-art" aria-hidden="true">
+            <span class="art-number">03</span>
+            <div class="kern-object"><i></i><b></b></div>
+            <span class="art-caption">Object / control / tactility</span>
+          </div>
+          <div class="project-meta">
+            <div><p>Realtime 3D product</p><h2>Kern One</h2></div>
+            <span class="open-mark">↗</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="project project--asme">
+        <a href="./asme-hero/" class="project-link" aria-label="Open Asme cinematic hero showcase">
+          <div class="project-art" aria-hidden="true">
+            <video id="asme-preview" muted loop playsinline preload="none">
+              <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4" type="video/mp4">
+            </video>
+            <div class="asme-preview-shade"></div>
+            <span class="art-number">04</span>
+            <strong>Built for the <em>curious</em></strong>
+            <span class="asme-glass">Enter the field&nbsp; ↗</span>
+            <span class="art-caption">Video / glass / atmosphere</span>
+          </div>
+          <div class="project-meta">
+            <div><p>Cinematic video hero</p><h2>Asme</h2></div>
+            <span class="open-mark">↗</span>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer><span>Built from the pack's own constraints.</span><span>DOM → motion → GPU → audit</span></footer>
+  <script src="./hub.js"></script>
+</body>
+</html>

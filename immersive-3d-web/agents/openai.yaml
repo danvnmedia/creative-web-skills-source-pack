@@ -1,0 +1,3 @@
+interface:
+  display_name: "Immersive 3D Web"
+  short_description: "Build performant Three.js, R3F and Spline experiences"

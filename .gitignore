@@ -1,0 +1,50 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependencies and virtual environments
+**/node_modules/
+.venv/
+venv/
+env/
+
+# Build, cache, and test output
+**/dist/
+**/build/
+**/coverage/
+**/.cache/
+**/.vite/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+*.tsbuildinfo
+*.log
+*.tmp
+
+# Generated Asme artifacts (rebuilt by the Pages workflow)
+showcase-apps/asme-hero/vite.config.js
+showcase-apps/asme-hero/vite.config.d.ts
+showcase-sites/asme-hero/
+
+# Browser-test artifacts
+output/
+.playwright-cli/
+playwright-report/
+test-results/
+blob-report/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini

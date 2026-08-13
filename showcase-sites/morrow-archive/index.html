@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Morrow Archive, an original editorial fashion archive showcase.">
+  <title>Morrow Archive — Studies in Light</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Italiana&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=3">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="opening-curtain" aria-hidden="true">
+    <span class="curtain-mark">Morrow / 04</span>
+    <i></i><i></i>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="./">Morrow Archive</a>
+    <p>Independent studies<br>in cloth and light</p>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-panel">Index <span>+</span></button>
+  </header>
+  <nav class="menu-panel" id="menu-panel" aria-label="Archive index" hidden>
+    <a href="#study-one">I. The held breath</a>
+    <a href="#study-two">II. Soft architecture</a>
+    <a href="#study-three">III. Afterimage</a>
+    <a href="../">Back to field tests</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <p class="edition">Edition 04 / Summer studies</p>
+      <h1 id="title"><span>Garments</span><span>remember</span><span>the body.</span></h1>
+      <figure class="hero-image image-reveal">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=88" alt="Portrait of a person in a red scarf against a teal background" fetchpriority="high">
+        <span class="image-echo image-echo--one" aria-hidden="true"></span>
+        <span class="image-echo image-echo--two" aria-hidden="true"></span>
+      </figure>
+      <p class="hero-note">A visual archive tracing the space between a gesture and the fabric that remains.</p>
+      <a class="scroll-cue" href="#study-one">Begin study <span>↓</span></a>
+    </section>
+
+    <section class="study study--one" id="study-one" aria-labelledby="study-one-title">
+      <div class="study-index reveal"><span>I</span><span>01:32 PM</span></div>
+      <div class="study-copy reveal">
+        <p>Study one</p>
+        <h2 id="study-one-title">The held<br><em>breath</em></h2>
+      </div>
+      <figure class="portrait image-reveal">
+        <img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=1200&q=86" alt="Editorial portrait with a flowing red patterned dress" loading="lazy">
+      </figure>
+      <p class="margin-note reveal">Volume is not decoration. It records air, distance, and the body's last direction.</p>
+    </section>
+
+    <section class="interlude" aria-label="Archive statement">
+      <p class="reveal">Not trend. Not season.</p>
+      <blockquote class="reveal">“A collection of evidence<br>that softness has structure.”</blockquote>
+    </section>
+
+    <section class="study study--two" id="study-two" aria-labelledby="study-two-title">
+      <div class="study-index reveal"><span>II</span><span>04:08 PM</span></div>
+      <figure class="wide-image image-reveal">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=86" alt="Fashion detail in warm afternoon light" loading="lazy">
+      </figure>
+      <div class="study-copy reveal">
+        <p>Study two</p>
+        <h2 id="study-two-title">Soft<br><em>architecture</em></h2>
+      </div>
+      <p class="margin-note reveal">Fold, seam, tension. Three quiet systems holding a temporary form.</p>
+    </section>
+
+    <section class="study study--three" id="study-three" aria-labelledby="study-three-title">
+      <div class="study-index reveal"><span>III</span><span>06:41 PM</span></div>
+      <div class="color-field" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="study-copy reveal">
+        <p>Study three</p>
+        <h2 id="study-three-title">The<br><em>afterimage</em></h2>
+      </div>
+      <p class="margin-note reveal">When the object leaves, color becomes its final silhouette.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Return to what<br>the light kept.</h2>
+    <a href="#title">Top ↑</a>
+    <p>Morrow Archive / An original field test</p>
+  </footer>
+  <script src="./app.js?v=3"></script>
+</body>
+</html>

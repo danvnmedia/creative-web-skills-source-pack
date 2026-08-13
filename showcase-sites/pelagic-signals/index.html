@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pelagic Signals, an interactive ocean observation WebGL field.">
+  <title>Pelagic Signals — Live Ocean Field</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500&family=Syne:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=3">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span>PS</span> Pelagic Signals</a>
+    <p class="station">Station 42.17 N / 08.43 W</p>
+    <a class="back" href="../">Field tests ↗</a>
+  </header>
+
+  <main>
+    <section class="field" aria-labelledby="field-title">
+      <canvas id="ocean-field" aria-hidden="true"></canvas>
+      <div class="fallback-field" aria-hidden="true"></div>
+      <div class="field-grid" aria-hidden="true"></div>
+      <div class="depth-probe" aria-hidden="true">
+        <i></i>
+        <span><b id="probe-depth">−184 m</b><small id="probe-flow">1.84 m/s</small></span>
+      </div>
+      <div class="field-copy">
+        <p class="eyebrow">Open-ocean observatory / live synthesis</p>
+        <h1 id="field-title">The water<br>is <em>speaking.</em></h1>
+        <p class="lede">A living field assembled from current, thermal, and salinity observations across the North Atlantic.</p>
+      </div>
+      <div class="field-status" aria-live="polite">
+        <span class="pulse"></span><span id="render-status">Initializing field</span>
+      </div>
+      <div class="coordinates" aria-hidden="true"><span>42°17'04" N</span><span>008°43'11" W</span></div>
+      <p class="probe-hint">Move to sample / click to pulse</p>
+      <a class="down" href="#reading">Read the signal ↓</a>
+    </section>
+
+    <section class="reading" id="reading" aria-labelledby="reading-title">
+      <div class="reading-intro">
+        <p>Observation 1437</p>
+        <h2 id="reading-title">One body.<br>Three readings.</h2>
+      </div>
+      <div class="mode-control" role="group" aria-label="Ocean data layer">
+        <button type="button" aria-pressed="true" data-mode="0"><span>01</span> Current</button>
+        <button type="button" aria-pressed="false" data-mode="1"><span>02</span> Thermal</button>
+        <button type="button" aria-pressed="false" data-mode="2"><span>03</span> Salinity</button>
+      </div>
+      <div class="metric" aria-live="polite">
+        <p id="metric-label">Surface velocity</p>
+        <strong id="metric-value">1.84</strong><span id="metric-unit">m/s</span>
+      </div>
+      <p class="reading-note" id="mode-note">Current vectors bend around density boundaries, revealing a westward return beneath the visible surface.</p>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <p class="section-label">How to read this field</p>
+      <h2 id="method-title">Not a picture<br>of the ocean.<br><em>A behavior.</em></h2>
+      <ol>
+        <li><span>01</span><p>Buoys measure temperature, conductivity, and drift.</p></li>
+        <li><span>02</span><p>Signals become a continuous spatial estimate.</p></li>
+        <li><span>03</span><p>Your pointer introduces a local disturbance, like a passing vessel.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer><p>Pelagic Signals</p><p>Field study / 2026</p><a href="#field-title">Surface ↑</a></footer>
+  <script src="./app.js?v=3"></script>
+</body>
+</html>
