@@ -1,0 +1,7 @@
+# Default owner for all skills, showcases, automation, and governance files.
+* @danvnmedia
+
+# Keep ownership policy and release automation under maintainer review.
+/.github/ @danvnmedia
+/scripts/ @danvnmedia
+

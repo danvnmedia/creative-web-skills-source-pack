@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: showcase-apps/asme-hero/package-lock.json
+
+      - name: Install showcase dependencies
+        run: npm ci
+        working-directory: showcase-apps/asme-hero
+
+      - name: Build Asme showcase
+        run: npm run build
+        working-directory: showcase-apps/asme-hero
+
+      - name: Build Pages artifact
+        run: node scripts/build-pages-site.mjs
+
+      - name: Validate skills, routes, and local links
+        run: node scripts/validate-repository.mjs
+
