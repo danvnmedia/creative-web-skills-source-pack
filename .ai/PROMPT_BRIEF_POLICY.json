@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "implementation": "task-projection-compiler",
+  "canonical_skills": 13,
+  "author_modes": {
+    "prompt_request": "prepare_only; no product edits; recipient may still be asked to execute",
+    "implementation_request": "prepare briefly then execute authorized work; not another prompt"
+  },
+  "modes": [
+    "compile",
+    "lint",
+    "resume",
+    "handoff",
+    "repair",
+    "verify"
+  ],
+  "invariants": {
+    "single_task_truth": true,
+    "prompt_context_part_of_task_contract_digest": true,
+    "native_default_no_durable_write": true,
+    "save_requires_explicit_flag": true,
+    "saved_capsule_not_verified_progress": true,
+    "freshness_checked_on_use": true,
+    "source_state_unmodified": true,
+    "no_permission_or_capability_transfer": true,
+    "no_model_selection_or_api_spend": true,
+    "inferred_commands_never_executed": true,
+    "self_report_never_activation_evidence": true,
+    "no_silent_required_field_truncation": true,
+    "unknowns_stay_unknown": true,
+    "only_exact_display_duplicates_removed": true
+  },
+  "limits": {
+    "max_task_bytes": 131072,
+    "max_capsule_bytes": 49152,
+    "max_text_chars": 3000,
+    "max_list_items": 24,
+    "max_saved_capsules": 128
+  },
+  "secrets": "heuristic reject of obvious secrets; no automatic credential/environment scraping; not proof of full DLP",
+  "support": "same compiler contract for Codex, Claude, Gemini, Antigravity; real host activation NOT_RUN",
+  "upstream": {
+    "url": "https://github.com/nidhinjs/prompt-master",
+    "commit": "2bd92518e26bf659e21e3d9ab90573fcf3ddeccb",
+    "version": "1.8.0",
+    "commit_date": "2026-08-24",
+    "license": "MIT",
+    "adoption": "independent small mechanism reimplementation; no vendored code/model tables"
+  }
+}

@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "harness_version": "5.5.10",
+  "principles": {
+    "one_runner_executes_once_per_verify": true,
+    "shared_runner_may_satisfy_multiple_checks": true,
+    "catalog_digest_pins_shared_evidence": true,
+    "project_commands_remain_repo_observed_or_verified": true
+  },
+  "runners": [
+    {
+      "id": "source-validator",
+      "checks": [
+        "source-structure-contract"
+      ],
+      "primary_check": "source-structure-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/validate_harness.py"
+      ],
+      "contexts": [
+        "source"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-validator",
+      "always": true
+    },
+    {
+      "id": "installed-runtime",
+      "checks": [
+        "installed-runtime-contract"
+      ],
+      "primary_check": "installed-runtime-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/verify_installation.py",
+        "--root",
+        "."
+      ],
+      "contexts": [
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-validator",
+      "always": true
+    },
+    {
+      "id": "package-contract",
+      "checks": [
+        "package-contract"
+      ],
+      "primary_check": "package-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/verify_package.py",
+        "--path",
+        "."
+      ],
+      "contexts": [
+        "source"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-validator",
+      "always": true
+    },
+    {
+      "id": "surface-drift",
+      "checks": [
+        "surface-drift"
+      ],
+      "primary_check": "surface-drift",
+      "command": [
+        "{python}",
+        ".ai/scripts/surface_drift.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-validator",
+      "always": true
+    },
+    {
+      "id": "harness-security",
+      "checks": [
+        "harness-security"
+      ],
+      "primary_check": "harness-security",
+      "command": [
+        "{python}",
+        ".ai/scripts/harness_security.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-security",
+      "always": true
+    },
+    {
+      "id": "skill-eval-contract",
+      "checks": [
+        "skill-eval-contract"
+      ],
+      "primary_check": "skill-eval-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/skill_eval.py",
+        "validate"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-eval-contract",
+      "always": true
+    },
+    {
+      "id": "skill-security-contract",
+      "checks": [
+        "skill-security-contract"
+      ],
+      "primary_check": "skill-security-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/skill_security_gate.py",
+        "--target",
+        ".agents/skills",
+        "--fail-on",
+        "block"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-security",
+      "always": true
+    },
+    {
+      "id": "self-test",
+      "checks": [
+        "harness-self-test"
+      ],
+      "primary_check": "harness-self-test",
+      "command": [
+        "{python}",
+        ".ai/scripts/self_test.py",
+        "--context",
+        "auto"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-self-test"
+    },
+    {
+      "id": "v541-contracts",
+      "checks": [
+        "quarantine-contract",
+        "release-witness-contract"
+      ],
+      "primary_check": "quarantine-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v541_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "v542-contracts",
+      "checks": [
+        "waiver-contract",
+        "control-decision-contract",
+        "mcp-surface-contract"
+      ],
+      "primary_check": "waiver-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v542_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "install-collision-contract",
+      "checks": [
+        "install-collision-contract"
+      ],
+      "primary_check": "install-collision-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/install_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "source-installed-boundary",
+      "checks": [
+        "source-installed-boundary"
+      ],
+      "primary_check": "source-installed-boundary",
+      "command": [
+        "{python}",
+        ".ai/scripts/v543_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "v544-contracts",
+      "checks": [
+        "skill-security-contract",
+        "compaction-truth-contract"
+      ],
+      "primary_check": "compaction-truth-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v544_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "v550-contracts",
+      "checks": [
+        "evidence-architecture-contract",
+        "cross-platform-reliability-contract",
+        "command-plane-contract",
+        "operational-lifecycle-contract"
+      ],
+      "primary_check": "evidence-architecture-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v550_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "verified-progress",
+      "checks": [
+        "verified-progress"
+      ],
+      "primary_check": "verified-progress",
+      "command": [
+        "{python}",
+        ".ai/scripts/checkpoint_reverify.py",
+        "--task",
+        "{task}"
+      ],
+      "contexts": [
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "checkpoint-reverification",
+      "requires_task": true
+    },
+    {
+      "id": "mcp-surface-pin",
+      "checks": [
+        "mcp-surface-pin"
+      ],
+      "primary_check": "mcp-surface-pin",
+      "command": null,
+      "contexts": [
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "external-runtime",
+      "external_pending": true
+    },
+    {
+      "id": "skill-eval-live",
+      "checks": [
+        "skill-eval-live"
+      ],
+      "primary_check": "skill-eval-live",
+      "command": null,
+      "contexts": [
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "trusted-host-live-eval",
+      "external_pending": true
+    },
+    {
+      "id": "v551-contracts",
+      "checks": [
+        "runtime-candidate-contract",
+        "check-catalog-contract",
+        "browser-capability-contract"
+      ],
+      "primary_check": "runtime-candidate-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v551_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "id": "v552-truth-regression",
+      "checks": [
+        "skill-trigger-truth-contract",
+        "skill-eval-transaction-contract",
+        "plugin-containment-contract",
+        "operator-event-contract",
+        "mcp-client-abuse-contract"
+      ],
+      "primary_check": "skill-trigger-truth-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v552_regression_test.py"
+      ]
+    },
+    {
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "id": "runtime-control-state",
+      "checks": [
+        "runtime-control-state"
+      ],
+      "primary_check": "runtime-control-state",
+      "command": [
+        "{python}",
+        ".ai/scripts/runtime_control_state.py"
+      ],
+      "always": true
+    },
+    {
+      "id": "deterministic-e2e-complete",
+      "checks": [
+        "deterministic-e2e-complete"
+      ],
+      "primary_check": "deterministic-e2e-complete",
+      "command": [
+        "{python}",
+        ".ai/scripts/deterministic_regression_gate.py"
+      ],
+      "contexts": [
+        "source"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression-suite"
+    },
+    {
+      "id": "skill-catalog-confusion-contract",
+      "checks": [
+        "skill-catalog-confusion-contract"
+      ],
+      "primary_check": "skill-catalog-confusion-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/skill_catalog_eval.py",
+        "validate"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-eval-contract",
+      "always": true
+    },
+    {
+      "id": "v553-contracts",
+      "checks": [
+        "security-analysis-completeness-contract",
+        "host-surface-contract"
+      ],
+      "primary_check": "security-analysis-completeness-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v553_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed",
+        "legacy-installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "v555-boundaries",
+      "checks": [
+        "regression-environment-contract",
+        "git-machine-output-contract",
+        "newline-structure-contract"
+      ],
+      "primary_check": "regression-environment-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v555_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression"
+    },
+    {
+      "id": "prompt-brief-contract",
+      "checks": [
+        "prompt-brief-contract"
+      ],
+      "primary_check": "prompt-brief-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v556_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "always": false
+    },
+    {
+      "id": "upgrade-feedback-regression",
+      "checks": [
+        "upgrade-feedback-contract"
+      ],
+      "primary_check": "upgrade-feedback-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v557_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "always": false
+    },
+    {
+      "id": "recorder-status-regression",
+      "checks": [
+        "recorder-status-contract"
+      ],
+      "primary_check": "recorder-status-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v558_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "always": false
+    },
+    {
+      "id": "v559-release-doctor-regression",
+      "checks": [
+        "release-doctor-contract"
+      ],
+      "primary_check": "release-doctor-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v559_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "always": false
+    },
+    {
+      "id": "v5510-provider-budget-routing-regression",
+      "checks": [
+        "provider-routing-budget-contract"
+      ],
+      "primary_check": "provider-routing-budget-contract",
+      "command": [
+        "{python}",
+        ".ai/scripts/v5510_regression_test.py"
+      ],
+      "contexts": [
+        "source",
+        "installed"
+      ],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "evidence_class": "deterministic-regression",
+      "always": false
+    }
+  ],
+  "project_checks": {
+    "build": {
+      "command_keys": [
+        "build"
+      ],
+      "evidence_class": "project-command"
+    },
+    "typecheck": {
+      "command_keys": [
+        "typecheck"
+      ],
+      "evidence_class": "project-command"
+    },
+    "performance": {
+      "command_keys": [
+        "performance",
+        "test"
+      ],
+      "evidence_class": "project-command"
+    },
+    "security-negative": {
+      "command_keys": [
+        "security"
+      ],
+      "evidence_class": "project-command"
+    },
+    "ai-contract": {
+      "command_keys": [
+        "test_integration",
+        "test"
+      ],
+      "evidence_class": "project-command"
+    },
+    "ai-failure-matrix": {
+      "command_keys": [
+        "test_integration",
+        "test"
+      ],
+      "evidence_class": "project-command"
+    },
+    "state-recovery": {
+      "command_keys": [
+        "test_integration",
+        "test"
+      ],
+      "evidence_class": "project-command"
+    },
+    "claim-contract": {
+      "command_keys": [
+        "test",
+        "test_integration"
+      ],
+      "evidence_class": "project-command"
+    },
+    "capacity-degradation": {
+      "command_keys": [
+        "performance",
+        "test"
+      ],
+      "evidence_class": "project-command"
+    }
+  },
+  "external_checks": {
+    "runtime-browser": {
+      "evidence_class": "browser-runtime",
+      "reason": "requires live browser executor and structured runtime evidence"
+    },
+    "critical-flow": {
+      "evidence_class": "browser-runtime",
+      "reason": "requires live critical-flow execution"
+    },
+    "external-probe": {
+      "evidence_class": "external-runtime",
+      "reason": "requires approved external dependency probe"
+    },
+    "production-smoke": {
+      "evidence_class": "production-runtime",
+      "reason": "requires deployed exact candidate"
+    },
+    "production-critical-flow": {
+      "evidence_class": "production-runtime",
+      "reason": "requires deployed exact candidate and live flow"
+    },
+    "browser-lease": {
+      "evidence_class": "borrowed-browser-receipt",
+      "reason": "requires current borrowed-session lease receipt"
+    },
+    "mcp-surface-pin": {
+      "evidence_class": "mcp-runtime",
+      "reason": "requires current MCP surface pin/verification"
+    },
+    "skill-eval-live": {
+      "evidence_class": "trusted-host-live-eval",
+      "reason": "requires trusted activation telemetry or paired live eval"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "creative-web-skills-pack",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve-showcase.mjs",
+    "build": "npm run build --prefix showcase-apps/asme-hero && node scripts/build-pages-site.mjs",
+    "lint": "node scripts/validate-skills.mjs",
+    "test": "node scripts/validate-repository.mjs",
+    "audit:static": "python motion-performance-auditor/scripts/creative_web_static_audit.py showcase-sites",
+    "qa:browser": "node scripts/qa-showcases.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

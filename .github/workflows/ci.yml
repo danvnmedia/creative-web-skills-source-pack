@@ -40,6 +40,8 @@ jobs:
       - name: Build Pages artifact
         run: node scripts/build-pages-site.mjs
 
+      - name: Validate skill structure and reference links
+        run: node scripts/validate-skills.mjs
+
       - name: Validate skills, routes, and local links
         run: node scripts/validate-repository.mjs
-

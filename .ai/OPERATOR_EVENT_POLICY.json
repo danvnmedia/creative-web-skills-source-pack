@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "script": ".ai/scripts/operator_events.py",
+  "path": ".ai/checkpoints/operator-events.sqlite3",
+  "storage": "SQLite FULL synchronous transactions + append-only hash chain",
+  "single_primary_agent": true,
+  "claim": "oldest pending input; one unresolved claim; same round may retrieve same token",
+  "ack": "delivery consumed, NOT verified progress; requires claim token, round and delivery receipt digest",
+  "ambiguous_recovery": "new round blocks; explicit claim-hash-pinned replay/ack with reason and approver",
+  "exactly_once_external_side_effects": false,
+  "automatic_host_input_interception": false,
+  "max_events": 10000,
+  "max_input_bytes": 16384,
+  "retention": "user instructions may be sensitive; keep local; explicit archive, never silent prune",
+  "source_fingerprint_excluded": true,
+  "runtime_validation": ".ai/scripts/runtime_control_state.py"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "principles": {
+    "headless_or_disposable_context_needs_no_user_tab_lease": true,
+    "borrowed_logged_in_browser_requires_explicit_lease": true,
+    "lease_scope_must_be_narrow": true,
+    "neighboring_tabs_are_out_of_scope": true,
+    "expired_or_returned_lease_is_invalid": true,
+    "return_evidence_is_required": true,
+    "human_takeover_must_not_expand_scope": true
+  },
+  "defaults": {
+    "ttl_seconds": 1800,
+    "max_ttl_seconds": 7200,
+    "allowed_actions": ["navigate", "read", "click", "fill", "upload", "download", "screenshot"]
+  },
+  "runtime_path": ".ai/checkpoints/browser-leases"
+}

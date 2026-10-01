@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "owner": "codex-product-harness",
+  "canonical_baseline": "5.3.0",
+  "source_distribution_marker": ".ai/SOURCE_DISTRIBUTION.json",
+  "state_path": ".ai/HARNESS_INSTALL_STATE.json",
+  "transaction_root": ".ai/checkpoints/install-transactions",
+  "namespace_root": ".ai/harness",
+  "protected_project_paths": [
+    "README.md",
+    "VERSION",
+    "CHANGELOG.md",
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt",
+    "START_HERE_PROMPT.md",
+    "SBOM.spdx.json",
+    "INSTALL_HARNESS.py"
+  ],
+  "protected_project_prefixes": [
+    "docs/",
+    "templates/"
+  ],
+  "source_only_paths": [
+    ".ai/SOURCE_DISTRIBUTION.json"
+  ],
+  "relocations": [
+    {
+      "source": "README.md",
+      "target": ".ai/harness/README.md"
+    },
+    {
+      "source": "VERSION",
+      "target": ".ai/harness/VERSION"
+    },
+    {
+      "source": "CHANGELOG.md",
+      "target": ".ai/harness/CHANGELOG.md"
+    },
+    {
+      "source": "START_HERE_PROMPT.md",
+      "target": ".ai/harness/START_HERE_PROMPT.md"
+    },
+    {
+      "source": "SBOM.spdx.json",
+      "target": ".ai/harness/SBOM.spdx.json"
+    },
+    {
+      "source": "INSTALL_HARNESS.py",
+      "target": ".ai/harness/INSTALL_HARNESS.py"
+    }
+  ],
+  "relocation_prefixes": [
+    {
+      "source_prefix": "docs/",
+      "target_prefix": ".ai/harness/docs/"
+    },
+    {
+      "source_prefix": "templates/",
+      "target_prefix": ".ai/harness/templates/"
+    }
+  ],
+  "managed_block_surfaces": [
+    {
+      "source": "AGENTS.md",
+      "target": "AGENTS.md",
+      "snapshot": ".ai/harness/surfaces/AGENTS.md",
+      "marker_id": "agents",
+      "label": "Codex"
+    },
+    {
+      "source": "CLAUDE.md",
+      "target": "CLAUDE.md",
+      "snapshot": ".ai/harness/surfaces/CLAUDE.md",
+      "marker_id": "claude",
+      "label": "Claude"
+    },
+    {
+      "source": "GEMINI.md",
+      "target": "GEMINI.md",
+      "snapshot": ".ai/harness/surfaces/GEMINI.md",
+      "marker_id": "gemini",
+      "label": "Gemini"
+    },
+    {
+      "source": "ANTIGRAVITY.md",
+      "target": "ANTIGRAVITY.md",
+      "snapshot": ".ai/harness/surfaces/ANTIGRAVITY.md",
+      "marker_id": "antigravity",
+      "label": "Antigravity"
+    }
+  ],
+  "compatibility_pointer_surfaces": [
+    {
+      "source": "docs/AI_INTEGRATION_TESTING.md",
+      "target": "docs/AI_INTEGRATION_TESTING.md",
+      "snapshot": ".ai/harness/docs/AI_INTEGRATION_TESTING.md",
+      "marker_id": "doc-ai-integration-testing"
+    },
+    {
+      "source": "docs/RUNTIME_VERIFICATION.md",
+      "target": "docs/RUNTIME_VERIFICATION.md",
+      "snapshot": ".ai/harness/docs/RUNTIME_VERIFICATION.md",
+      "marker_id": "doc-runtime-verification"
+    },
+    {
+      "source": "docs/GEMINI_FREE_FIRST.md",
+      "target": "docs/GEMINI_FREE_FIRST.md",
+      "snapshot": ".ai/harness/docs/GEMINI_FREE_FIRST.md",
+      "marker_id": "doc-gemini-free-first"
+    }
+  ],
+  "managed_exact_prefixes": [
+    ".ai/",
+    ".agents/"
+  ],
+  "runtime_state_exclusions": [
+    ".ai/REPO_MAP.json",
+    ".ai/checkpoints/**"
+  ],
+  "apply_contract": {
+    "default_is_plan_only": true,
+    "apply_requires_plan_digest": true,
+    "compare_and_swap_before_each_write": true,
+    "rollback_on_failure": true,
+    "never_overwrite_unowned_conflict": true
+  },
+  "mutable_seed_paths": [
+    ".ai/PROJECT.md",
+    ".ai/STATE.json",
+    ".ai/COMMANDS.json",
+    ".ai/RESUME.md",
+    ".ai/DECISIONS.md"
+  ],
+  "mutable_seed_contract": {
+    "installer_never_overwrites_modified_seed": true,
+    "verification_accepts_runtime_divergence": true,
+    "immutable_managed_surfaces_remain_hash_strict": true,
+    "manual_hash_rebaseline_required": false
+  },
+  "git_checkout_byte_contract": {
+    "mode": "exact-path-managed-attributes",
+    "whole_file_and_managed_containers": true,
+    "hashes_remain_raw": true,
+    "repair_eol_requires_explicit_plan": true,
+    "never_normalize_entire_product": true
+  }
+}

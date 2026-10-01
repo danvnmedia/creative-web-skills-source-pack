@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "purpose": "Natural-prompt routing matrix. Prepared runner rows intentionally omit expected skill/polarity.",
+  "skills_root": ".agents/skills",
+  "cases": [
+    {
+      "id": "product-discovery-pos-1",
+      "skill": "product-discovery",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Turn this vague product idea into the smallest valuable user outcome and identify risky assumptions before coding."
+    },
+    {
+      "id": "product-discovery-neg-1",
+      "skill": "product-discovery",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Fix this known TypeScript typo in one file; the expected behavior and exact line are already known."
+    },
+    {
+      "id": "codebase-recon-pos-1",
+      "skill": "codebase-recon",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "I just inherited this unfamiliar repository. Map the architecture, real commands, state boundaries, and likely change surface before editing."
+    },
+    {
+      "id": "codebase-recon-neg-1",
+      "skill": "codebase-recon",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Rewrite this already-provided paragraph to be shorter; no repository inspection is needed."
+    },
+    {
+      "id": "feature-build-pos-1",
+      "skill": "feature-build",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Implement a bounded feature slice end to end with acceptance criteria and tests."
+    },
+    {
+      "id": "feature-build-neg-1",
+      "skill": "feature-build",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Investigate why this existing feature crashes before proposing a fix."
+    },
+    {
+      "id": "systematic-debugging-pos-1",
+      "skill": "systematic-debugging",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "The build passes sometimes but production intermittently fails. Reproduce, isolate the root cause, and add a regression guard."
+    },
+    {
+      "id": "systematic-debugging-neg-1",
+      "skill": "systematic-debugging",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Design a brand-new onboarding flow from scratch."
+    },
+    {
+      "id": "ui-ux-design-pos-1",
+      "skill": "ui-ux-design",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Redesign this dashboard flow for mobile and desktop, including loading, empty, error, accessibility, and visual verification."
+    },
+    {
+      "id": "ui-ux-design-neg-1",
+      "skill": "ui-ux-design",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Rotate an API key and audit server-side permissions; no user interface changes are requested."
+    },
+    {
+      "id": "runtime-verification-pos-1",
+      "skill": "runtime-verification",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Verify this web feature in the real browser, including critical flow, network failures, screenshots, overflow, and console errors."
+    },
+    {
+      "id": "runtime-verification-neg-1",
+      "skill": "runtime-verification",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Explain what this pure helper function does from the code snippet only."
+    },
+    {
+      "id": "security-hardening-pos-1",
+      "skill": "security-hardening",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Audit this authentication and tenant-isolation change, try to disprove the security finding, and add negative tests."
+    },
+    {
+      "id": "security-hardening-neg-1",
+      "skill": "security-hardening",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Polish the spacing and typography of a static marketing card."
+    },
+    {
+      "id": "performance-reliability-pos-1",
+      "skill": "performance-reliability",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Find the latency and retry amplification bottleneck under load, measure it, bound retries, and verify graceful degradation."
+    },
+    {
+      "id": "performance-reliability-neg-1",
+      "skill": "performance-reliability",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Translate this short message into Vietnamese."
+    },
+    {
+      "id": "ai-provider-routing-pos-1",
+      "skill": "ai-provider-routing",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Design provider routing for Gemini-first AI with quota groups, capability-safe fallback, retries, circuit breakers, privacy, and cost constraints."
+    },
+    {
+      "id": "ai-provider-routing-neg-1",
+      "skill": "ai-provider-routing",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Debug a CSS overflow issue with no AI API integration."
+    },
+    {
+      "id": "ai-integration-verification-pos-1",
+      "skill": "ai-integration-verification",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Test this AI integration beyond mocks: contract path plus deterministic 401, 403, 404, 429, timeout, fallback mismatch, stream interruption, and redaction failures."
+    },
+    {
+      "id": "ai-integration-verification-neg-1",
+      "skill": "ai-integration-verification",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Create a static SQL migration with no model or provider calls."
+    },
+    {
+      "id": "code-simplification-pos-1",
+      "skill": "code-simplification",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Refactor this working module to reduce complexity without changing behavior, and prove behavior preservation."
+    },
+    {
+      "id": "code-simplification-neg-1",
+      "skill": "code-simplification",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Add a new user-facing workflow with changed behavior and new state."
+    },
+    {
+      "id": "release-acceptance-pos-1",
+      "skill": "release-acceptance",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "Prepare and accept this production release only after exact-revision smoke and the real production critical flow pass."
+    },
+    {
+      "id": "release-acceptance-neg-1",
+      "skill": "release-acceptance",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Brainstorm three names for an internal prototype."
+    },
+    {
+      "id": "harness-improvement-pos-1",
+      "skill": "harness-improvement",
+      "polarity": "should_trigger",
+      "split": "tune",
+      "prompt": "The coding agent keeps missing the same class of verification and session-continuity failure. Turn the repeated evidence into the smallest tested harness mechanism."
+    },
+    {
+      "id": "harness-improvement-neg-1",
+      "skill": "harness-improvement",
+      "polarity": "should_not_trigger",
+      "split": "tune",
+      "prompt": "Implement an ordinary product feature whose existing harness already covers the workflow."
+    }
+  ]
+}

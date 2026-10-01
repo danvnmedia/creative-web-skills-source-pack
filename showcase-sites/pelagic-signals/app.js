@@ -25,6 +25,12 @@ let startTime = performance.now();
 let activeMode = 0;
 let fieldVisible = true;
 let impulse = 0;
+let renderScale = Math.min(window.devicePixelRatio || 1, window.innerWidth < 720 ? 1 : 1.25);
+let lastRenderAt = 0;
+let sampledFrames = 0;
+let sampledTime = 0;
+let uniforms;
+let canvasBounds;
 const pointer = { x: .72, y: .42 };
 
 const vertexSource = `
@@ -58,13 +64,13 @@ const fragmentSource = `
     float disturbance = .16 / (.12 + pointerDistance);
     vec2 flow = vec2(fbm(p * 1.5 + time), fbm(p * 1.45 - time + 8.2));
     float field = fbm(p * 2.2 + flow * 2.4 + disturbance * .08);
-    float contour = smoothstep(.035, 0.0, abs(fract(field * 10.0 + uMode * .13) - .5) - .46);
-    vec3 deep = vec3(.025, .10, .10);
-    vec3 mint = vec3(.23, .92, .69);
-    vec3 coral = vec3(1.0, .33, .24);
-    vec3 color = mix(deep, uMode < .5 ? mint : coral, smoothstep(.42, .86, field) * .58);
-    if (uMode > 1.5) color = mix(deep, vec3(.72, .88, .43), smoothstep(.38, .83, field) * .55);
-    color += contour * (uMode < .5 ? mint : vec3(1.0,.72,.57)) * .42;
+    float contour = smoothstep(.025, 0.0, abs(fract(field * 7.0 + uMode * .13) - .5) - .47);
+    vec3 deep = vec3(.009, .035, .075);
+    vec3 mint = vec3(.13, .75, .92);
+    vec3 coral = vec3(1.0, .39, .28);
+    vec3 color = mix(deep, uMode < .5 ? mint : coral, smoothstep(.5, .88, field) * .32);
+    if (uMode > 1.5) color = mix(deep, vec3(.72, .88, .43), smoothstep(.45, .86, field) * .3);
+    color += contour * (uMode < .5 ? mint : vec3(1.0,.72,.57)) * .22;
     color += smoothstep(.22, 0.0, distance(uv, uPointer)) * vec3(.15,.5,.38) * .2;
     float impulseRing = smoothstep(.035, 0.0, abs(pointerDistance - uImpulse * .46)) * (1.0 - uImpulse);
     color += impulseRing * vec3(.42,1.0,.82) * 1.4;
@@ -89,6 +95,7 @@ function initWebGL() {
   gl.linkProgram(program);
   if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
   gl.useProgram(program);
+  uniforms = Object.fromEntries(['uResolution', 'uPointer', 'uTime', 'uMode', 'uImpulse'].map((name) => [name, gl.getUniformLocation(program, name)]));
   const buffer = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, -1,1, 1,-1, 1,1]), gl.STATIC_DRAW);
@@ -96,7 +103,7 @@ function initWebGL() {
   gl.enableVertexAttribArray(position);
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
   fallback.hidden = true;
-  status.textContent = reducedMotion ? 'Field paused / reduced motion' : 'Live field / WebGL';
+  status.textContent = reducedMotion ? 'Field paused / reduced motion' : 'Simulated field / WebGL';
   resize();
   render();
 }
@@ -104,19 +111,32 @@ function initWebGL() {
 function resize() {
   if (!gl) return;
   const box = canvas.getBoundingClientRect();
-  const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-  canvas.width = Math.max(1, Math.round(box.width * dpr));
-  canvas.height = Math.max(1, Math.round(box.height * dpr));
+  canvasBounds = { left: box.left + window.scrollX, top: box.top + window.scrollY, width: box.width, height: box.height };
+  canvas.width = Math.max(1, Math.round(box.width * renderScale));
+  canvas.height = Math.max(1, Math.round(box.height * renderScale));
   gl.viewport(0, 0, canvas.width, canvas.height);
 }
 
 function render(now = startTime) {
   if (!gl) return;
-  gl.uniform2f(gl.getUniformLocation(program, 'uResolution'), canvas.width, canvas.height);
-  gl.uniform2f(gl.getUniformLocation(program, 'uPointer'), pointer.x, 1 - pointer.y);
-  gl.uniform1f(gl.getUniformLocation(program, 'uTime'), reducedMotion ? 0 : (now - startTime) / 1000);
-  gl.uniform1f(gl.getUniformLocation(program, 'uMode'), activeMode);
-  gl.uniform1f(gl.getUniformLocation(program, 'uImpulse'), impulse);
+  if (!reducedMotion && lastRenderAt && now - lastRenderAt < 100) {
+    sampledTime += now - lastRenderAt;
+    sampledFrames += 1;
+    if (sampledFrames >= 40) {
+      if (sampledTime / sampledFrames > 20 && renderScale > .7) {
+        renderScale = Math.max(.7, renderScale - .15);
+        resize();
+      }
+      sampledTime = 0;
+      sampledFrames = 0;
+    }
+  }
+  lastRenderAt = now;
+  gl.uniform2f(uniforms.uResolution, canvas.width, canvas.height);
+  gl.uniform2f(uniforms.uPointer, pointer.x, 1 - pointer.y);
+  gl.uniform1f(uniforms.uTime, reducedMotion ? 0 : (now - startTime) / 1000);
+  gl.uniform1f(uniforms.uMode, activeMode);
+  gl.uniform1f(uniforms.uImpulse, impulse);
   gl.drawArrays(gl.TRIANGLES, 0, 6);
   if (impulse > 0) impulse = Math.max(0, impulse - .018);
   if (!reducedMotion && fieldVisible && !document.hidden) animationFrame = requestAnimationFrame(render);
@@ -127,23 +147,29 @@ function restartRender() {
   render(performance.now());
 }
 
+let pointerFrame = 0;
+let nextPointer;
 canvas.addEventListener('pointermove', (event) => {
-  const box = canvas.getBoundingClientRect();
-  pointer.x = (event.clientX - box.left) / box.width;
-  pointer.y = (event.clientY - box.top) / box.height;
-  probe.style.left = `${(pointer.x * 100).toFixed(2)}%`;
-  probe.style.top = `${(pointer.y * 100).toFixed(2)}%`;
-  probe.classList.toggle('is-right', pointer.x > .64);
-  probeDepth.textContent = `−${Math.round(42 + pointer.y * 536)} m`;
-  probeFlow.textContent = `${(.62 + pointer.x * 1.84).toFixed(2)} m/s`;
-  if (reducedMotion) render();
+  nextPointer = { x: event.clientX, y: event.clientY };
+  if (pointerFrame) return;
+  pointerFrame = requestAnimationFrame(() => {
+    pointer.x = Math.max(0, Math.min(1, (nextPointer.x + window.scrollX - canvasBounds.left) / canvasBounds.width));
+    pointer.y = Math.max(0, Math.min(1, (nextPointer.y + window.scrollY - canvasBounds.top) / canvasBounds.height));
+    probe.style.left = '0';
+    probe.style.top = '0';
+    probe.style.transform = `translate3d(${(pointer.x * canvasBounds.width).toFixed(1)}px, ${(pointer.y * canvasBounds.height).toFixed(1)}px, 0) translate(-50%, -50%)`;
+    probe.classList.toggle('is-right', pointer.x > .64);
+    probeDepth.textContent = `−${Math.round(42 + pointer.y * 536)} m`;
+    probeFlow.textContent = `${(.62 + pointer.x * 1.84).toFixed(2)} m/s`;
+    if (reducedMotion) render();
+    pointerFrame = 0;
+  });
 }, { passive: true });
 
 canvas.addEventListener('pointerdown', () => {
   impulse = .01;
   field.classList.remove('is-pulsing');
-  void field.offsetWidth;
-  field.classList.add('is-pulsing');
+  requestAnimationFrame(() => field.classList.add('is-pulsing'));
   restartRender();
 });
 
@@ -151,10 +177,14 @@ modeButtons.forEach((button) => button.addEventListener('click', () => {
   activeMode = Number(button.dataset.mode);
   modeButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
   const mode = modes[activeMode];
-  metricLabel.textContent = mode.label;
-  metricValue.textContent = mode.value;
-  metricUnit.textContent = mode.unit;
-  modeNote.textContent = mode.note;
+  const updateMetric = () => {
+    metricLabel.textContent = mode.label;
+    metricValue.textContent = mode.value;
+    metricUnit.textContent = mode.unit;
+    modeNote.textContent = mode.note;
+  };
+  if (!reducedMotion && document.startViewTransition) document.startViewTransition(updateMetric);
+  else updateMetric();
   restartRender();
 }));
 

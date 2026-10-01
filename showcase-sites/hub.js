@@ -8,9 +8,9 @@ function drawField() {
   canvas.width = Math.round(box.width * dpr);
   canvas.height = Math.round(box.height * dpr);
   context.scale(dpr, dpr);
-  context.fillStyle = '#081d24';
+  context.fillStyle = '#071b2c';
   context.fillRect(0, 0, box.width, box.height);
-  context.strokeStyle = 'rgba(90, 241, 205, .34)';
+  context.strokeStyle = 'rgba(131, 221, 237, .4)';
   context.lineWidth = 1;
   for (let row = 0; row < 17; row += 1) {
     context.beginPath();
@@ -24,11 +24,3 @@ function drawField() {
 
 drawField();
 window.addEventListener('resize', drawField, { passive: true });
-
-const asmePreview = document.querySelector('#asme-preview');
-if (asmePreview) {
-  new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting && !document.hidden) void asmePreview.play().catch(() => undefined);
-    else asmePreview.pause();
-  }, { rootMargin: '120px' }).observe(asmePreview);
-}

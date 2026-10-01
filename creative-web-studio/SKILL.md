@@ -1,6 +1,6 @@
 ---
 name: creative-web-studio
-description: Direct end-to-end creative website work from idea, brand, URL, screenshot, brief, or existing code into an art-directed motion/3D experience and implementation plan. Use for cinematic landing pages, portfolios, product stories, editorial sites, immersive launches, AI-coding prompts, major redesigns, or requests that combine visual direction, motion, 3D/WebGL, responsive behavior, accessibility, and performance. Prefer narrower specialist skills for isolated animation, 3D, shader, rebuild, or audit tasks.
+description: Direct a whole creative website from brief or existing code through art direction, scene plan, rendering choices, and acceptance evidence. Use when a request spans multiple visual layers; use a specialist skill for isolated motion, 3D, shader, component, rebuild, or audit work.
 ---
 
 # Creative Web Studio

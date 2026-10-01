@@ -1,6 +1,6 @@
 ---
 name: motion-choreographer
-description: "Design, implement, debug, or refactor motion systems for websites and React apps. Use for GSAP/ScrollTrigger, Motion for React, Lenis, Barba.js, Rive, Lottie/dotLottie, native CSS/WAAPI/View Transitions, scroll choreography, page transitions, text/image reveals, FLIP/shared-layout motion, microinteractions, kinetic typography, carousels, drag/gesture behavior, or requests to make a site feel smoother, more cinematic, or more intentional without requiring full custom 3D/shader work."
+description: Design or repair website motion such as scroll choreography, page transitions, reveals, gestures, or kinetic type. Use when timing and continuity are the main problem; use accessible-interaction-systems for component semantics and immersive-3d-web or shader-web-art for GPU-led scenes.
 ---
 
 # Motion Choreographer
@@ -93,6 +93,8 @@ Use Barba.js only for navigation lifecycle and page-container swapping on sites 
 
 Prefer CSS `animation-timeline` / view-progress timelines when support and fallback requirements fit. Use View Transitions for shared navigation continuity where appropriate. Keep a non-animated fallback.
 
+Read [modern motion support](references/modern-motion-support.md) before choosing scroll timelines or View Transitions for a public site.
+
 ## Text motion
 
 Text must become readable quickly. Animate masks/lines/words for rhythm but do not make visitors wait through decorative sequencing. Preserve screen-reader semantics; do not convert meaningful text into canvas-only glyphs.
@@ -132,3 +134,4 @@ Read `references/examples.md` when selecting a choreography pattern or producing
 - `references/library-decisions.md`
 - `references/pattern-cookbook.md`
 - `references/reduced-motion.md`
+- `references/modern-motion-support.md`

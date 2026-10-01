@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pelagic Signals, an interactive ocean observation WebGL field.">
-  <title>Pelagic Signals — Live Ocean Field</title>
+  <meta name="description" content="Pelagic Signals, an interactive speculative ocean WebGL field.">
+  <title>Pelagic Signals — Simulated Ocean Field</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500&family=Syne:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=3">
+  <link rel="stylesheet" href="./style.css?v=4">
 </head>
 <body>
   <header class="topbar">
@@ -28,9 +28,9 @@
         <span><b id="probe-depth">−184 m</b><small id="probe-flow">1.84 m/s</small></span>
       </div>
       <div class="field-copy">
-        <p class="eyebrow">Open-ocean observatory / live synthesis</p>
+        <p class="eyebrow">Open-ocean observatory / simulated field</p>
         <h1 id="field-title">The water<br>is <em>speaking.</em></h1>
-        <p class="lede">A living field assembled from current, thermal, and salinity observations across the North Atlantic.</p>
+        <p class="lede">A speculative field study of current, thermal, and salinity patterns across the North Atlantic. Values shown here are illustrative.</p>
       </div>
       <div class="field-status" aria-live="polite">
         <span class="pulse"></span><span id="render-status">Initializing field</span>
@@ -68,7 +68,7 @@
     </section>
   </main>
 
-  <footer><p>Pelagic Signals</p><p>Field study / 2026</p><a href="#field-title">Surface ↑</a></footer>
-  <script src="./app.js?v=3"></script>
+  <footer><p>Pelagic Signals</p><p>Field study / 2026</p><a href="#field-title">Surface ↑</a><small class="motion-note">Motion study / Shader flow pauses offscreen, pointer feedback uses transforms, and reading changes use View Transitions where supported. Reduced motion freezes the field.</small></footer>
+  <script src="./app.js?v=4"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.5",
+  "scan_mode": "deterministic-static",
+  "required_analyzers": [
+    "content-static",
+    "native-permission-metadata"
+  ],
+  "principles": {
+    "analysis_incomplete_is_never_clean": true,
+    "required_analyzer_failure_is_release_blocking": true,
+    "static_scan_does_not_claim_dynamic_or_semantic_coverage": true,
+    "unreadable_harness_owned_payload_is_failure": true
+  }
+}

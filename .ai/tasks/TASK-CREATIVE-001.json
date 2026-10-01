@@ -1,0 +1,130 @@
+{
+  "schema_version": 6,
+  "id": "TASK-CREATIVE-001",
+  "mode": "FEATURE",
+  "status": "IN_PROGRESS",
+  "objective": "Install Harness v5.5.10, audit and upgrade the creative web skills pack, and redesign its runnable showcases.",
+  "user_outcome": "A stable local Harness, a prioritized audit, clearer validated skills, and polished accessible motion demos with browser evidence.",
+  "scope": {
+    "in": [
+      "Harness install and project mapping",
+      "repository and skill audit",
+      "licensed reference research",
+      "skill and validator improvements",
+      "four first-party showcase demos",
+      "local browser verification and reports",
+      "commit the reviewed candidate, push main, and inspect the live GitHub Pages showcase"
+    ],
+    "out": [
+      "rewriting repository history",
+      "claiming live autonomous Skill activation without telemetry"
+    ]
+  },
+  "traits": {
+    "user_facing_web": true,
+    "ai_integration": false,
+    "security_sensitive": true,
+    "performance_sensitive": true,
+    "production_release": true,
+    "external_runtime_dependencies": true,
+    "stateful_user_workflow": false,
+    "large_binary_data": false,
+    "truthful_claims": true,
+    "harness_modification": true,
+    "skill_modification": true,
+    "borrowed_browser_session": false,
+    "mcp_runtime": false
+  },
+  "execution_contract": {
+    "profile": "audited",
+    "resolved_profile": "audited",
+    "cross_session_expected": true,
+    "external_wait_expected": false,
+    "context_refresh_expected": true,
+    "routing_reasons": [
+      "trait:security_sensitive",
+      "trait:harness_modification"
+    ],
+    "checkpoint_policy": "verified-boundary-only"
+  },
+  "experience_contract": {
+    "primary_user": "frontend designer or developer exploring the skills pack",
+    "trigger": "open a showcase or invoke a focused skill",
+    "dominant_action": "inspect a motion pattern and use its skill instructions",
+    "safe_default": "readable semantic still composition",
+    "first_time_flow": [
+      "choose a skill",
+      "open a showcase",
+      "read its motion note"
+    ],
+    "returning_user_flow": [
+      "revisit a named showcase directly",
+      "run its local validation"
+    ],
+    "recovery_flow": [
+      "use static content if optional media, JavaScript, or WebGL fails"
+    ],
+    "degraded_flow": [
+      "preserve content and navigation under reduced motion"
+    ],
+    "truthful_claims": [
+      "local browser evidence is separate from deployed Pages behavior",
+      "static skill checks do not prove live activation"
+    ]
+  },
+  "state_contract": {
+    "durable_state": [],
+    "transient_state": [
+      "demo interaction state"
+    ],
+    "capacity_limits": [],
+    "replacement_and_cleanup": [],
+    "recovery_and_reset": [
+      "reload returns to a useful default state"
+    ]
+  },
+  "acceptance_criteria": [
+    "installed Harness health checks pass",
+    "audit report ranks issues",
+    "reference table records license and maintenance evidence",
+    "skills validate structurally and with meaningful routing cases",
+    "all four demos run locally with mobile, desktop, keyboard, and reduced-motion checks"
+  ],
+  "critical_user_flows": [
+    "open hub and navigate each demo",
+    "interact with each demo's primary control",
+    "exercise reduced motion and keyboard navigation"
+  ],
+  "change_budget": {
+    "expected_files": null,
+    "schema_change": false,
+    "public_api_change": false
+  },
+  "verification": {
+    "required_checks": [],
+    "waivers": [],
+    "notes": "Local browser and native Harness evidence exist. Live Pages deployment, exact revision, production smoke, and production critical flow must be checked separately; audited Harness closure remains open.",
+    "findings": [],
+    "check_states": {}
+  },
+  "release": {
+    "candidate_revision": null,
+    "production_url": null,
+    "revision_marker": "GitHub Pages hub meta[name=build-revision] and /revision.json carry the full GITHUB_SHA",
+    "rollback": "Revert the deployment commit on main and let GitHub Pages redeploy; preserve the feature branch for review."
+  },
+  "risk": {
+    "level": "medium",
+    "human_gate": false,
+    "reasons": [
+      "public repository",
+      "motion accessibility",
+      "external demo resources",
+      "public GitHub Pages deployment"
+    ]
+  },
+  "notes": [
+    "User corrected target path to this repository; the sibling Harness distribution remains the install source.",
+    "The user explicitly authorized commit and push for live review on 2026-09-30; Pages workflow deploys main."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-01T01:09:48.175309+00:00",
+  "root": "D:\\Projects\\SKILLS\\creative-web-skills-source-pack",
+  "framework": null,
+  "package_manager": "npm",
+  "entries": [
+    {
+      "kind": "package-manager",
+      "name": "package-manager",
+      "value": "npm",
+      "trust": "observed",
+      "source": "package-lock.json"
+    },
+    {
+      "kind": "command",
+      "name": "audit:static",
+      "value": "npm run audit:static",
+      "trust": "observed",
+      "source": "package.json#scripts.audit:static",
+      "execution_enabled": true
+    },
+    {
+      "kind": "command",
+      "name": "build",
+      "value": "npm run build",
+      "trust": "observed",
+      "source": "package.json#scripts.build",
+      "execution_enabled": true
+    },
+    {
+      "kind": "command",
+      "name": "dev",
+      "value": "npm run dev",
+      "trust": "observed",
+      "source": "package.json#scripts.dev",
+      "execution_enabled": true
+    },
+    {
+      "kind": "command",
+      "name": "lint",
+      "value": "npm run lint",
+      "trust": "observed",
+      "source": "package.json#scripts.lint",
+      "execution_enabled": true
+    },
+    {
+      "kind": "command",
+      "name": "qa:browser",
+      "value": "npm run qa:browser",
+      "trust": "observed",
+      "source": "package.json#scripts.qa:browser",
+      "execution_enabled": true
+    },
+    {
+      "kind": "command",
+      "name": "test",
+      "value": "npm run test",
+      "trust": "observed",
+      "source": "package.json#scripts.test",
+      "execution_enabled": true
+    },
+    {
+      "kind": "dependency",
+      "name": "playwright",
+      "value": "^1.63.0",
+      "trust": "observed",
+      "source": "package.json dependencies"
+    },
+    {
+      "kind": "agent-surface",
+      "name": "AGENTS.md",
+      "value": "present",
+      "trust": "observed",
+      "source": "AGENTS.md"
+    },
+    {
+      "kind": "agent-surface",
+      "name": "CLAUDE.md",
+      "value": "present",
+      "trust": "observed",
+      "source": "CLAUDE.md"
+    },
+    {
+      "kind": "agent-surface",
+      "name": "GEMINI.md",
+      "value": "present",
+      "trust": "observed",
+      "source": "GEMINI.md"
+    },
+    {
+      "kind": "agent-surface",
+      "name": "ANTIGRAVITY.md",
+      "value": "present",
+      "trust": "observed",
+      "source": "ANTIGRAVITY.md"
+    },
+    {
+      "kind": "agent-surface",
+      "name": ".agents",
+      "value": "present",
+      "trust": "observed",
+      "source": ".agents"
+    },
+    {
+      "kind": "ci",
+      "name": "ci.yml",
+      "value": ".github/workflows/ci.yml",
+      "trust": "observed",
+      "source": ".github/workflows/ci.yml"
+    },
+    {
+      "kind": "ci",
+      "name": "pages.yml",
+      "value": ".github/workflows/pages.yml",
+      "trust": "observed",
+      "source": ".github/workflows/pages.yml"
+    }
+  ],
+  "policy": {
+    "observed": "Directly read from a repository file/path. May still need runtime verification.",
+    "declared": "Explicit human/project declaration not independently observed yet.",
+    "inferred": "Heuristic or convention. Never execute solely because it appears here."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.5",
+  "discovery_globs": [
+    ".ai/scripts/*_regression_test.py"
+  ],
+  "exclude": [],
+  "live_patterns": [
+    "*_live_e2e.py",
+    "*_live_eval.py"
+  ],
+  "principles": {
+    "all_discovered_deterministic_regressions_are_required": true,
+    "new_regression_needs_no_allowlist_edit": true,
+    "live_or_external_tests_are_never_counted_as_deterministic_pass": true,
+    "runner_provenance_is_hashed": true,
+    "skipped_tests_are_reported_not_passed": true,
+    "copy_scratch_must_be_outside_source": true,
+    "installed_mode_fails_before_running_source_suite": true,
+    "stderr_not_machine_data": true,
+    "os_evidence_is_not_transferable": true,
+    "child_temp_override_never_changes_global_environment": true
+  },
+  "per_runner_timeout_seconds": 300,
+  "execution_context": "source"
+}

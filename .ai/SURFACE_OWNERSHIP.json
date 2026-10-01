@@ -1,0 +1,102 @@
+{
+  "version": 4,
+  "canonical": {
+    "operating_constitution": "AGENTS.md",
+    "skills_root": ".agents/skills",
+    "rules_root": ".agents/rules",
+    "workflows_root": ".agents/workflows",
+    "task_contract": ".ai/TASK_TEMPLATE.json",
+    "quality_policy": ".ai/QUALITY.json",
+    "provider_policy": ".ai/AI_PROVIDER_POLICY.json",
+    "execution_policy": ".ai/EXECUTION_POLICY.json",
+    "skill_eval_policy": ".ai/SKILL_EVAL_POLICY.json",
+    "quarantine_policy": ".ai/QUARANTINE_POLICY.json",
+    "browser_lease_policy": ".ai/BROWSER_LEASE_POLICY.json",
+    "release_policy": ".ai/RELEASE_POLICY.json"
+  },
+  "adapters": {
+    "codex": {
+      "entrypoints": [
+        "AGENTS.md"
+      ],
+      "native_surfaces": [
+        ".agents/skills",
+        ".agents/rules",
+        ".agents/workflows"
+      ],
+      "must_reference": [
+        ".ai/TASK_TEMPLATE.json",
+        ".ai/QUALITY.json",
+        ".agents/skills/"
+      ]
+    },
+    "gemini": {
+      "entrypoints": [
+        "GEMINI.md"
+      ],
+      "native_surfaces": [
+        ".agents/skills",
+        ".agents/rules",
+        ".agents/workflows"
+      ],
+      "must_reference": [
+        "AGENTS.md",
+        ".ai/QUALITY.json",
+        ".ai/TASK_TEMPLATE.json"
+      ]
+    },
+    "claude": {
+      "entrypoints": [
+        "CLAUDE.md"
+      ],
+      "native_surfaces": [
+        ".agents/skills",
+        ".agents/rules",
+        ".agents/workflows"
+      ],
+      "must_reference": [
+        "AGENTS.md",
+        ".ai/QUALITY.json",
+        ".ai/TASK_TEMPLATE.json"
+      ]
+    },
+    "antigravity": {
+      "entrypoints": [
+        "ANTIGRAVITY.md"
+      ],
+      "native_surfaces": [
+        ".agents/skills",
+        ".agents/rules",
+        ".agents/workflows"
+      ],
+      "must_reference": [
+        "AGENTS.md",
+        ".agents/rules/",
+        ".agents/workflows/",
+        ".agents/skills/",
+        ".ai/QUALITY.json"
+      ]
+    }
+  },
+  "policy": {
+    "skills_have_one_canonical_copy": true,
+    "adapter_docs_must_not_duplicate_skill_bodies": true,
+    "harness_specific_claims_must_not_assume_feature_parity": true,
+    "portable_export_must_not_claim_host_policy_parity": true,
+    "generic_project_root_files_are_not_harness_owned": true,
+    "installed_adapter_entrypoints_use_managed_blocks": true
+  },
+  "portable_exports": {
+    "agent_plugins_v1": {
+      "source": ".agents/skills",
+      "generator": ".ai/scripts/export_agent_plugin.py",
+      "scope": "skills-only",
+      "host_install_permissions_sandbox_policy_included": false
+    }
+  },
+  "installed_canonical": {
+    "operating_constitution": ".ai/harness/surfaces/AGENTS.md",
+    "metadata_root": ".ai/harness",
+    "integration_mode": "marker-scoped-pointers"
+  }
+}

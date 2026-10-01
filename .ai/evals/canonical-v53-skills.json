@@ -1,0 +1,58 @@
+{
+  "canonical_baseline": "5.3.0",
+  "count": 13,
+  "files": [
+    {
+      "path": ".agents/skills/ai-integration-verification/SKILL.md",
+      "sha256": "69999906b19cbbc80a709df0ebb554e4a22af205d6d36c7e45cfc5dc080daeef"
+    },
+    {
+      "path": ".agents/skills/ai-provider-routing/SKILL.md",
+      "sha256": "6e8dedf0ad67005267b10e96ae2581313d2c3ee9124affbfe539791193c91d64"
+    },
+    {
+      "path": ".agents/skills/code-simplification/SKILL.md",
+      "sha256": "3b4c239cea55049df8fff7665d1f7a82c20e8bf889c59f78edbeff6823e96ba9"
+    },
+    {
+      "path": ".agents/skills/codebase-recon/SKILL.md",
+      "sha256": "962fd20f4a44f7fdab9cce7eb5dc5d66473f2215081a778585fed3f67b242983"
+    },
+    {
+      "path": ".agents/skills/feature-build/SKILL.md",
+      "sha256": "af2aa58ff4674d220a7a732ac9b54b6c9eb082c37f2481c424dbc52411fdef4a"
+    },
+    {
+      "path": ".agents/skills/harness-improvement/SKILL.md",
+      "sha256": "4257f09a337cfa3d926290e43c75dc9674fa2f56ed5ae6fc66b0b7bc2b07dbb7"
+    },
+    {
+      "path": ".agents/skills/performance-reliability/SKILL.md",
+      "sha256": "c6ea22a72134e6f9d49b707e244bdd18a7251e6510f0839f356e6abb2610855c"
+    },
+    {
+      "path": ".agents/skills/product-discovery/SKILL.md",
+      "sha256": "ec47844b61e99c55bd2a6508226bf2cb50bfaab619be6eb8cfa014c6d6ef9e72"
+    },
+    {
+      "path": ".agents/skills/release-acceptance/SKILL.md",
+      "sha256": "66efb43af58a92cbe3a9574f48f21cecd466a8e79ed634187070e1f4eeafaac4"
+    },
+    {
+      "path": ".agents/skills/runtime-verification/SKILL.md",
+      "sha256": "153265b995d8709e920943b2fb8eba7bbb25ddcb61dad293e5921c1426183d7d"
+    },
+    {
+      "path": ".agents/skills/security-hardening/SKILL.md",
+      "sha256": "5b344f34e5ef9bcc98119453c5361037aceeaf47352cea901cc80ef1596a0cc8"
+    },
+    {
+      "path": ".agents/skills/systematic-debugging/SKILL.md",
+      "sha256": "948d7b33ffede09e56f01924965ad54aedf70fd93bce60537e3eff11e41e65b7"
+    },
+    {
+      "path": ".agents/skills/ui-ux-design/SKILL.md",
+      "sha256": "6b9c8fa5134573a20b46a73435c1cfb91e4574c2d042c873a593ed978eee8aba"
+    }
+  ]
+}

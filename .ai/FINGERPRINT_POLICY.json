@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "product_source_digest": {
+    "excludes_exact": [
+      ".ai/STATE.json",
+      ".ai/RESUME.md",
+      ".ai/DECISIONS.md",
+      ".ai/REPO_MAP.json",
+      ".ai/HARNESS_INSTALL_STATE.json"
+    ],
+    "excludes_prefixes": [
+      ".ai/evidence/",
+      ".ai/checkpoints/",
+      ".ai/tasks/"
+    ],
+    "content_hashes_files": true,
+    "mtime_only_is_forbidden": true
+  },
+  "task_contract_digest": {
+    "includes_acceptance_criteria": true,
+    "includes_required_checks": true,
+    "includes_waivers_and_findings": true,
+    "excludes_lifecycle_status": true,
+    "excludes_closed_at": true
+  },
+  "lifecycle_state_digest": {
+    "includes": [
+      ".ai/STATE.json",
+      ".ai/RESUME.md",
+      ".ai/DECISIONS.md",
+      "task.status",
+      "task.closure"
+    ],
+    "does_not_invalidate_product_evidence": true
+  },
+  "runtime_candidate_digest": {
+    "includes": [
+      "product_source_digest",
+      "release.candidate_revision",
+      "release.deployed_revision",
+      "release.revision_marker",
+      "release.artifact_sha256",
+      "release.deployment_id",
+      "release.production_url"
+    ],
+    "invalidates_checks": [
+      "runtime-browser",
+      "critical-flow",
+      "external-probe",
+      "production-smoke",
+      "production-critical-flow"
+    ],
+    "does_not_invalidate_source_only_checks": true,
+    "closure_receipt_is_lifecycle_only": true,
+    "actual_url_revision_artifact_still_bound": true
+  }
+}

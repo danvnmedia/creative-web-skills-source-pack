@@ -10,6 +10,7 @@ const skills = [
   'shader-web-art',
   'creative-site-rebuilder',
   'motion-performance-auditor',
+  'accessible-interaction-systems',
 ];
 const showcases = ['morrow-archive', 'pelagic-signals', 'kern-one', 'asme-hero'];
 const errors = [];
@@ -89,4 +90,3 @@ if (errors.length) {
 } else {
   console.log(`Validated ${skills.length} skills, ${showcases.length} showcases, and all local Pages links.`);
 }
-

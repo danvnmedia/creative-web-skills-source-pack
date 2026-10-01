@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.8",
+  "canonical_baseline": "5.3.0",
+  "implementation_parent": "5.5.7",
+  "input_artifacts": [
+    {
+      "name": "Codex_Product_Harness_v5.3.zip",
+      "sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df",
+      "role": "canonical-contract-and-skill-byte-baseline"
+    },
+    {
+      "name": "Codex_Product_Harness_v5.5.7.zip",
+      "sha256": "95c20f53c42615fa33886d2f469a48b2c21145d18cc6eca7cb2c6381023326e0",
+      "role": "implementation-parent"
+    }
+  ],
+  "not_inherited": [
+    "separate older noncanonical skill-first 5.6.0 branch"
+  ],
+  "traits": {
+    "harness_modification": true,
+    "security": true,
+    "skill_modification": false,
+    "user_facing_web": false,
+    "production_release": false
+  },
+  "no_external_code_vendored": true,
+  "canonical_skills_byte_preserved": 13,
+  "adopted_mechanisms": [
+    "fail-closed-analysis-completeness",
+    "auto-discovered-deterministic-regressions",
+    "full-catalog-skill-routing-contract",
+    "pinned-host-surface-drift-contract",
+    "opaque-executable-coverage-truth",
+    "python-reflective-sink-resolution",
+    "source-installed-regression-routing",
+    "copy-safe-temp-preflight",
+    "git-nul-stdout-diagnostics-separation",
+    "crlf-bom-frontmatter-structure",
+    "os-specific-runner-provenance",
+    "task-bound-prompt-brief-compiler",
+    "brief-context-contract-digest",
+    "non-authoritative-content-addressed-handoff",
+    "bounded-install-command-reference-audit",
+    "ci-install-state-portability-warning",
+    "exact-path-git-byte-preservation",
+    "explicit-prior-hash-eol-repair",
+    "closure-receipt-not-runtime-candidate",
+    "actionable-release-lifecycle-errors",
+    "bounded-local-server-identity",
+    "conservative-windows-command-resolution",
+    "schema-owned-mode-enum",
+    "advisory-trait-skill-map",
+    "optional-project-ux-token-validation",
+    "process-success-before-failure-keyword-heuristics"
+  ],
+  "prior_lineage": {
+    "path": ".ai/lineage/v5.5.7.json",
+    "sha256": "8d1f5f2d5a761023c54337ef5b6227699ec0dda88a67c46ecdc3784c9b96f97a"
+  }
+}

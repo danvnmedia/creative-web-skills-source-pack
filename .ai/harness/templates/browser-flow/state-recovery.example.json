@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://127.0.0.1:8765",
+  "viewport": {"width": 390, "height": 844},
+  "steps": [
+    {"action": "goto", "path": "/templates/browser-flow/state-recovery-fixture.html"},
+    {"action": "captureAttribute", "selector": "html", "attribute": "data-saved-at", "as": "beforeSave"},
+    {"action": "click", "role": "button", "name": "Save durable state"},
+    {"action": "waitForAttributeChange", "selector": "html", "attribute": "data-saved-at", "from": "beforeSave", "as": "savedRevision"},
+    {"action": "reload"},
+    {"action": "expectAttribute", "selector": "html", "attribute": "data-saved-at", "from": "savedRevision"},
+    {"action": "expectNoHorizontalOverflow"},
+    {"action": "expectNoOverlap", "selector": "h1", "otherSelector": "button"},
+    {"action": "screenshot", "name": "restored"}
+  ]
+}

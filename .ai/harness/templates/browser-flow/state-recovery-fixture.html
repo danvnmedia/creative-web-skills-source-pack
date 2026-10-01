@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" data-saved-at="0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harness state recovery fixture</title>
+<style>html,body{margin:0;max-width:100%;overflow-x:hidden}main{padding:24px}button{min-height:44px}</style>
+<main>
+  <h1>State recovery fixture</h1>
+  <button type="button">Save durable state</button>
+  <p id="status">Ready</p>
+</main>
+<script>
+  const savedAt=localStorage.getItem('harness-saved-at') || '0';
+  document.documentElement.dataset.savedAt=savedAt;
+  document.querySelector('button').addEventListener('click',()=>{
+    const next=String(Date.now());
+    localStorage.setItem('harness-saved-at',next);
+    document.documentElement.dataset.savedAt=next;
+    document.querySelector('#status').textContent='Saved';
+  });
+</script>
+</html>

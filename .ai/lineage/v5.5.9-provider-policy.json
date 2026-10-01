@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "strategy": "gemini-free-first",
+  "privacy": {
+    "allow_free_tier_for_sensitive_data": false,
+    "allow_raw_prompt_logging": false,
+    "allow_raw_provider_key_logging": false,
+    "client_side_provider_keys_forbidden": true
+  },
+  "gemini": {
+    "enabled": true,
+    "official_sdk_js": "@google/genai",
+    "legacy_sdk_forbidden": "@google/generative-ai",
+    "quota_scope": "project",
+    "credential_groups": [],
+    "model_selection": "capability-aware-dynamic",
+    "prefer_free_tier": true
+  },
+  "routing": {
+    "selection": "least-loaded-healthy-quota-group",
+    "respect_retry_after": true,
+    "max_total_attempts": 3,
+    "max_provider_hops": 2,
+    "exponential_backoff": {
+      "base_ms": 1000,
+      "max_ms": 30000,
+      "jitter": true
+    },
+    "circuit_breaker": {
+      "failure_threshold": 3,
+      "cooldown_seconds": 60
+    },
+    "classify": {
+      "401": "credential-invalid-quarantine",
+      "403": "permission-or-policy-quarantine",
+      "404": "model-or-resource-refresh-capabilities",
+      "429_rate": "quota-group-cooldown",
+      "429_daily": "quota-group-exhausted-until-reset",
+      "500": "transient-backoff",
+      "503": "transient-backoff-and-failover",
+      "504": "transient-backoff-and-failover"
+    },
+    "authorized_capacity_failover": {
+      "enabled": true,
+      "independent_quota_scope_only": true,
+      "free_to_free": true,
+      "free_to_paid_requires_budget_authorization": true,
+      "paid_to_eligible_alternative": true,
+      "same_scope_credentials_are_not_new_capacity": true,
+      "different_eligible_capacity_may_run_during_other_scope_cooldown": true
+    },
+    "quota_scope_identity_fields": [
+      "provider",
+      "project_or_account",
+      "model",
+      "region",
+      "billing_scope"
+    ],
+    "deadline_and_budget_bounds": {
+      "bounded_provider_hops": true,
+      "bounded_total_attempts": true,
+      "paid_spend_must_be_pre_authorized": true
+    }
+  },
+  "fallbacks": [
+    {
+      "provider": "deepseek",
+      "enabled_if_env": "DEEPSEEK_API_KEY",
+      "capabilities": [
+        "text",
+        "code",
+        "reasoning"
+      ],
+      "model": "configured-at-runtime",
+      "policy": "low-cost-compatible-fallback"
+    }
+  ],
+  "safety": {
+    "never_silently_downgrade_required_capability": true,
+    "paid_fallback_requires_explicit_project_policy": true,
+    "never_bypass_provider_restrictions_or_unapproved_spend_caps": true,
+    "authorized_failover_is_not_treated_as_quota_evasion": true
+  }
+}

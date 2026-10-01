@@ -1,0 +1,122 @@
+{
+  "schema_version": 6,
+  "id": "TASK-EXAMPLE-RELEASE",
+  "mode": "RELEASE",
+  "status": "READY",
+  "objective": "Release an already verified player fix at one exact revision",
+  "user_outcome": "The deployed artifact exposes the verified fix and a matching revision marker",
+  "scope": {
+    "in": [
+      "Candidate checks, immutable closure, deployment provenance and production verification"
+    ],
+    "out": [
+      "New UI/features",
+      "Reusing stale production evidence",
+      "Changing the tested environment after closure"
+    ]
+  },
+  "traits": {
+    "user_facing_web": true,
+    "ai_integration": false,
+    "security_sensitive": false,
+    "performance_sensitive": false,
+    "production_release": true,
+    "external_runtime_dependencies": false,
+    "stateful_user_workflow": true,
+    "large_binary_data": false,
+    "truthful_claims": false,
+    "harness_modification": false,
+    "skill_modification": false,
+    "borrowed_browser_session": false,
+    "mcp_runtime": false
+  },
+  "execution_contract": {
+    "profile": "audited",
+    "resolved_profile": "audited",
+    "cross_session_expected": false,
+    "external_wait_expected": true,
+    "context_refresh_expected": false,
+    "routing_reasons": [
+      "production_release"
+    ],
+    "checkpoint_policy": "verified-boundary-only"
+  },
+  "experience_contract": {
+    "primary_user": "Returning and first-time listeners",
+    "trigger": "Open a media item",
+    "dominant_action": "Play audible media with explicit controls",
+    "safe_default": "Use a nonzero initial volume without forced autoplay",
+    "first_time_flow": [
+      "Load fresh profile",
+      "Review volume",
+      "Press Play"
+    ],
+    "returning_user_flow": [
+      "Restore the user-selected volume"
+    ],
+    "recovery_flow": [
+      "Retry a failed media load without losing volume choice"
+    ],
+    "degraded_flow": [
+      "Show a clear unavailable state"
+    ],
+    "truthful_claims": [
+      "Do not claim playback success without observed output"
+    ]
+  },
+  "state_contract": {
+    "durable_state": [
+      "Explicit user volume preference"
+    ],
+    "transient_state": [
+      "Current player loading/error status"
+    ],
+    "capacity_limits": [
+      "Single active playback session"
+    ],
+    "replacement_and_cleanup": [
+      "Dispose previous media listeners"
+    ],
+    "recovery_and_reset": [
+      "Reset test profiles only in a disposable environment"
+    ]
+  },
+  "acceptance_criteria": [
+    "Candidate checks pass before closure",
+    "Closure commit matches CI and deployment revision",
+    "Production smoke observes the actual revision marker",
+    "Fresh production critical flow passes at that deployment"
+  ],
+  "critical_user_flows": [
+    "Fresh profile on deployed app -> Play -> audible output",
+    "Observe revision endpoint and compare with the deployed closure commit"
+  ],
+  "change_budget": {
+    "expected_files": 5,
+    "schema_change": false,
+    "public_api_change": false
+  },
+  "verification": {
+    "required_checks": [],
+    "waivers": [],
+    "notes": "Example only. Replace project paths/URLs after observation; required checks are derived from traits. No evidence is supplied by this example.",
+    "findings": [],
+    "check_states": {}
+  },
+  "release": {
+    "candidate_revision": null,
+    "production_url": "https://example.invalid",
+    "revision_marker": "/build-info.json -> revision (example; observe the actual endpoint)",
+    "rollback": "Use the approved previous immutable deployment; verify its revision and the critical flow"
+  },
+  "risk": {
+    "level": "medium",
+    "human_gate": false,
+    "reasons": [
+      "Example contract; adapt to the actual repository before execution"
+    ]
+  },
+  "notes": [
+    "Replace example.invalid and fictional product assumptions before use. Never claim this example is an executed test."
+  ]
+}

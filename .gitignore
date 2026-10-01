@@ -41,6 +41,17 @@ playwright-report/
 test-results/
 blob-report/
 
+# Harness runtime residue (source, ownership state, and review reports remain trackable)
+/.ai/checkpoints/*
+!/.ai/checkpoints/README.md
+/.ai/evidence/events/
+/.ai/evidence/events.jsonl
+/.ai/evidence/logs/
+/.ai/evidence/browser/
+/.ai/evidence/completion-*.md
+/.ai/evidence/skill-eval-runs*.jsonl
+/.ai/harness/.tmp/
+
 # Editor and operating-system files
 .vscode/
 .idea/

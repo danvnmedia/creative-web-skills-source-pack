@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "canonical_baseline": "5.3.0",
+  "distribution_version": "5.5.5",
+  "layers": [
+    "package-presence",
+    "autonomous-activation",
+    "causal-value"
+  ],
+  "activation_states": [
+    "TRIGGERED",
+    "NOT_TRIGGERED",
+    "INFRA_ERROR",
+    "ATTRIBUTION_UNCERTAIN"
+  ],
+  "sensor": ".ai/scripts/skill_trigger_eval.py",
+  "accepted_sensor_format": "claude-stream-json",
+  "trusted_boundary": "operator-reviewed capture adapter and local collector; not cryptographic host attestation",
+  "reject_as_activation": [
+    "self-report",
+    "generic-read",
+    "prose",
+    "user-forced-slash",
+    "fixture",
+    "legacy-unbound-trace-label"
+  ],
+  "isolation": "per-query HOME + project + selected canonical skill; no shared discovery namespace",
+  "is_os_sandbox": false,
+  "max_workers": 8,
+  "max_repetitions": 5,
+  "trace_max_bytes": 2097152,
+  "host_support": {
+    "codex": "first-class baseline workflow; native activation sensor unavailable",
+    "claude": "native-stream sensor implemented; live-host acceptance NOT_RUN",
+    "gemini": "baseline adapter retained; native activation sensor unavailable",
+    "antigravity": "first-class baseline adapter retained; native activation sensor unavailable"
+  },
+  "absence_of_sensor_never_weakens_skill_modification_gate": true,
+  "legacy_reports": "--legacy-diagnostic remains readable but never acceptance-eligible",
+  "closure": "record_evidence and evidence_gate revalidate bound raw artifacts; approved bounded waiver remains explicit",
+  "catalog_confusion_contract": {
+    "policy": ".ai/SKILL_CATALOG_EVAL_POLICY.json",
+    "matrix": ".ai/evals/skill-catalog-routing.json",
+    "deterministic_validation_is_live_proof": false
+  }
+}

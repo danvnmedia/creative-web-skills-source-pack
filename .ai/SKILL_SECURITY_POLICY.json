@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "rule_version": "v5.5.5-r1",
+  "default_fail_on": "review",
+  "limits": {
+    "max_files": 5000,
+    "max_total_bytes": 52428800,
+    "max_text_file_bytes": 1048576,
+    "max_archive_entry_bytes": 10485760,
+    "max_compression_ratio": 200,
+    "max_path_depth": 16
+  },
+  "principles": {
+    "scan_before_install_import_or_promotion": true,
+    "never_execute_scanned_skill_code": true,
+    "deterministic_findings_cannot_be_downgraded_by_semantic_review": true,
+    "static_only_must_be_labeled_static_only": true,
+    "exact_bundle_hash_required": true,
+    "baseline_suppresses_only_exact_finding_fingerprints": true,
+    "resource_limit_exhaustion_fails_closed": true,
+    "baseline_cannot_suppress_analysis_incompleteness": true,
+    "analysis_status_required": true,
+    "opaque_executable_content_makes_static_analysis_partial": true,
+    "python_ast_sink_resolution_required_for_python_sources": true,
+    "statically_resolved_reflective_exec_is_blocking": true
+  },
+  "baseline": {
+    "accepted_fingerprints_field": "accepted_fingerprints",
+    "requires_explicit_file": true
+  }
+}

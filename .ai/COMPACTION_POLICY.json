@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "name": "compaction-truth-barrier",
+  "canonical_baseline": "5.3.0",
+  "max_resume_digest_chars": 1200,
+  "allowed_boundary_capture": ["manual", "instruction_driven", "host_hook"],
+  "principles": {
+    "observed_output_is_never_verified_fact": true,
+    "nonzero_exit_never_promotes_to_verified_claim": true,
+    "failed_and_rejected_work_remains_evidence": true,
+    "tool_call_result_pair_must_be_closed_before_promotion": true,
+    "checkpoint_claims_require_fresh_exact_workspace_evidence": true,
+    "compaction_summary_is_not_evidence": true,
+    "resume_reverifies_checkpoint_before_use": true,
+    "unsupported_host_hooks_must_not_be_claimed": true,
+    "control_plane_changes_invalidate_checkpoint": true
+  }
+}
