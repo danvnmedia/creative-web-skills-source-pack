@@ -1,6 +1,6 @@
 ---
 name: motion-performance-auditor
-description: Audit creative websites and frontend code for animation, scroll, WebGL/3D, accessibility, responsiveness, and runtime performance. Use for slow/janky motion, poor mobile behavior, Core Web Vitals risk, GSAP/ScrollTrigger cleanup issues, R3F/Three.js performance, excessive canvas work, missing reduced-motion support, long pinned sections, memory leaks, bundle bloat, or pre-launch QA of motion-heavy and 3D sites. Can run the bundled static source scanner when a local codebase is available.
+description: Audit a motion-heavy website for frame pacing, WebGL cost, accessibility, mobile behavior, and lifecycle leaks. Use for diagnosis or pre-launch QA with browser evidence; use motion-choreographer or immersive-3d-web when the main request is implementation.
 ---
 
 # Motion Performance Auditor

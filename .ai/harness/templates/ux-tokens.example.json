@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "ui_languages": [
+    "vi",
+    "en"
+  ],
+  "colors": {
+    "background": "#ffffff",
+    "text": "#111827",
+    "primary": "#1d4ed8"
+  },
+  "spacing_px": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24
+  },
+  "breakpoints_px": {
+    "mobile": 390,
+    "desktop": 1440
+  },
+  "typography": {
+    "body": "system-ui, sans-serif"
+  },
+  "density": "comfortable",
+  "accessibility": {
+    "target": "WCAG 2.2 AA (goal, not a conformance claim)",
+    "reduced_motion": true
+  }
+}

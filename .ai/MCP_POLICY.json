@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "runtime_pin_root": ".ai/checkpoints/mcp",
+  "surface_changes": {
+    "server_identity_changed": "review_required",
+    "tool_added": "review_required",
+    "tool_removed": "review_required",
+    "description_changed": "review_required",
+    "input_schema_changed": "review_required",
+    "capability_class_changed": "review_required"
+  },
+  "call_guard": {
+    "require_pinned_tool": true,
+    "project_relative_paths_only": true,
+    "sensitive_argument_key_patterns": [
+      "api[_-]?key",
+      "token",
+      "secret",
+      "password",
+      "authorization"
+    ]
+  },
+  "notes": "The harness never starts or executes an MCP server while pinning. A trusted host or adapter must provide the enumerated tool surface as JSON."
+}

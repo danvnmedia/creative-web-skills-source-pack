@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "fixture": ".ai/scripts/mcp_adversarial_fixture.py",
+  "regression": ".ai/scripts/mcp_client_regression.py",
+  "scope": "bundled reference response guard only",
+  "scenarios": 10,
+  "network_used": false,
+  "model_calls": false,
+  "protections": [
+    "server-qualified tool identity",
+    "ASCII tool identifiers",
+    "duplicate-key rejection",
+    "bounded responses",
+    "bounded list_changed notifications",
+    "circuit breaker",
+    "unsolicited request rejection"
+  ],
+  "real_host_codex_claude_gemini_antigravity_abuse_test": "NOT_RUN",
+  "host_immunity_claim": false,
+  "protected_files_mutated": false,
+  "automatic_guard_injection_into_hosts": false
+}

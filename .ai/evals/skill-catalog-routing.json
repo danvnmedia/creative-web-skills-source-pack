@@ -1,0 +1,879 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.5",
+  "canonical_skill_count": 13,
+  "purpose": "Full-catalog and target-excluded routing matrix. Validation is deterministic only; execution requires trusted activation telemetry.",
+  "cases": [
+    {
+      "id": "ai-integration-verification-catalog-positive",
+      "target_skill": "ai-integration-verification",
+      "kind": "should-trigger",
+      "prompt": "Test this AI integration beyond mocks: contract path plus deterministic 401, 403, 404, 429, timeout, fallback mismatch, stream interruption, and redaction failures.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "ai-integration-verification"
+      ]
+    },
+    {
+      "id": "ai-integration-verification-catalog-negative",
+      "target_skill": "ai-integration-verification",
+      "kind": "should-not-trigger",
+      "prompt": "Create a static SQL migration with no model or provider calls.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "ai-integration-verification-no-skill-baseline",
+      "target_skill": "ai-integration-verification",
+      "kind": "no-skill-baseline",
+      "prompt": "Test this AI integration beyond mocks: contract path plus deterministic 401, 403, 404, 429, timeout, fallback mismatch, stream interruption, and redaction failures.",
+      "visible_catalog": [
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "ai-provider-routing-catalog-positive",
+      "target_skill": "ai-provider-routing",
+      "kind": "should-trigger",
+      "prompt": "Design provider routing for Gemini-first AI with quota groups, capability-safe fallback, retries, circuit breakers, privacy, and cost constraints.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "ai-provider-routing"
+      ]
+    },
+    {
+      "id": "ai-provider-routing-catalog-negative",
+      "target_skill": "ai-provider-routing",
+      "kind": "should-not-trigger",
+      "prompt": "Debug a CSS overflow issue with no AI API integration.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "ai-provider-routing-no-skill-baseline",
+      "target_skill": "ai-provider-routing",
+      "kind": "no-skill-baseline",
+      "prompt": "Design provider routing for Gemini-first AI with quota groups, capability-safe fallback, retries, circuit breakers, privacy, and cost constraints.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "code-simplification-catalog-positive",
+      "target_skill": "code-simplification",
+      "kind": "should-trigger",
+      "prompt": "Refactor this working module to reduce complexity without changing behavior, and prove behavior preservation.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "code-simplification"
+      ]
+    },
+    {
+      "id": "code-simplification-catalog-negative",
+      "target_skill": "code-simplification",
+      "kind": "should-not-trigger",
+      "prompt": "Add a new user-facing workflow with changed behavior and new state.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "code-simplification-no-skill-baseline",
+      "target_skill": "code-simplification",
+      "kind": "no-skill-baseline",
+      "prompt": "Refactor this working module to reduce complexity without changing behavior, and prove behavior preservation.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "codebase-recon-catalog-positive",
+      "target_skill": "codebase-recon",
+      "kind": "should-trigger",
+      "prompt": "I just inherited this unfamiliar repository. Map the architecture, real commands, state boundaries, and likely change surface before editing.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "codebase-recon"
+      ]
+    },
+    {
+      "id": "codebase-recon-catalog-negative",
+      "target_skill": "codebase-recon",
+      "kind": "should-not-trigger",
+      "prompt": "Rewrite this already-provided paragraph to be shorter; no repository inspection is needed.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "codebase-recon-no-skill-baseline",
+      "target_skill": "codebase-recon",
+      "kind": "no-skill-baseline",
+      "prompt": "I just inherited this unfamiliar repository. Map the architecture, real commands, state boundaries, and likely change surface before editing.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "feature-build-catalog-positive",
+      "target_skill": "feature-build",
+      "kind": "should-trigger",
+      "prompt": "Implement a bounded feature slice end to end with acceptance criteria and tests.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "feature-build"
+      ]
+    },
+    {
+      "id": "feature-build-catalog-negative",
+      "target_skill": "feature-build",
+      "kind": "should-not-trigger",
+      "prompt": "Investigate why this existing feature crashes before proposing a fix.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "feature-build-no-skill-baseline",
+      "target_skill": "feature-build",
+      "kind": "no-skill-baseline",
+      "prompt": "Implement a bounded feature slice end to end with acceptance criteria and tests.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "harness-improvement-catalog-positive",
+      "target_skill": "harness-improvement",
+      "kind": "should-trigger",
+      "prompt": "The coding agent keeps missing the same class of verification and session-continuity failure. Turn the repeated evidence into the smallest tested harness mechanism.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "harness-improvement"
+      ]
+    },
+    {
+      "id": "harness-improvement-catalog-negative",
+      "target_skill": "harness-improvement",
+      "kind": "should-not-trigger",
+      "prompt": "Implement an ordinary product feature whose existing harness already covers the workflow.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "harness-improvement-no-skill-baseline",
+      "target_skill": "harness-improvement",
+      "kind": "no-skill-baseline",
+      "prompt": "The coding agent keeps missing the same class of verification and session-continuity failure. Turn the repeated evidence into the smallest tested harness mechanism.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "performance-reliability-catalog-positive",
+      "target_skill": "performance-reliability",
+      "kind": "should-trigger",
+      "prompt": "Find the latency and retry amplification bottleneck under load, measure it, bound retries, and verify graceful degradation.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "performance-reliability"
+      ]
+    },
+    {
+      "id": "performance-reliability-catalog-negative",
+      "target_skill": "performance-reliability",
+      "kind": "should-not-trigger",
+      "prompt": "Translate this short message into Vietnamese.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "performance-reliability-no-skill-baseline",
+      "target_skill": "performance-reliability",
+      "kind": "no-skill-baseline",
+      "prompt": "Find the latency and retry amplification bottleneck under load, measure it, bound retries, and verify graceful degradation.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "product-discovery-catalog-positive",
+      "target_skill": "product-discovery",
+      "kind": "should-trigger",
+      "prompt": "Turn this vague product idea into the smallest valuable user outcome and identify risky assumptions before coding.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "product-discovery"
+      ]
+    },
+    {
+      "id": "product-discovery-catalog-negative",
+      "target_skill": "product-discovery",
+      "kind": "should-not-trigger",
+      "prompt": "Fix this known TypeScript typo in one file; the expected behavior and exact line are already known.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "product-discovery-no-skill-baseline",
+      "target_skill": "product-discovery",
+      "kind": "no-skill-baseline",
+      "prompt": "Turn this vague product idea into the smallest valuable user outcome and identify risky assumptions before coding.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "release-acceptance-catalog-positive",
+      "target_skill": "release-acceptance",
+      "kind": "should-trigger",
+      "prompt": "Prepare and accept this production release only after exact-revision smoke and the real production critical flow pass.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "release-acceptance"
+      ]
+    },
+    {
+      "id": "release-acceptance-catalog-negative",
+      "target_skill": "release-acceptance",
+      "kind": "should-not-trigger",
+      "prompt": "Brainstorm three names for an internal prototype.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "release-acceptance-no-skill-baseline",
+      "target_skill": "release-acceptance",
+      "kind": "no-skill-baseline",
+      "prompt": "Prepare and accept this production release only after exact-revision smoke and the real production critical flow pass.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "runtime-verification-catalog-positive",
+      "target_skill": "runtime-verification",
+      "kind": "should-trigger",
+      "prompt": "Verify this web feature in the real browser, including critical flow, network failures, screenshots, overflow, and console errors.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "runtime-verification"
+      ]
+    },
+    {
+      "id": "runtime-verification-catalog-negative",
+      "target_skill": "runtime-verification",
+      "kind": "should-not-trigger",
+      "prompt": "Explain what this pure helper function does from the code snippet only.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "runtime-verification-no-skill-baseline",
+      "target_skill": "runtime-verification",
+      "kind": "no-skill-baseline",
+      "prompt": "Verify this web feature in the real browser, including critical flow, network failures, screenshots, overflow, and console errors.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "security-hardening-catalog-positive",
+      "target_skill": "security-hardening",
+      "kind": "should-trigger",
+      "prompt": "Audit this authentication and tenant-isolation change, try to disprove the security finding, and add negative tests.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "security-hardening"
+      ]
+    },
+    {
+      "id": "security-hardening-catalog-negative",
+      "target_skill": "security-hardening",
+      "kind": "should-not-trigger",
+      "prompt": "Polish the spacing and typography of a static marketing card.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "security-hardening-no-skill-baseline",
+      "target_skill": "security-hardening",
+      "kind": "no-skill-baseline",
+      "prompt": "Audit this authentication and tenant-isolation change, try to disprove the security finding, and add negative tests.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "systematic-debugging-catalog-positive",
+      "target_skill": "systematic-debugging",
+      "kind": "should-trigger",
+      "prompt": "The build passes sometimes but production intermittently fails. Reproduce, isolate the root cause, and add a regression guard.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "systematic-debugging"
+      ]
+    },
+    {
+      "id": "systematic-debugging-catalog-negative",
+      "target_skill": "systematic-debugging",
+      "kind": "should-not-trigger",
+      "prompt": "Design a brand-new onboarding flow from scratch.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "systematic-debugging-no-skill-baseline",
+      "target_skill": "systematic-debugging",
+      "kind": "no-skill-baseline",
+      "prompt": "The build passes sometimes but production intermittently fails. Reproduce, isolate the root cause, and add a regression guard.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "ui-ux-design-catalog-positive",
+      "target_skill": "ui-ux-design",
+      "kind": "should-trigger",
+      "prompt": "Redesign this dashboard flow for mobile and desktop, including loading, empty, error, accessibility, and visual verification.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": [
+        "ui-ux-design"
+      ]
+    },
+    {
+      "id": "ui-ux-design-catalog-negative",
+      "target_skill": "ui-ux-design",
+      "kind": "should-not-trigger",
+      "prompt": "Rotate an API key and audit server-side permissions; no user interface changes are requested.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging",
+        "ui-ux-design"
+      ],
+      "expected_skills": []
+    },
+    {
+      "id": "ui-ux-design-no-skill-baseline",
+      "target_skill": "ui-ux-design",
+      "kind": "no-skill-baseline",
+      "prompt": "Redesign this dashboard flow for mobile and desktop, including loading, empty, error, accessibility, and visual verification.",
+      "visible_catalog": [
+        "ai-integration-verification",
+        "ai-provider-routing",
+        "code-simplification",
+        "codebase-recon",
+        "feature-build",
+        "harness-improvement",
+        "performance-reliability",
+        "product-discovery",
+        "release-acceptance",
+        "runtime-verification",
+        "security-hardening",
+        "systematic-debugging"
+      ],
+      "expected_skills": []
+    }
+  ]
+}

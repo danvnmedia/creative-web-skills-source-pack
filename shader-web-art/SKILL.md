@@ -1,6 +1,6 @@
 ---
 name: shader-web-art
-description: Design, implement, or debug custom GPU visual effects for creative websites using GLSL/WebGL, Three.js shaders, React Three Fiber shader materials, OGL, Curtains.js, PixiJS, particles, displacement, noise, image transitions, refraction, fluid-like masks, DOM-to-WebGL image planes, or experimental WGSL/WebGPU. Use when the main challenge is shader math, texture effects, particles, GPU 2D, or synchronizing DOM media with canvas rather than building a conventional 3D scene.
+description: Design or debug a GPU visual effect when shader math, textures, particles, or DOM-to-canvas synchronization is the main challenge. Use for WebGL/GLSL image and field effects; use immersive-3d-web when a navigable 3D scene is central.
 ---
 
 # Shader Web Art

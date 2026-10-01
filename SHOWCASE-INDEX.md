@@ -1,6 +1,6 @@
 # Creative Web Skills — Showcase Index
 
-This index is for browsing the pack. Each installable skill includes a narrower `references/showcase.md`.
+This index is for browsing the pack. Most specialist skills include a narrower `references/showcase.md`; `accessible-interaction-systems` uses component examples and a verification checklist.
 
 ## First-party field tests
 
@@ -11,7 +11,7 @@ These original, runnable sites are proof fixtures for the pack itself, not exter
 | Morrow Archive — `showcase-sites/morrow-archive/` | Studio + motion choreography | Editorial hierarchy, restrained reveals, keyboard menu, mobile re-composition, reduced motion |
 | Pelagic Signals — `showcase-sites/pelagic-signals/` | Studio + shader art + audit | Semantic DOM over WebGL, pointer/touch input, static capability fallback, offscreen pause |
 | Kern One — `showcase-sites/kern-one/` | Studio + immersive 3D + audit | Real 3D product, demand-led rendering, adaptive DPR, object interaction, static poster fallback |
-| Asme — `showcase-sites/asme-hero/` | Studio + motion choreography + React | Cinematic video loop, RAF opacity handoff, liquid-glass UI, responsive single-screen composition |
+| Asme — `showcase-sites/asme-hero/` | Studio + motion choreography + React | Responsive travel atlas, interactive photographic field notes, and day/night View Transition |
 
 Browse all four from `showcase-sites/index.html` through a local static server.
 
@@ -36,8 +36,7 @@ Browse all four from `showcase-sites/index.html` through a local static server.
 
 ## Open repository references
 
-- mfon-ukobo/cinematic-web-skill — https://github.com/mfon-ukobo/cinematic-web-skill — story-first cinematic site planning and QA concepts.
-- JosephASG/codrops-cinematic-scroll-animations — https://github.com/JosephASG/codrops-cinematic-scroll-animations — TypeScript cinematic 3D scroll demo project.
+The reviewed shortlist, licenses, activity dates, and rejection reasons are in [repository research](docs/REPOSITORY-RESEARCH-2026-09-30.md). Treat outside repositories as sources of transferable principles; the local examples remain original.
 
 ## Rule
 

@@ -1,181 +1,91 @@
-import { FormEvent, useEffect, useRef, useState } from 'react';
-import { ArrowRight, Globe, Instagram, Twitter } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowDownRight, ArrowRight, ArrowUpRight, Compass } from 'lucide-react';
 
-const VIDEO_URL = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4';
+type Expedition = {
+  number: string;
+  name: string;
+  region: string;
+  duration: string;
+  description: string;
+  tone: string;
+  image: string;
+};
 
-function useLoopingVideoFade() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const frameRef = useRef<number>();
-  const resetTimerRef = useRef<number>();
-  const opacityRef = useRef(0);
-  const fadingOutRef = useRef(false);
-  const reducedMotionRef = useRef(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const expeditions: Expedition[] = [
+  { number: '01', name: 'The quiet coast', region: 'Atlantic / 42.7° N', duration: '7 day field note', description: 'Salt on the windows. Low light on the headland. An invitation to keep walking after the road ends.', tone: 'coast', image: 'coast.webp' },
+  { number: '02', name: 'Blue hour, inland', region: 'Highlands / 57.2° N', duration: '4 day field note', description: 'A route drawn by ridgelines and changing weather, with enough room for the unexpected.', tone: 'highland', image: 'highland.webp' },
+  { number: '03', name: 'The last light', region: 'Desert / 24.6° N', duration: '6 day field note', description: 'Follow a long shadow into a quieter landscape. Stay for the stars and the conversations between them.', tone: 'desert', image: 'desert.webp' },
+];
 
-  const fadeTo = (target: number, duration = 500) => {
-    if (frameRef.current) cancelAnimationFrame(frameRef.current);
-    const video = videoRef.current;
-    if (!video) return;
-
-    const initial = opacityRef.current;
-    const startedAt = performance.now();
-    const tick = (now: number) => {
-      const progress = Math.min((now - startedAt) / duration, 1);
-      const eased = progress * progress * (3 - 2 * progress);
-      const opacity = initial + (target - initial) * eased;
-      opacityRef.current = opacity;
-      video.style.opacity = String(opacity);
-      if (progress < 1) frameRef.current = requestAnimationFrame(tick);
-    };
-    frameRef.current = requestAnimationFrame(tick);
-  };
-
-  const handleLoadedData = () => {
-    if (reducedMotionRef.current) {
-      const video = videoRef.current;
-      if (!video) return;
-      video.pause();
-      opacityRef.current = 1;
-      video.style.opacity = '1';
-      return;
-    }
-    fadingOutRef.current = false;
-    void videoRef.current?.play().catch(() => undefined);
-    fadeTo(1);
-  };
-
-  const handleTimeUpdate = () => {
-    if (reducedMotionRef.current) return;
-    const video = videoRef.current;
-    if (!video || !Number.isFinite(video.duration)) return;
-    if (video.duration - video.currentTime <= 0.55 && !fadingOutRef.current) {
-      fadingOutRef.current = true;
-      fadeTo(0);
-    }
-  };
-
-  const handleEnded = () => {
-    if (reducedMotionRef.current) return;
-    const video = videoRef.current;
-    if (!video) return;
-    if (frameRef.current) cancelAnimationFrame(frameRef.current);
-    opacityRef.current = 0;
-    video.style.opacity = '0';
-    resetTimerRef.current = window.setTimeout(() => {
-      video.currentTime = 0;
-      fadingOutRef.current = false;
-      void video.play().then(() => fadeTo(1)).catch(() => undefined);
-    }, 100);
-  };
-
-  useEffect(() => {
-    const resumeWhenVisible = () => {
-      const video = videoRef.current;
-      if (document.hidden || !video || reducedMotionRef.current) return;
-      if (video.paused) void video.play().catch(() => undefined);
-      if (!fadingOutRef.current && opacityRef.current < 1) fadeTo(1);
-    };
-    document.addEventListener('visibilitychange', resumeWhenVisible);
-    return () => {
-      document.removeEventListener('visibilitychange', resumeWhenVisible);
-      if (frameRef.current) cancelAnimationFrame(frameRef.current);
-      if (resetTimerRef.current) window.clearTimeout(resetTimerRef.current);
-    };
-  }, []);
-
-  return { videoRef, handleLoadedData, handleTimeUpdate, handleEnded };
-}
+const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
 export default function App() {
-  const { videoRef, handleLoadedData, handleTimeUpdate, handleEnded } = useLoopingVideoFade();
-  const [subscribed, setSubscribed] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [phase, setPhase] = useState<'day' | 'night'>('day');
+  const [active, setActive] = useState(0);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubscribed(true);
+  useEffect(() => {
+    const query = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const onChange = () => setReducedMotion(query.matches);
+    query.addEventListener('change', onChange);
+    return () => query.removeEventListener('change', onChange);
+  }, []);
+
+  const changeScene = (next: 'day' | 'night') => {
+    if (next === phase) return;
+    const update = () => setPhase(next);
+    if (!reducedMotion && 'startViewTransition' in document) document.startViewTransition(update);
+    else update();
   };
 
   return (
-    <main className="relative flex min-h-screen flex-col overflow-hidden bg-black text-white">
-      <video
-        ref={videoRef}
-        className="absolute inset-0 h-full w-full translate-y-[17%] object-cover"
-        src={VIDEO_URL}
-        muted
-        autoPlay
-        playsInline
-        preload="auto"
-        onLoadedData={handleLoadedData}
-        onTimeUpdate={handleTimeUpdate}
-        onEnded={handleEnded}
-        style={{ opacity: 0 }}
-        aria-hidden="true"
-      />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,.72)_0%,rgba(0,0,0,.08)_35%,rgba(0,0,0,.28)_100%)]" />
+    <main className={`site-shell phase-${phase}`}>
+      <section className="hero" id="top" aria-labelledby="hero-title">
+        <div className="hero-art" aria-hidden="true">
+          <img className="hero-photo" src={asset("coast.webp")} alt="" fetchPriority="high" />
+          <div className="hero-grain" />
+          <div className="hero-orbit" />
+        </div>
+        <header className="topbar">
+          <a className="wordmark" href="#top" aria-label="Asme, back to top"><Compass size={24} strokeWidth={1.4} aria-hidden="true" /><span>asme<span className="wordmark-dot">.</span></span></a>
+          <nav aria-label="Primary navigation"><a href="#atlas">The atlas</a><a href="#approach">Our approach</a></nav>
+          <a className="header-action" href="../" aria-label="Back to showcase index">All studies <ArrowUpRight size={16} aria-hidden="true" /></a>
+        </header>
 
-      <nav className="relative z-20 px-6 py-6" aria-label="Primary navigation">
-        <div className="liquid-glass mx-auto flex max-w-5xl items-center justify-between rounded-full px-6 py-3">
-          <div className="relative z-10 flex items-center gap-8">
-            <a href="#" className="flex items-center gap-2 text-lg font-semibold text-white" aria-label="Asme home">
-              <Globe size={24} aria-hidden="true" />
-              <span>Asme</span>
-            </a>
-            <div className="hidden items-center gap-8 md:flex">
-              {['Features', 'Pricing', 'About'].map((item) => (
-                <a key={item} href={`#${item.toLowerCase()}`} className="text-sm font-medium text-white/80 transition-colors hover:text-white">{item}</a>
-              ))}
-            </div>
-          </div>
-          <div className="relative z-10 flex items-center gap-4">
-            <button type="button" className="text-sm font-medium text-white">Sign Up</button>
-            <button type="button" className="liquid-glass rounded-full px-6 py-2 text-sm font-medium text-white">Login</button>
+        <div className="hero-content">
+          <div className="hero-overline"><span className="overline-rule" /> FIELD NOTES / VOL. 01 <span className="overline-right">AN OPEN INVITATION</span></div>
+          <h1 id="hero-title">Go where<br /><em>wonder</em> leads.</h1>
+          <div className="hero-bottom">
+            <p>Small journeys for people who would rather feel a place than collect one. Choose a direction. We will leave room for discovery.</p>
+            <a className="round-link" href="#atlas" aria-label="Explore the atlas"><ArrowDownRight size={29} strokeWidth={1.35} aria-hidden="true" /></a>
           </div>
         </div>
-      </nav>
-
-      <section className="relative z-10 flex flex-1 -translate-y-[20%] flex-col items-center justify-center px-6 py-12 text-center" aria-labelledby="hero-heading">
-        <h1
-          id="hero-heading"
-          className="mb-8 whitespace-nowrap text-5xl tracking-tight text-white max-[420px]:text-[2.5rem] md:text-6xl lg:text-7xl"
-          style={{ fontFamily: "'Instrument Serif', serif" }}
-        >
-          Built for the <em>curious</em>
-        </h1>
-
-        <div className="w-full max-w-xl space-y-4">
-          <form className="liquid-glass flex items-center gap-3 rounded-full py-2 pl-6 pr-2" onSubmit={handleSubmit}>
-            <input
-              type="email"
-              required
-              className="relative z-10 min-w-0 flex-1 bg-transparent text-base text-white outline-none placeholder:text-white/40"
-              placeholder={subscribed ? "You're on the list" : 'Enter your email'}
-              aria-label="Email address"
-              disabled={subscribed}
-            />
-            <button className="relative z-10 rounded-full bg-white p-3 text-black" type="submit" aria-label="Subscribe to newsletter">
-              <ArrowRight size={20} aria-hidden="true" />
-            </button>
-          </form>
-          <p className="px-4 text-sm leading-relaxed text-white">
-            Stay updated with the latest news and insights. Subscribe to our newsletter today and never miss out on exciting updates.
-          </p>
-          <button type="button" className="liquid-glass rounded-full px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5">
-            Read our manifesto
-          </button>
-          <p className="sr-only" aria-live="polite">{subscribed ? 'Subscription confirmed.' : ''}</p>
-        </div>
+        <div className="hero-coordinate" aria-hidden="true">AS / 001 — 09:24 UTC</div>
       </section>
 
-      <footer className="relative z-10 flex justify-center gap-4 pb-12">
-        {[
-          { label: 'Instagram', Icon: Instagram },
-          { label: 'Twitter', Icon: Twitter },
-          { label: 'Website', Icon: Globe },
-        ].map(({ label, Icon }) => (
-          <a key={label} href="#" aria-label={label} className="liquid-glass rounded-full p-4 text-white/80 transition-all hover:bg-white/5 hover:text-white">
-            <Icon className="relative z-10" size={20} aria-hidden="true" />
-          </a>
-        ))}
-      </footer>
+      <section className="atlas" id="atlas" aria-labelledby="atlas-title">
+        <div className="section-head"><span>01 / THE ATLAS</span><span>THREE DIRECTIONS, NO FIXED ROUTE</span></div>
+        <div className="atlas-intro"><h2 id="atlas-title">Find your<br /><em>somewhere.</em></h2><p>Consider this a beginning. Each field note is a fictional concept journey, made to show how a place can become an interface.</p></div>
+        <div className="expeditions" role="group" aria-label="Choose a field note">
+          {expeditions.map((expedition, index) => (
+            <button className={`expedition ${expedition.tone} ${active === index ? 'is-active' : ''}`} key={expedition.number} type="button" aria-pressed={active === index} onClick={() => setActive(index)}>
+              <span className="expedition-landscape" aria-hidden="true"><img src={asset(expedition.image)} alt="" loading="lazy" /></span>
+              <span className="expedition-top"><span>FIELD NOTE {expedition.number}</span><ArrowUpRight size={18} strokeWidth={1.4} aria-hidden="true" /></span>
+              <span className="expedition-bottom"><strong>{expedition.name}</strong><small>{expedition.region}</small></span>
+            </button>
+          ))}
+        </div>
+        <div className="selection" aria-live="polite"><span>SELECTED / {expeditions[active].number}</span><p>{expeditions[active].description}</p><span>{expeditions[active].duration}</span></div>
+      </section>
+
+      <section className="approach" id="approach" aria-labelledby="approach-title">
+        <img className="approach-photo" src={asset("highland.webp")} alt="" loading="lazy" aria-hidden="true" />
+        <div className="section-head"><span>02 / THE APPROACH</span><span>TRAVEL AT HUMAN SPEED</span></div>
+        <div className="approach-layout"><p className="approach-kicker">The good part is often<br />between the destinations.</p><h2 id="approach-title">Leave space<br />for <em>elsewhere.</em></h2></div>
+        <div className="approach-bottom"><p>Asme is a design concept for curious travel: thoughtful routes, tactile stories, and moments that are yours to notice.</p><div className="scene-switch" role="group" aria-label="Change the atmosphere"><button type="button" aria-pressed={phase === 'day'} onClick={() => changeScene('day')}>Daylight</button><button type="button" aria-pressed={phase === 'night'} onClick={() => changeScene('night')}>After dark</button></div></div>
+      </section>
+
+      <footer className="footer"><a href="#top" className="footer-wordmark">asme<span>.</span></a><p>AN ORIGINAL INTERACTIVE FIELD STUDY / 2026</p><a href="#top">Back to the beginning <ArrowRight size={15} aria-hidden="true" /></a><small>Motion study / Staggered hero reveal, transform based card feedback, scroll linked section entry, and a same document View Transition for atmosphere. Reduced motion keeps all content still.</small></footer>
     </main>
   );
 }

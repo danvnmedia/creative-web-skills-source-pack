@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-product-harness.local/schemas/task-v6.json",
+  "title": "Codex Product Harness task contract v6",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "status",
+    "traits",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 6
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9._-]{0,127}$"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "READY",
+        "IN_PROGRESS",
+        "LOCALLY_ACCEPTED",
+        "COMPLETE",
+        "EXTERNALLY_PENDING",
+        "BLOCKED",
+        "CANCELLED"
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "required_checks",
+        "waivers",
+        "findings"
+      ],
+      "properties": {
+        "required_checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          }
+        },
+        "waivers": {
+          "type": "array"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "check_states": {
+          "type": "object"
+        }
+      }
+    },
+    "prompt_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "locked_decisions": {
+          "type": "array",
+          "maxItems": 24,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          }
+        },
+        "do_not_change": {
+          "type": "array",
+          "maxItems": 24,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          }
+        },
+        "reference_files": {
+          "type": "array",
+          "maxItems": 24,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          }
+        },
+        "unknowns": {
+          "type": "array",
+          "maxItems": 24,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          }
+        },
+        "output_format": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        }
+      }
+    },
+    "mode": {
+      "enum": [
+        "FEATURE",
+        "BUGFIX",
+        "AUDIT",
+        "CRITICAL",
+        "RELEASE",
+        "MAINTENANCE"
+      ]
+    }
+  }
+}

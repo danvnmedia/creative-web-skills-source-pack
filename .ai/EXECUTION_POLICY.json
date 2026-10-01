@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "profiles": {
+    "native": {
+      "purpose": "Finish and verify inside the current session with no extra durable checkpoint ceremony.",
+      "durable_checkpoint_required": false
+    },
+    "portable": {
+      "purpose": "Survive a session/model/context boundary or external wait using verified-progress checkpoints only.",
+      "durable_checkpoint_required": true
+    },
+    "audited": {
+      "purpose": "Use portable verified progress plus the full trait-derived evidence required for high-risk or release work.",
+      "durable_checkpoint_required": true
+    }
+  },
+  "selection": {
+    "audited_if_mode": [
+      "CRITICAL"
+    ],
+    "audited_if_traits": [
+      "production_release",
+      "security_sensitive",
+      "harness_modification"
+    ],
+    "audited_if_risk_levels": [
+      "high",
+      "critical"
+    ],
+    "portable_if_execution_flags": [
+      "cross_session_expected",
+      "external_wait_expected",
+      "context_refresh_expected"
+    ],
+    "default": "native",
+    "explicit_profile_cannot_be_weaker_than_derived_minimum": true
+  },
+  "profile_required_checks": {
+    "native": [],
+    "portable": [
+      "verified-progress"
+    ],
+    "audited": [
+      "verified-progress"
+    ]
+  },
+  "rules": {
+    "profile_controls_persistence_not_product_quality": true,
+    "trait_required_checks_never_disappear_in_native_mode": true,
+    "persist_verified_progress_only": true,
+    "do_not_mirror_runtime_plan_into_extra_files_in_native_mode": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "decisions": ["ACCEPT", "RETRY", "REPLAN", "ROLLBACK"],
+  "runtime_output_root": ".ai/checkpoints/decisions",
+  "hard_boundary_event_fields": ["hard_boundary_breach"],
+  "hard_boundary_labels": ["security", "data-loss", "permission", "secret-exposure", "production-safety"],
+  "rollback_requires_verified_checkpoint": true,
+  "retry_requires_changed_hypothesis": true,
+  "accept_requires_fresh_candidate_evidence": true,
+  "notes": "This controller is deterministic. RETRY is prospective and requires --next-hypothesis-id distinct from the last attempted hypothesis. ROLLBACK may target only a currently valid verified checkpoint."
+}

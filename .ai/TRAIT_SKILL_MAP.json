@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "advisory_only": true,
+  "not_activation_telemetry": true,
+  "mapping": {
+    "user_facing_web": [
+      "ui-ux-design",
+      "runtime-verification"
+    ],
+    "ai_integration": [
+      "ai-provider-routing",
+      "ai-integration-verification"
+    ],
+    "security_sensitive": [
+      "security-hardening"
+    ],
+    "performance_sensitive": [
+      "performance-reliability"
+    ],
+    "production_release": [
+      "release-acceptance"
+    ],
+    "external_runtime_dependencies": [
+      "runtime-verification"
+    ],
+    "stateful_user_workflow": [
+      "runtime-verification"
+    ],
+    "large_binary_data": [
+      "performance-reliability"
+    ],
+    "truthful_claims": [
+      "runtime-verification"
+    ],
+    "harness_modification": [
+      "harness-improvement",
+      "codebase-recon"
+    ],
+    "skill_modification": [
+      "harness-improvement"
+    ],
+    "borrowed_browser_session": [
+      "runtime-verification"
+    ],
+    "mcp_runtime": [
+      "security-hardening",
+      "runtime-verification"
+    ]
+  }
+}

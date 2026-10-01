@@ -1,38 +1,40 @@
 # First-party Showcase Sites
 
-These sites are original proof fixtures for the Creative Web Skills Pack. They intentionally use different composition systems, palettes, type strategies, and rendering tiers.
+These four original experiences demonstrate distinct creative-web roles. The hub at `/` links to each standalone page. The photographic assets in Asme, Kern, and Morrow were generated for this repository, converted to WebP, and committed with the source. Pelagic's field is procedural WebGL with a CSS fallback.
 
 ## Run
 
-Serve this directory over HTTP because Kern One imports a pinned Three.js ES module:
+From the repository root:
 
 ```powershell
-npx --yes serve . -l 4173
+npm.cmd ci
+npm.cmd ci --prefix showcase-apps/asme-hero
+npm.cmd run build
+npm.cmd run dev
 ```
 
-Then open `http://localhost:4173`.
+Open `http://127.0.0.1:4173`. Kern imports a pinned Three.js ES module, so serve it over HTTP. The three static experiences also run from `showcase-sites/` under any static HTTP server. Asme's source app runs with `npm.cmd run dev --prefix showcase-apps/asme-hero`.
 
-## Demonstration matrix
+## Experiences
 
-| Site | Experience thesis | Base layer | Enhancement | Intentional fallback |
-|---|---|---|---|---|
-| Morrow Archive | Fabric behaves like memory held by light | Semantic editorial DOM + photography | Opening curtain, split-image echoes, pointer depth, and scroll-countermotion | Complete still layout; all reveals visible under reduced motion |
-| Pelagic Signals | Ocean observations become a behavior rather than a chart | Semantic research narrative + CSS field | WebGL contour field, live depth probe, edge-aware readout, and click impulse | CSS contour field and full readable content |
-| Kern One | A camera should reveal each photographic decision | Semantic product story + CSS product poster | Three.js self-assembly, drag/explode states, viewfinder HUD, and tactile shutter | Poster remains visible and status reports 3D failure |
-| Asme | Curiosity should feel like entering a half-seen cinematic world | React form/navigation over a semantic full-screen composition | Video loop with cancellable RAF fades and liquid-glass surfaces | Black cinematic base, readable UI, and functional subscription form |
+| Site | Visual direction | Useful interaction | Motion and fallback |
+|---|---|---|---|
+| Morrow Archive | Dark fashion editorial, tactile cloth photography, disciplined type | Open the keyboard-accessible index and move between three studies | Native scroll reading line where supported, scheduled pointer depth and one-time reveals; reduced motion displays all content immediately |
+| Pelagic Signals | Deep-water instrument with animated procedural contours | Sample the field and switch current, thermal, and salinity readings | Adaptive WebGL resolution, impulse/probe feedback and metric View Transition; CSS field and readable values survive WebGL failure |
+| Kern One | Industrial camera campaign followed by an interactive technical specimen | Drag the 3D object, explode/assemble it, reset, and trigger the shutter | On-demand Three.js, damped spring assembly and view-timeline anatomy; local product photograph remains the fallback |
+| Asme | Photographic travel atlas with three fictional destinations | Select field notes and switch the atmosphere | Staggered entry, card feedback, scroll-linked section motion, and day/night View Transition; all imagery is local and the content stays still under reduced motion |
 
-## Signature interactions
+Each page includes a short motion-technique note. The concept journeys and Pelagic readings are illustrative, not live travel inventory or measured ocean observations.
 
-- **Morrow:** enter through the opening curtain, move across the hero image, then scroll to pull type and image in opposite directions.
-- **Pelagic:** move or touch to sample depth/flow; click or tap to send a visible impulse through the contour field.
-- **Kern:** watch the camera assemble, drag to inspect, toggle the exploded state, then fire the shutter control.
-- **Asme:** watch the video fade in, submit the email form, and inspect the loop boundary where fade-out hands back to fade-in without CSS transitions.
+## Check
 
-## Manual acceptance checks
+```powershell
+npm.cmd run lint
+npm.cmd run test
+npm.cmd run audit:static
+npm.cmd run qa:browser -- .ai/evidence/browser/my-fresh-run
+```
 
-- The hub reaches every site with keyboard navigation.
-- No page has accidental horizontal scrolling at 390px or 1440px widths.
-- Reduced motion removes continuous or large movement without hiding content.
-- Pelagic remains readable with WebGL disabled and pauses while hidden/offscreen.
-- Kern remains product-specific before Three.js loads, supports pointer drag, and renders a nonblank canvas after load.
-- Remote photography has meaningful alt text; canvas content is nonessential enhancement.
+The browser QA runs the hub and four experiences at 1440x900, 390x844, and 390x844 with reduced motion. It checks local images, overflow, browser errors, and the main control of each experience. Use a fresh output directory for each run. The full-page screenshots and JSON report are local evidence under ignored `.ai/evidence/browser/`.
+
+The browser test is a functional baseline. Performance on a range of physical devices, exact sustained frame rate, and deployed GitHub Pages behavior require separate checks.

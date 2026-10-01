@@ -1,0 +1,3959 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Codex Product Harness 5.5.10",
+  "documentNamespace": "https://codex-product-harness.local/spdx/5.5.10/66ab1184b625cf06",
+  "creationInfo": {
+    "created": "2026-09-27T14:49:14Z",
+    "creators": [
+      "Tool: Codex Product Harness build_sbom.py"
+    ]
+  },
+  "packages": [
+    {
+      "name": "codex-product-harness",
+      "SPDXID": "SPDXRef-Package",
+      "versionInfo": "5.5.10",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./.agents/rules/00-product-harness.md",
+      "SPDXID": "SPDXRef-File-a1bbb0be0583dc761337",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f0896ba50f44e49b47699c535f56cfcf88991f7f110ebec7bc4e8eb14f7d0e18"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/ai-integration-verification/SKILL.md",
+      "SPDXID": "SPDXRef-File-10fb4d82943c291fd991",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "69999906b19cbbc80a709df0ebb554e4a22af205d6d36c7e45cfc5dc080daeef"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/ai-provider-routing/SKILL.md",
+      "SPDXID": "SPDXRef-File-d60d8cf4f5b0a91a8dbb",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e8dedf0ad67005267b10e96ae2581313d2c3ee9124affbfe539791193c91d64"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/code-simplification/SKILL.md",
+      "SPDXID": "SPDXRef-File-913e1390242130ac4e75",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b4c239cea55049df8fff7665d1f7a82c20e8bf889c59f78edbeff6823e96ba9"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/codebase-recon/SKILL.md",
+      "SPDXID": "SPDXRef-File-1c6cabed998ebebc0930",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "962fd20f4a44f7fdab9cce7eb5dc5d66473f2215081a778585fed3f67b242983"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/feature-build/SKILL.md",
+      "SPDXID": "SPDXRef-File-503c29894bd7c5abaaea",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "af2aa58ff4674d220a7a732ac9b54b6c9eb082c37f2481c424dbc52411fdef4a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/harness-improvement/SKILL.md",
+      "SPDXID": "SPDXRef-File-d499faebf162a5db43d8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4257f09a337cfa3d926290e43c75dc9674fa2f56ed5ae6fc66b0b7bc2b07dbb7"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/performance-reliability/SKILL.md",
+      "SPDXID": "SPDXRef-File-a78d1a5f1ac11a616eb4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c6ea22a72134e6f9d49b707e244bdd18a7251e6510f0839f356e6abb2610855c"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/product-discovery/SKILL.md",
+      "SPDXID": "SPDXRef-File-e2b9206de2fc58596c53",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ec47844b61e99c55bd2a6508226bf2cb50bfaab619be6eb8cfa014c6d6ef9e72"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/release-acceptance/SKILL.md",
+      "SPDXID": "SPDXRef-File-d13e3cd508480d75c280",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "66efb43af58a92cbe3a9574f48f21cecd466a8e79ed634187070e1f4eeafaac4"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/runtime-verification/SKILL.md",
+      "SPDXID": "SPDXRef-File-20931974def4dcca9f90",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "153265b995d8709e920943b2fb8eba7bbb25ddcb61dad293e5921c1426183d7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/security-hardening/SKILL.md",
+      "SPDXID": "SPDXRef-File-e47d5c03e0632247c35c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b344f34e5ef9bcc98119453c5361037aceeaf47352cea901cc80ef1596a0cc8"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/systematic-debugging/SKILL.md",
+      "SPDXID": "SPDXRef-File-23c4cedf679c10180b02",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "948d7b33ffede09e56f01924965ad54aedf70fd93bce60537e3eff11e41e65b7"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/skills/ui-ux-design/SKILL.md",
+      "SPDXID": "SPDXRef-File-ced7d39b04843dc025e3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6b9c8fa5134573a20b46a73435c1cfb91e4574c2d042c873a593ed978eee8aba"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/workflows/brief-task.md",
+      "SPDXID": "SPDXRef-File-8213dab84f1987b15ec6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f256a2feccec4cf536b187ecd7526021d5f68c044ef9abb42fbfed90cfc5c37"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/workflows/ship.md",
+      "SPDXID": "SPDXRef-File-be3793f82b873af3f84c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44727351f1a624d56b79bed3d55502b8b34f8e3ce9affb2210cac9c9c66d5541"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/workflows/start-task.md",
+      "SPDXID": "SPDXRef-File-ab063fd8e4d21b631081",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc4d390cd414a34c7c5b294b41f1995f892d1bc67305b7c1d4ff80cdeed93fca"
+        }
+      ]
+    },
+    {
+      "fileName": "./.agents/workflows/verify-runtime.md",
+      "SPDXID": "SPDXRef-File-7d5f9de0947a4e9a8a50",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b4e5c4baaee326545eaee735e31e83d2b020c2474f504475cf184dfe69f8ce7b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/AGENT_PLUGIN_POLICY.json",
+      "SPDXID": "SPDXRef-File-07c19d548d198dd0103c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "99af22b170aec856b53ca062cc62a97afcaa0ffe3cb15093cd0c660b463c0350"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/AI_PROVIDER_POLICY.json",
+      "SPDXID": "SPDXRef-File-a49b6b81c57586c77c32",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ad078a753a847b6cd070ed81ae0fda83723d5befc94f23616fb9cdd4b65574de"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/BROWSER_CAPABILITY_POLICY.json",
+      "SPDXID": "SPDXRef-File-ce5a326c8f2a614274a8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6c9bfd519475e36d38911b190b5b7de7f72f7ce21024f5473dcaa4afb89dcd20"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/BROWSER_LEASE_POLICY.json",
+      "SPDXID": "SPDXRef-File-2845b6ac46e0523dcac8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0e5c5c55deb39f42e5d077583dabb10c85513fd00ff8edfb7fcecf3e0accea74"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/CANONICAL_SKILL_HASHES.json",
+      "SPDXID": "SPDXRef-File-23a504a51b686e68472f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f2c5f6acbdd217ae0e1983de05b1448182b78995cfad8951b08a61f73fb8d8e6"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/CHECK_CATALOG.json",
+      "SPDXID": "SPDXRef-File-dfa054d3c450e627c382",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ae4ee1e69e39cf0b08bea5be575b56b91c33dc77cdcbd28af4f578f4a041010"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/COMMANDS.json",
+      "SPDXID": "SPDXRef-File-5da9786d7b89935e642a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c148ecfb1318645ca5c33dabe238ca73d12bacfa3cae4df950daf960e23731a0"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/COMMAND_COMPATIBILITY.json",
+      "SPDXID": "SPDXRef-File-fa8604ab5b77de2a4b70",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5496a261df63fa33a39707fb159e3be36e7592ac92fc22ad20b7cd4c4a5def4c"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/COMPACTION_POLICY.json",
+      "SPDXID": "SPDXRef-File-8915c79f78a6d8aeebf9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5859044fdbde1c1a3a445f19a39cd23576e9cc515eb365c6704b28df80f5c68b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/CONTROL_POLICY.json",
+      "SPDXID": "SPDXRef-File-8952d899d0d93f2ac7f3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51a8b77f203e441837b3fe15ea5f2000db4737dc8c0ca359a764f9b1ad697777"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/DECISIONS.md",
+      "SPDXID": "SPDXRef-File-e96922c840efdb16b07b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58447d111b45d4c86de0fd314e9a2408f36f380a515640b15fe0a1c9ab5c6978"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/DETERMINISTIC_E2E_POLICY.json",
+      "SPDXID": "SPDXRef-File-2c40ac9f95eea1ec55a1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5238891a4cda18536b823e1ca29a45ee38d3b3280c408bb01b050b3adc9c0e96"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/EXECUTION_POLICY.json",
+      "SPDXID": "SPDXRef-File-fe0b1953a6bde233db0a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ef211f4bb2919598aa24418332360f4e04ef0613386961094471b00761a1788b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/FINGERPRINT_POLICY.json",
+      "SPDXID": "SPDXRef-File-c728c489b2416740d84d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "993bb3d22ff385d6baa692e5cf35439b39d2968268420495a164a25142a5c76b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/HANDOFF_TEMPLATE.md",
+      "SPDXID": "SPDXRef-File-015ab8f075b02c4a76d8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ce3a22f7a886c4f2534bd33dac4b9bf90cbf77dfb698266762f8c61f8c02f23f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/HARNESS_SECURITY_POLICY.json",
+      "SPDXID": "SPDXRef-File-5ee6140a928772049fb5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60761a556199adf01ac4f08d65e62b966d71ae5e69e4f218f6179af61a511347"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/HOST_SURFACE_POLICY.json",
+      "SPDXID": "SPDXRef-File-f4edb7e37ded258bdfcc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "42d8f52cbb8cca7e8cb9a8324db5b6d3ddee44926c8be79c89cfb64463507f50"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/INSTALL_POLICY.json",
+      "SPDXID": "SPDXRef-File-31e8ed2e7b194116777d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "35947b5ea4305c832cfb7feeadb07e6ec4fcd641c20346da9226bebb3b365948"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/KNOWN_LEGACY_SURFACE_HASHES.json",
+      "SPDXID": "SPDXRef-File-b0c8c8dde66896a85142",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60643478b867be52f34866b8266dffadd2de8756c267056b82fb5f0113e34139"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/LEARNING_POLICY.json",
+      "SPDXID": "SPDXRef-File-6f4a679866777300fbfe",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c1e57af736f5a4015e11a1aa5a0e2168c5261ea710472b4896200cc27e3bdda2"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/MCP_ADVERSARIAL_POLICY.json",
+      "SPDXID": "SPDXRef-File-782315cb06d4d038025e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6e1fe5a8cda9ccb24999ed63152f525ee0090fcd572f1fe46768433e84c94f58"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/MCP_POLICY.json",
+      "SPDXID": "SPDXRef-File-2b9242e6084ee481f39c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31394d7d4004e2f51eb3561daf8ad8e1cc73f161af47b1ad26fa78af1f489aa2"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/OPERATOR_EVENT_POLICY.json",
+      "SPDXID": "SPDXRef-File-1ecd4785facd8031c585",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9addb50d977a3d0368b2d72c65ffe37967d67232b2336795b802a01fe331692a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/PROJECT.md",
+      "SPDXID": "SPDXRef-File-be0ba643056f788c349b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c58f1d7445c14e038b1fc6653b92e0f418a6c14ffba59762503dda98fbfdd16f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/PROMPT_BRIEF_POLICY.json",
+      "SPDXID": "SPDXRef-File-df28d41b73bb8f9181eb",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8883e24635126e916efde5c7c5556ec589427ad97bfe26b984d666d62ca3e959"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/QUALITY.json",
+      "SPDXID": "SPDXRef-File-f75a00a77bfeee67c235",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5e4e243e2c92b9028cf09c956fe22d5b1426ad49063486f7a2159acd7acf6390"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/QUARANTINE_POLICY.json",
+      "SPDXID": "SPDXRef-File-bd43dd10e14c76cb825a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ca39b5f80b28080277559f9fe68783f9fae4c8596572b930d8ee9c8685083020"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/RELEASE_LINEAGE.json",
+      "SPDXID": "SPDXRef-File-a97803d4e66282d36bf0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8fcae50cadbdb75583ec66618e3be0cf968b9196d60287af9617dad2c9a88afc"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/RELEASE_POLICY.json",
+      "SPDXID": "SPDXRef-File-0f70ad2c8341424da559",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1639e056fc2b697914140619d4a2dd1e1f8f1cfb2428533b2126be460c21e014"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/RESUME.md",
+      "SPDXID": "SPDXRef-File-38b383a32d639ed7fe8d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "175540cc641460c7bc2a17df3efae4d720f4218992d4c77793223769c1bd7aeb"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/RUNTIME_BUDGET.json",
+      "SPDXID": "SPDXRef-File-72e456a63140fb200103",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06d04517010e81578fd969416d25fe368335b604d45380436c5532c8f4c9851d"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SKILL_CATALOG_EVAL_POLICY.json",
+      "SPDXID": "SPDXRef-File-22b3b7d1bd6822ca8305",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "914a3e2f98577b8a2c176c5518ad6338edbb9025b4b2e1359e96493e3b559422"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SKILL_EVAL_CONTRACT.json",
+      "SPDXID": "SPDXRef-File-8c879512ce61be770fc2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7228898eb0dc653768010526bf56cd570255c1577e21b5bcf2e8ac306b04c77e"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SKILL_EVAL_POLICY.json",
+      "SPDXID": "SPDXRef-File-e30d314f116cbdb4cf87",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae19508be20cdb3096af79fffe2c57aa58945b6bba5ed3c53f7030d6c8dcc441"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SKILL_RUNTIME_ACCEPTANCE.json",
+      "SPDXID": "SPDXRef-File-94074f4cd89e0245fc02",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eebb8b854b37033cd8d88bdbd2ac6b78547c0cdd0deeb411782ec6608fc7818b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SKILL_SECURITY_POLICY.json",
+      "SPDXID": "SPDXRef-File-4a18a83261add8e4bdac",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d2ed1576197d8e7f786f75e704a228c881fc3708de41c2c7b82ed12d4335987"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SOURCE_DISTRIBUTION.json",
+      "SPDXID": "SPDXRef-File-cbeeb3ebfe3c6082a122",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5d62ddf4ad0a2416a0a5e925046f4a18fdef057738d077ca2837b8370c88721"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/STATE.json",
+      "SPDXID": "SPDXRef-File-572b21891a7c35a6780c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dc327ccf936492714ec34361bc59f97927cfe5ad30aa7630286ac6847f29659"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/SURFACE_OWNERSHIP.json",
+      "SPDXID": "SPDXRef-File-27f22d3b41a27962484b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "55e12d90a08df491f7cce24ea9a0f6e70fe0718144c7df4d149dcffe1a13680a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/TASK_TEMPLATE.json",
+      "SPDXID": "SPDXRef-File-e991ee848afe21c972e3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02ed0334027e5e7fa3971590bda4f73e58e70a93decc20cfc1eb7de45edaf990"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/TRAIT_SKILL_MAP.json",
+      "SPDXID": "SPDXRef-File-791d0c80d2bd9252fe0f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5a6874e35ad3aba477d664f9381ae900cc88e3bed1c0e48327376e43c38055f2"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/WAIVER_POLICY.json",
+      "SPDXID": "SPDXRef-File-eb2a792ac4b2e82ab490",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "65a48e00f9b6a9eebd3b48e354419da3f2dcc1e8b6563d7dc6887b36100804c4"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/evals/canonical-v53-skills.json",
+      "SPDXID": "SPDXRef-File-5d9dbf65032766b48735",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "258319abf84cc37aed07430877a884c495537ee6f35acc7a117c2ad9af61030e"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/evals/skill-catalog-routing.json",
+      "SPDXID": "SPDXRef-File-5cdffee8c3d1d6401dbf",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "136a989a515a0047d90d0671c49f098ede4248688ed44455900534e59ab55863"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/evals/skill-routing.json",
+      "SPDXID": "SPDXRef-File-139e0295fad5dab38950",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4e6b97907eede673f1e67a9b30563267260b35bed455e41fd8fa099290e71391"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lessons/README.md",
+      "SPDXID": "SPDXRef-File-938dbfc6116585e043db",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a4b7712ccc3c8036dc9dff4d974fa9f1633c9bf4a25a56b94f10c1ca361df2b8"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.5.json",
+      "SPDXID": "SPDXRef-File-2ac67b13e3bfb024730d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e4e9e16760fe6d1df4990df450c4dd96188f19227d42d228578cdcf994d81d28"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.6.json",
+      "SPDXID": "SPDXRef-File-32749ab23d7435e11d54",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3d8403b6bbfc70f8fc3a277af18380ca7845870f27279cf7e8d637cfab928c71"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.7.json",
+      "SPDXID": "SPDXRef-File-1699ccab42f3b28ca406",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d1f5f2d5a761023c54337ef5b6227699ec0dda88a67c46ecdc3784c9b96f97a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.8.json",
+      "SPDXID": "SPDXRef-File-d330098ff5708bec8ada",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7adf56acbfff0fbf3805ed4c1e2aa120d48d4e878bdd6aa80169845d84bdae67"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.9-provider-policy.json",
+      "SPDXID": "SPDXRef-File-b08e5a22c11e588d015e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e2ac55bcc32b2c7e6fa194e6d14673882eddb0488b42ad06b5fc76a3f9f71190"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/lineage/v5.5.9.json",
+      "SPDXID": "SPDXRef-File-0b1c71b98f1c3aed34f5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "635c0871413c9b14a211a57d29a89b9aa6a618c6cacd739679df73a05c48158a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/schemas/prompt_context.schema.json",
+      "SPDXID": "SPDXRef-File-b032cd3fa7a87ce62210",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fd16766778321e9797a674de7b1e5716d50f4488d9723f39cb5c661465d301f3"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/schemas/task.schema.json",
+      "SPDXID": "SPDXRef-File-2e0c0a2cfbc0792abd6d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "19d5797a3bf3f59f69b3d8936f35474ced319cbbf52130e000995f2a76a9d9c3"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/schemas/ux-tokens.schema.json",
+      "SPDXID": "SPDXRef-File-060a5fe37ce6c8c5470a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "97cea7081c97895efd1126c07052ffb50e7d50012ba487d75358b480c565281f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/_common.py",
+      "SPDXID": "SPDXRef-File-d69c5411fefc2f081a18",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dd56bb294b85358a52d4a1fb44db5810ad35754be76222707b2713cde10ffded"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/_truth.py",
+      "SPDXID": "SPDXRef-File-9be3affb84eb01e6aae0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "94b5f367ffe484bee5fcb3f81d04cb7a7d1ea0f5dabaffd518e6c8c189fdfe02"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/accept_release.py",
+      "SPDXID": "SPDXRef-File-785c1cf5c8ff87ad3beb",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "85a496a072a1df3e4f6591905b17ed6115a8d60b0241edcb7252c6575ca43eb6"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/bootstrap_project.py",
+      "SPDXID": "SPDXRef-File-d3b3efd39cf224f8cd03",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c908771dcdbc4ce00e0acccd1c545be24eac316fbad0433f8ed0eba047a2dc07"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/browser_capability.py",
+      "SPDXID": "SPDXRef-File-14867462306736f9acd8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "def61309ec842d27fb66676e33a95be6110b93eb25e0597bdeb6b79229d8ee0b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/browser_flow.mjs",
+      "SPDXID": "SPDXRef-File-2974f3f56cbe063bdf39",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9e464716fbd6a4d0e8927357a0a84723e2ec7c133f04f1626c6b6b2b43bd98a8"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/browser_lease.py",
+      "SPDXID": "SPDXRef-File-e4d7ba1ae5c0ebfc2314",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c1d3df109a902e249a114ed1c6b2bd9ec4ef156dcfadff8449e004b7f04db4e1"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/browser_smoke.mjs",
+      "SPDXID": "SPDXRef-File-a17797cdc1f9305c4a23",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bea7072827f4ed9860b3b23ca1fae27a2bee228879e91587035269e7e1b7baf6"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/build_manifest.py",
+      "SPDXID": "SPDXRef-File-ccc089abc202e860fe07",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a2c600bdad0b146d4f1493a864254b692338693292c31c4cc185acb959b22d2f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/build_sbom.py",
+      "SPDXID": "SPDXRef-File-6571b22e8acfb8bccd1e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b2569023685cdd54d0e577a0ba95cd23ca71ca54c13b2e4073a81c2f67bb55b7"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/candidate_preflight.py",
+      "SPDXID": "SPDXRef-File-e03bc2d7a98d0fbdbbc1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc816e8b8fd9f5ec9a4f6240829f2844ed148b000de1d18f79d44df7218e6431"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/checkpoint_reverify.py",
+      "SPDXID": "SPDXRef-File-0688884f0e2fe055ce72",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6319c39b8393851d57357e356526c93c45a99e4540d1de04f9b46d3ed8c72b41"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/close_task.py",
+      "SPDXID": "SPDXRef-File-97128877f0a2c4115781",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c07a86e58a88818eb49a1a4e2dde2d14d69b547870f3471bc3876ee89001e177"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/command_runtime.py",
+      "SPDXID": "SPDXRef-File-7dd5c577dac68e617d8b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ede5fb2a5e2167fdd9f01d8bf50e3d503373cf75d6b4a7443f5ad1f0eff5fa67"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/completion_report.py",
+      "SPDXID": "SPDXRef-File-cd785f695aac37818020",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f9d5d4cf004d3be58634d2164fcbc7d1dc5c01ecb509e7cae23fc8bd55e3bb77"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/control_decision.py",
+      "SPDXID": "SPDXRef-File-66c598fac949c030fc8f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "229cd6e61fb6b391c1edce414913af60e2504291bac856b43f028f5a441e9c3d"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/deterministic_regression_gate.py",
+      "SPDXID": "SPDXRef-File-a55c326dac6eb0f53154",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11eb05c1a03ff5e8bf7b452ff1f2fe29aa6f66ddeea710f3670846dd5fadd30d"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/evidence_gate.py",
+      "SPDXID": "SPDXRef-File-52d1f8a6ba763cc0259e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa707c28375b8402f7ceb73f8640aa4210c82d13c130f97fcd117a4f1ff4a9c5"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/evidence_status.py",
+      "SPDXID": "SPDXRef-File-020632841e029c1df857",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ee5e4f04a4b658690797772e6197f4871b168fdafd3f32aacd9cedd7e11edcb"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/execution_profile.py",
+      "SPDXID": "SPDXRef-File-ec8e2618d08e1203fcab",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7afc7c0ac6a49320e72838a9a3a57cb7fa4315f398a894a3ac488204acffc80a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/export_agent_plugin.py",
+      "SPDXID": "SPDXRef-File-00f34d18ff763d94e142",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "474ab0674cbbb811a02a3edcc5807bf9438c33de32d1aaca42a4aee10acfd149"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/harness.py",
+      "SPDXID": "SPDXRef-File-7cb749884ae28a165e08",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba42333672ef3157768e3098b3c1c49867908b6f1fd40bd96666d01b44f89269"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/harness_doctor.py",
+      "SPDXID": "SPDXRef-File-e064c65dbd135f595ca4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2786a80cc17cd095f3b7fe835a52a96ddf0989628a6a967db8b5ad3c76db5b1c"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/harness_ownership.py",
+      "SPDXID": "SPDXRef-File-0d13eadb6c76a78521e6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "999cd5a9dabac18ee0c5fc01de886fc42a11559d8740f2318b4eb46a13bef3e7"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/harness_security.py",
+      "SPDXID": "SPDXRef-File-f25e2d6f662551f940b9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "36a6f2f2f51c61ee89dc540a5d8dc3d4b4ec66392fdc20c70f49c5830dd5837c"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/host_surface_contract.py",
+      "SPDXID": "SPDXRef-File-c18ba4bea854bf5bfdf6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0282ccdaf0a3b125c781f7212d54c2a483f08b93c50b1961f5d574e2f153371"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/install_plan.py",
+      "SPDXID": "SPDXRef-File-687da1b3e0555ee3fa22",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0de9fd5f57f2dfcf472cb2d321b7da6310011d4bcc41df9f3df59ad3740aed9e"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/install_preflight.py",
+      "SPDXID": "SPDXRef-File-3846fd9e2ea6b8edbab1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5cfd023263116857bb2b9f0cdb6c377fdf17b54989652b8e07f8b750e4c46b97"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/install_regression_test.py",
+      "SPDXID": "SPDXRef-File-b8b7f56ca72a38657914",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "672ad4e2a1de16b934902cfbc0fc014c977d874284535ee3f92bc7b5335074db"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/lesson_candidate.py",
+      "SPDXID": "SPDXRef-File-b84cc63dd928e8a5b233",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5cfe41693252bb1e3db1659a89138f91abfd23d5e9f8ed92642ca7c648794e0c"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/lifecycle_regression_test.py",
+      "SPDXID": "SPDXRef-File-a7eefdbec61dc7737f73",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3141f1b74a9d5a00e83b5c6667502d075057428bd629db8b15d427cba4b38c33"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/loop_guard.py",
+      "SPDXID": "SPDXRef-File-71d19c35d5953eac7598",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e3d384cc95c4fc063423a2f4cfd66ed1f16397e29fd3535618fd6f7dcc21edf2"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/mcp_adversarial_fixture.py",
+      "SPDXID": "SPDXRef-File-9ca281c2d3afcb0380f4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f6cd744d9ed18b60d5774fc35f8133dc429a4cc9f59b2789cf781e440a939657"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/mcp_client_regression.py",
+      "SPDXID": "SPDXRef-File-d66d9f0487668bd81e4c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a214be59d2e01880b658f65b2186bd42ef917a87a5d64d16dd991a7ed0195cc3"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/mcp_surface_pin.py",
+      "SPDXID": "SPDXRef-File-dfbc81b752565ea3d4fa",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "40ba026bb540f7ac1f372a574898d21fb3e401a3ad2abbee86b41131a44b4fd1"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/operator_events.py",
+      "SPDXID": "SPDXRef-File-55560f284d5529ea4f5c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c3be53f77fd380f27c82331ed2dd0de35c640bb63a12fe8c4928bb35745e2496"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/package_release.py",
+      "SPDXID": "SPDXRef-File-15bd04289c33860cc606",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a3854e7728df8ae3bb896dc84644567132fed8d44ff3d861ae7cba1b04339be"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/probe_urls.py",
+      "SPDXID": "SPDXRef-File-ca98cef209a6b466dc67",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5ead0d09e1d872f2aba5968aec31fb5a5578269a4c963e989eb340cbf56213ae"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/prompt_brief.py",
+      "SPDXID": "SPDXRef-File-4385fafb0d73c77df607",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5c648a34415f3ff626d5f5d3dbcc731f0723db168fad6e8722c7cff94371f217"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/provider_policy_lint.py",
+      "SPDXID": "SPDXRef-File-2a81f3e01032197f77d4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0247ce81c90bcb38576695c07c2ab345d5d451f4b1fc1f251c555153e5e07879"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/provider_route_budget.py",
+      "SPDXID": "SPDXRef-File-a62bcb47cf2b8fb95e5d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "38fe9c8607f6d6d58269e0098734babe5475bb2b5b48b1bab64995c179ed0832"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/quarantine_scan.py",
+      "SPDXID": "SPDXRef-File-a257b802c00a61ff8dc7",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3854aeceb2ae89d60b3917fb4fdf3468b7f5465e017141a4e712a4a5183d71e8"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/record_evidence.py",
+      "SPDXID": "SPDXRef-File-089a4cc4f202eae3cf74",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80d1b744c5207887d6b672566dfe1b832a2e1eb83ff1c16a7ef08f1e07b2bdba"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/release_doctor.py",
+      "SPDXID": "SPDXRef-File-c7c673b0e8f60dfbec65",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b5ccb0eddeac7c59656b587d1fc9b8dbde8fc6edcdbd3b424bb0ed602bf97ac"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/release_witness.py",
+      "SPDXID": "SPDXRef-File-e71a1d17a9a5b77b8032",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "240f2fe4688aed0d5c990a9d3e95735dcf8299aa05569156c2064187d99866d5"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/repo_mapping.py",
+      "SPDXID": "SPDXRef-File-455e0f743b9a729c42dd",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dfe81d48ef4cdc28d86d4f5a8eb3fd03869f84b048ed26123d5921777be371dc"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/runtime_control_state.py",
+      "SPDXID": "SPDXRef-File-401eec26ff27fffe3c5f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "effe613bb900bec7eb724d239f5c79f80492813081127574282c2ff093bbc1c4"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/scan_external_urls.py",
+      "SPDXID": "SPDXRef-File-eecec63d6608a5a1bc67",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "63c8e224914124d1ba2f4cdf148d402b10b36fa11a94b1d696f78cbb5fbf81ce"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/self_test.py",
+      "SPDXID": "SPDXRef-File-7deea20122aa1666546d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "45bc7899897d07f17238fca96647371d353cdad97c5540572dedd4959bbaf094"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/self_test_extended.py",
+      "SPDXID": "SPDXRef-File-135f91c9fce4cf230b25",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "146c7d3d1e555bf40a5fb7a12a9f22b65d2796afcfd75ae9bd70f8ae9165e233"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_catalog_eval.py",
+      "SPDXID": "SPDXRef-File-5897a0143c705f00bad2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c154868b59dadeb3212fad7a7812a3f9af79c531cb607f04306a63b2c8105f07"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_eval.py",
+      "SPDXID": "SPDXRef-File-1c89c0b6a18f94ec4801",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c488864273cce44401a842dc0c9af4f1b14f951dd01e27c51ed770698c61b7cd"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_eval_acceptance.py",
+      "SPDXID": "SPDXRef-File-378414b3c6ba02cbaaed",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "47b80a706ba753dec62ebd809fc806b3e5b59697826ad59acb406a154fffbe9a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_eval_transaction.py",
+      "SPDXID": "SPDXRef-File-e90e50ff895009d20f99",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "414a6603a6d55f138c545f8970e90713b83caf18e1a409baf6739fd44d9a9c96"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_security_gate.py",
+      "SPDXID": "SPDXRef-File-69200b97addb8f9c390f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "65f45c575422a9f0c6ac6ef78899ae3427957bfb0d6f80ce77fdd25fc03fa4b1"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/skill_trigger_eval.py",
+      "SPDXID": "SPDXRef-File-a79d7100c922904ee014",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d88185cc718b3f21e0c8383175d0f3cb77c866864c8d316c1d1ba69d7873f19"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/surface_drift.py",
+      "SPDXID": "SPDXRef-File-02203bbe61e11c05c7a9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0a3dde06132bc752c602fc3adc4c464e2eb724427d3d1946c3434c59bee3995f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/task_guidance.py",
+      "SPDXID": "SPDXRef-File-8f522c0c0f5f2fa1286e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "17cccdcb6bc4f739eec26ea2a651e4df2af5b7de73fb9d8a325d755bffbbd68b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/task_transition.py",
+      "SPDXID": "SPDXRef-File-31ee0b978a161412574d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "72a25dbdc060f8e293f6cc8e3793831c9d31a60dda6e6769d74a4acfc79b6e59"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v53_regression_test.py",
+      "SPDXID": "SPDXRef-File-18a31f808af2a2ccff11",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "655f1daf82e22e2345d3b591a853499f38c6ccdffa955fe43cd39f462c8004c4"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v541_regression_test.py",
+      "SPDXID": "SPDXRef-File-965231d729a1f5491bb9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5502194ee77eb05ef8a996c7ef8e3790b0e25d52f914f49b79168404f4580bf3"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v542_regression_test.py",
+      "SPDXID": "SPDXRef-File-394b273ce8211fa889d6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11a0d43e30095a115ae26c62e3f0cfc31f6f44fa78e201987a23186230d78bf0"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v543_regression_test.py",
+      "SPDXID": "SPDXRef-File-87e8ab9e2354ce0e6a7d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d807b4f54a646639858048791544390f1b48d6092d9bc31dd3663c5c9dc9acbc"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v544_regression_test.py",
+      "SPDXID": "SPDXRef-File-1bbae7b45f290b5a8950",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3ef55aca3f265739a80cda66ff8e463daf7d4c8ba71b3b48fcbd8fa6f93cac5d"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v545_regression_test.py",
+      "SPDXID": "SPDXRef-File-eebde78390a99d424ced",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b39f47f2582c04d18ecae7e3cbb8b49a444db35d81b5aecf2528794fcd4b957"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v550_regression_test.py",
+      "SPDXID": "SPDXRef-File-3a0909af6df410423f62",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93a82db6381b5d4406041ae109c3496260ef969594055d5b858b51c8a6838747"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v550_snapshot_regression_test.py",
+      "SPDXID": "SPDXRef-File-63745cde84190a85c3a3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8971ca14141d688e84b3ec721778215398c06501a9acc63e90559c146d340b28"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v5510_regression_test.py",
+      "SPDXID": "SPDXRef-File-b825002f57b2cab31023",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7cc5275bd3dc26b5aa232d53f031065bc88193349d19fdbf37706dcbd058757a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v551_regression_test.py",
+      "SPDXID": "SPDXRef-File-855c44316b35f72579db",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "578d97e3fdd69b878c525e246bc877472268444407fd64c1ee9ba836c799eaa9"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v552_regression_test.py",
+      "SPDXID": "SPDXRef-File-46423ee4b0434e683840",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "86e3325a683859f17d3f9b865dcb6ae6ece1b4bc7df21977ffaf6ede97710d5a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v553_regression_test.py",
+      "SPDXID": "SPDXRef-File-4b99b3747c23c96be51c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7dc752c36e9154f3d28073200bf69344f7170ef8291069028a0b743e95f31051"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v554_regression_test.py",
+      "SPDXID": "SPDXRef-File-892d461900fadfcce9f8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0aea3f7f1a25a0e0ac9ba7c93c3b6bebc7769543c55d61c6cf4a52c02c25905b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v555_regression_test.py",
+      "SPDXID": "SPDXRef-File-cfc33e0fc694d7f8208f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59dc91672ac2491215cb9f71ea88d3e6cde5d617d860ed5cbbbbade4344e6b70"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v556_regression_test.py",
+      "SPDXID": "SPDXRef-File-114dcfef58ec3f39f4a4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7011d1db15fa12778eadb9270a003a9e647fbc6aeecd32c58247e1b39844875b"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v557_regression_test.py",
+      "SPDXID": "SPDXRef-File-e10ec2132848c3536b66",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e80a76ec35a52ed2ddd6af03235597cf92c22931246aae0999d5e81f6d85874e"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v558_regression_test.py",
+      "SPDXID": "SPDXRef-File-0c30a44b68d6b9918b11",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a479d07a70de35b1d96a02510eda793f115bd517dd9f4e5978faa63cfb96bddf"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/v559_regression_test.py",
+      "SPDXID": "SPDXRef-File-c717e7c051b7c5071381",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "788ff977cc73181ec6a66da640e0190de4055b7db247f9f653e3aa72fb21fedc"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/validate_agent_plugin.py",
+      "SPDXID": "SPDXRef-File-64ef5d2a0f747c595528",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d037d5f74b1a169543a2ccae1f527a97be54fd63a262b62c4ef124b7e85fb1a"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/validate_harness.py",
+      "SPDXID": "SPDXRef-File-285c178b1b6d9d5e51dd",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8ec9a259f11c8c8238a70c93e73eaaf20735290a2dca38a361da8bea137e71be"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/validate_task.py",
+      "SPDXID": "SPDXRef-File-7e52e1f6ca72f6d13b87",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10dae5425d4eeda7b00172928ded5d25934b84d91d08a315b69179b5c4165f14"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/verified_checkpoint.py",
+      "SPDXID": "SPDXRef-File-41fd14a23374adf93a01",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b7c53bd6d224f0e2d44c738efa13d4cffad6ca868276afdbcce9010e672ce5f"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/verify_all.py",
+      "SPDXID": "SPDXRef-File-b45eed605351a09e69da",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eee3b74dead820ebe56adeebb2f9b64202c08e5e73a5938c2f202e64b0a5abcc"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/verify_installation.py",
+      "SPDXID": "SPDXRef-File-4b75386b845d1031fa70",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b692d06f89edf884aa4619a7e85d868964b5fba773c1a955e4da9dff07e30d9"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/verify_package.py",
+      "SPDXID": "SPDXRef-File-e2b4dd1b05edd5f42840",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "227a8bdccb4ca67af0125ee33c05ee4b3ce00ea0636abf8939f7b90602bfec67"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/with_server.py",
+      "SPDXID": "SPDXRef-File-6fa96ea0d0fc8ddbfb04",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1976a43e54c283a31b8bd03ab63e02283322910dd7f79d26a764910776652911"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/scripts/workspace_hygiene.py",
+      "SPDXID": "SPDXRef-File-80cb216e2b0f9d24be3a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b72e57ef7351412a1d1be9aa74c6b92d084dd40995ccb825132c68816de46c1"
+        }
+      ]
+    },
+    {
+      "fileName": "./.ai/tasks/README.md",
+      "SPDXID": "SPDXRef-File-018129b7a975e03be002",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3807100c488ec9329fb5e6c8ab1031c6b7336b0b5f26dc74bd96bd36097a1fda"
+        }
+      ]
+    },
+    {
+      "fileName": "./AGENTS.md",
+      "SPDXID": "SPDXRef-File-a54ff182c7e8acf56acf",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74db887b53f61adb3f3f75b07fc3b478e85d512e1b943b6baf3a1f9a35429852"
+        }
+      ]
+    },
+    {
+      "fileName": "./ANTIGRAVITY.md",
+      "SPDXID": "SPDXRef-File-dfad03e025a6327163de",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c00bc8340d0e96e8584eb66b7c7906bc76e2c63ecced4fb1126ceb853a732150"
+        }
+      ]
+    },
+    {
+      "fileName": "./CHANGELOG.md",
+      "SPDXID": "SPDXRef-File-06572a96a58dc510037d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2499414cb272711729a4e6e54816541001b626bc3d5bcb2c8c86a453d61ffaef"
+        }
+      ]
+    },
+    {
+      "fileName": "./CLAUDE.md",
+      "SPDXID": "SPDXRef-File-6ebdb617a8104a7756d0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6621f4a67c976d965246349bd4962f4278a2f1daf2f2271450542ee847f858bb"
+        }
+      ]
+    },
+    {
+      "fileName": "./GEMINI.md",
+      "SPDXID": "SPDXRef-File-399080f41ccf73c6004e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c881d09e55974be317a212f9023fb6889e03be1d42bea5c4f09d9d33df085bba"
+        }
+      ]
+    },
+    {
+      "fileName": "./INSTALL_HARNESS.py",
+      "SPDXID": "SPDXRef-File-050c844ba9d2e184172a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f46ae8dd3126554c59969d5c3fd8f721563d250f452a07f9a8d9e5eefd5ab92"
+        }
+      ]
+    },
+    {
+      "fileName": "./README.md",
+      "SPDXID": "SPDXRef-File-b335630551682c19a781",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80024e4549b67c37597fd744d2d4da2b5763b442644b53d888e49e01b37376da"
+        }
+      ]
+    },
+    {
+      "fileName": "./START_HERE_PROMPT.md",
+      "SPDXID": "SPDXRef-File-ebe090cc3ec88e9e50a2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8d7aa242c578a8bf44b7a42150da4a109fe82aa83e51bf680d42e287adf92af8"
+        }
+      ]
+    },
+    {
+      "fileName": "./VERSION",
+      "SPDXID": "SPDXRef-File-7b60b8e351cbb80c4745",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa2ccc54f675c79b057453aad0ad4da08e1cf7b6a795f5405d1850a81b42d0d9"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/AI_INTEGRATION_TESTING.md",
+      "SPDXID": "SPDXRef-File-58378e7e757f4170071a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4291657d1c095d9885f44d156f30c39ae097be92dbc4974c950f9a9644ac43c0"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/AI_PROVIDER_ROUTING.md",
+      "SPDXID": "SPDXRef-File-e92cfcc16f44ba5c0f02",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "afc8af78da233f56ca5ca4e7d98189f4250889bfb2e0a090504c2f983cf890fa"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/GEMINI_FREE_FIRST.md",
+      "SPDXID": "SPDXRef-File-7f816d9b5107edb520b3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28c1440449d6a1d1aa3b173a031b5dda511a0e9138e57067700904f52a88aded"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HARNESS_FEEDBACK_V5_5_7.md",
+      "SPDXID": "SPDXRef-File-283a73156ab0b11fe37f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f794a0701bcfce49407153477fdf8adec0a2a16a2c4cbb3738563b30cbb8324"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_PROMPT_V5_5_6_VI.md",
+      "SPDXID": "SPDXRef-File-4105abd5f824d7a644f0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d42670d5c6763bbeb22def05df2fb8e304f89b18c2bc8ab7377cb6dcb0f4eb5"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_V5_5_10_VI.md",
+      "SPDXID": "SPDXRef-File-84f1ecf9cc99e7528606",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "26944d1856dae409efe6a4d4e708b1734bf6a6e92137d24325698937f655cd29"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_V5_5_5_VI.md",
+      "SPDXID": "SPDXRef-File-ba097fd73f9b3ed291d0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09fb79ab57400bb084c1decdba97d2795f09218807c391cdf4affd94e79b524f"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_V5_5_7_VI.md",
+      "SPDXID": "SPDXRef-File-36debdd400d2a83ba449",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f7c8a6e63c58d5b3c46547e80066c892d6866238806ac83ab725834d0d89317"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_V5_5_8_VI.md",
+      "SPDXID": "SPDXRef-File-9527ef71db991bd9a720",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "45da9df587917e9e9d8695de32e89a435959087571bd9cd81fdda8dede4aa9c8"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/HUONG_DAN_V5_5_9_VI.md",
+      "SPDXID": "SPDXRef-File-c7109f997472fbb69d4a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e8e11fbaab4598d31a3354cfe5bea40d783baac900a32cd27f3808c9f6fa0349"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_FROM_ORIGINAL.md",
+      "SPDXID": "SPDXRef-File-07693fa1306580c2493b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cdfc6aeb9c0e679629586858227e44f63683f81a0ca657d05d692cc1ba885577"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V3_TO_V4.md",
+      "SPDXID": "SPDXRef-File-61d6b80b6fe6391d6508",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ccea491f80e5490cdece13712a06d5176e94cf7bd531151f73d0cace77fe2a3"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V4_TO_V5.md",
+      "SPDXID": "SPDXRef-File-dbd86cf6d19a62345d1c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "afe8d7aee603983b684cd772a54ae1d6c78153a608364923f849c44f21b6bbce"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_0_TO_V5_1.md",
+      "SPDXID": "SPDXRef-File-a6d1362b01cfd241cc1e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "92c05b8f43c03fab16e5e6d372a8a416afff7d705737435442be12d9a8a8da3b"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_1_TO_V5_2.md",
+      "SPDXID": "SPDXRef-File-a5e47f81f8fb3d5234c0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "93e39ddf4104f4ebf762c162bfef6826657e441c6b523373d89897eb23bb62e5"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_2_0_TO_V5_2_1.md",
+      "SPDXID": "SPDXRef-File-a4b3b6e9a0db825bbb59",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "181d7e3f44d13028019ca88161c0ac7f8b94365468e9360f789bf7797c524e8e"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_2_1_TO_V5_3.md",
+      "SPDXID": "SPDXRef-File-c67ddb6139fa3078e938",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "03d7a94c289ada585530ae8f7b9e6f800ad1e6e3d59f354c438b48761b2d7b22"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_3_TO_V5_4_1.md",
+      "SPDXID": "SPDXRef-File-1deae0588d1b0c8e4bc7",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ac998833bd8348c457794278b8a8d5f9aeb288605b187fcf8c65db0d36c54e9"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_4_1_TO_V5_4_2.md",
+      "SPDXID": "SPDXRef-File-81e95cff30e4b3fac0bf",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e7f0ecf8a3d1b8bc0f8afec6c83c2da78e7f28c23433f1c62b48b1338c9cf168"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_4_2_TO_V5_4_3.md",
+      "SPDXID": "SPDXRef-File-ec1e15a655a4f1b29266",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7da858813f6649d02bbdb46680d90347ef1a0eeca8aa603e69f557b338160a88"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_4_3_TO_V5_4_4.md",
+      "SPDXID": "SPDXRef-File-11b4d73144000afd857b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "33f2bad0f38f7628a52fe9df49efecdf70f49110bdc817ec84b287406867fd2b"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_4_4_TO_V5_4_5.md",
+      "SPDXID": "SPDXRef-File-3f5aa15e7225742fec9a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f494ab8543fc4feeeef9aa16a8a8b6c2bcb130ec0ae7221781cb8dfa1351805c"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_4_5_TO_V5_5_0.md",
+      "SPDXID": "SPDXRef-File-20b9ede2584b9836e509",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "19e7a6db412ae31b175c5614458d248f29b51aad779a2a2d7c34718fe7f6a2ec"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_0_TO_V5_5_1.md",
+      "SPDXID": "SPDXRef-File-583a43deaf58baebb352",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0a652faf507314bcecf9a5919ffb32164a53aaf41e3dc1921aff9bdcb19805a1"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_1_TO_V5_5_2.md",
+      "SPDXID": "SPDXRef-File-de90985560d47afeb993",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f0d4bc5a77acb15a55b5143c83c878dacaff64e2343c10de4174237602b808a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_2_TO_V5_5_3.md",
+      "SPDXID": "SPDXRef-File-1ab2acb6267cb9aeb6fc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d9df19814c1e99bdb83bd128ebef5a5c92ced1442c665205e302eba749910bc"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_3_TO_V5_5_4.md",
+      "SPDXID": "SPDXRef-File-95105d9d988897b52592",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "85b5d32227eb396d3420743c7d91c1edcd31b19a2ee19a2e2527a0ec151ce57e"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_4_TO_V5_5_5.md",
+      "SPDXID": "SPDXRef-File-260896d4ba0a1648d19e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "07aa249053fd0f4e380e986c5bd7b18a24f890b6356e83c48f3b209ac25f43ce"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_5_TO_V5_5_6.md",
+      "SPDXID": "SPDXRef-File-f4f3add880771e21bf5b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9a0b25dd3d0d0fad37502ff604f7a7add123029def79aef11908e5665f39479"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_6_TO_V5_5_7.md",
+      "SPDXID": "SPDXRef-File-ce55c8de2d3fd26b7867",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6f3d2f38d49069e20874eac3190d81c07a67feab05d5fc28b2bf13028f9b551f"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_8_TO_V5_5_9.md",
+      "SPDXID": "SPDXRef-File-f46cbba5dd0a7d49a203",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f19e8b905b2cde583f325ecc352151db58224d76e4d6befd292ce775a2069ff0"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/MIGRATION_V5_5_9_TO_V5_5_10.md",
+      "SPDXID": "SPDXRef-File-ba8be9d205ac599c69fb",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a5c6699d51e7f5d04bc3b54cce74c3537d7fbca49f91aa94a0d1c5f3cca8fa4c"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/PERFORMANCE_RELIABILITY.md",
+      "SPDXID": "SPDXRef-File-31a95976fda9ac7567b2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74fd8038b5f66203e76044e405104b3a53f2723d3446d5a2bbaa1048353c3636"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/PRODUCT_AUDIT_TEMPLATE.md",
+      "SPDXID": "SPDXRef-File-a325fabc2320c4bf6dd9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a35da0c28ac4b78acc353e9e23798e48afb98c2827f74411a2332903eadef0b3"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/PRODUCT_PLAYBOOK.md",
+      "SPDXID": "SPDXRef-File-855eb80cc7923c3a6022",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06f1821af09965e646d038e6a89e7873db7caa16ca6ca9584c2d287341ddbb30"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/PROMPT_BRIEF_V5_5_6.md",
+      "SPDXID": "SPDXRef-File-1ec8c62b5cd552e9de6f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b1a10fff84511229abd93524f32c0306fc3905c6587584667dc0739da65e003e"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/PROMPT_MASTER_RESEARCH_V5_5_6.md",
+      "SPDXID": "SPDXRef-File-1ced038b231970f30272",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "94f0976729d8c4d048229c3f00aa4142277f8d45eed935f5adf60d705c1a8b3f"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/QUALITY_CONTRACT.md",
+      "SPDXID": "SPDXRef-File-081336e81219c77fa9a5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58072bf28e10fec24aa9f0e5e58d71559da009aec44990b234acab90ee386e8a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/RECORDER_STATUS_V5_5_8.md",
+      "SPDXID": "SPDXRef-File-9b2c42b0e341fb054bd5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6267456deb16ccc486adc2eda8b011d87ea28f87ab651b0a77cb9864c4046235"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/RELEASE_RUNBOOK.md",
+      "SPDXID": "SPDXRef-File-e7f5b2762e65e5563466",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4c45b26c4e86c1c48e150f399c0cede38a7d35ab8bdc264143290bb3b6f69ae7"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/RESEARCH_2026_09_15.md",
+      "SPDXID": "SPDXRef-File-bcb5cff3764da634dc4a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b9a4014acae264119dbc94eb81c27854e41568bd497a3f90f4a82fee2edc81e2"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/RUNTIME_VERIFICATION.md",
+      "SPDXID": "SPDXRef-File-9d8643700592f48c3d97",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8c881b448d32bfdfa301870b7722eace440b0e03c6c387b8866e6f4ed022d88"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/SECURITY_BASELINE.md",
+      "SPDXID": "SPDXRef-File-778ab9cc5a4774ae3fe8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "add7a72e5f920797da29b4d94d1f8e09e6106505c24cfde4757fd3e26060f3a4"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/SECURITY_COVERAGE_V5_5_4.md",
+      "SPDXID": "SPDXRef-File-5a17ae1b40605cfbc9b2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b445a4453cf4047b0f15f9d78ff0f0cfe9df282092436e76c7ddcb81dcdfba34"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/TRUTH_COMPLETENESS_V5_5_3.md",
+      "SPDXID": "SPDXRef-File-77251f7269da29cd85a3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43ba5be561d67cb4c6bfd3a2a05c322898b36f5b70d771347c1a695c8247b222"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/TRUTH_HARDENING_V5_5_2.md",
+      "SPDXID": "SPDXRef-File-ec2558f51af656820704",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7cdcf7321a5c2f171b10c25641819c085ba0ccd117858d9848d7fe4907509e0a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/UX_UI_BASELINE.md",
+      "SPDXID": "SPDXRef-File-314bee1adc5a1b60b6f5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c6f9b2ef090672713c3619311cfe99e79d8b16af7b0327622fa92adc96f4904b"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/WINDOWS_EXECUTION_V5_5_5.md",
+      "SPDXID": "SPDXRef-File-97b9219da2cbcc99aa09",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ea881518c2cc0ff4e666f90be08a1b1a92bda4d0fd6d6c6ecfa932540d166923"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/ADAPTIVE_EXECUTION.md",
+      "SPDXID": "SPDXRef-File-d1b48c29d8c24188646d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11ac9b3f32affd2ba425741e2ebe2daedb9f1ea29486949ca6b7753af113c5f6"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/AGENT_PLUGIN_EXPORT.md",
+      "SPDXID": "SPDXRef-File-cf4288c3556d7922cf85",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "baf9e9985f9dff26f07aac0f0ef0fc0a6956e9bcb58833ae4e0c1eed1a731d17"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/BROWSER_LEASE.md",
+      "SPDXID": "SPDXRef-File-873fa94956aee8484bf2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53a421993cc362ea2be0a785d4e72222ca08629856d5047d6c8a04ad54afd0f9"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/CANDIDATE_CLOSURE.md",
+      "SPDXID": "SPDXRef-File-5eef763848518e180b6d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28984c70a4eb3fe4f1b60091ca5859a8726a8d7ecb70ad3c6eaaeedcc43722ab"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/COMPACTION_TRUTH_BARRIER.md",
+      "SPDXID": "SPDXRef-File-be97658b8df253bb41c2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dee80fcad08a5d777bae748bddcf0ffdc3b5c7d1bdbcda624fc296aa58939273"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/COMPLETION_GATE.md",
+      "SPDXID": "SPDXRef-File-3f4f351ecd97fb8e1bcb",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b402f2436dea30da4dc7534c08bdfc44397af8e8dcf9ee30711b8d19bee928f7"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/CONTENT_PINNED_WAIVERS.md",
+      "SPDXID": "SPDXRef-File-7e611e4b5176ce6f59ea",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1bc1bf3f72d1e56d9227914266d8f2c454b4873d9a9e7749ebf9637369480d8c"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/CONTROL_DECISIONS.md",
+      "SPDXID": "SPDXRef-File-932542dda7bb1b8d4e64",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0db3a46425a5724ffbce1e8568de90d603f9e9594f065fb287003e4aeaf07d0e"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/CROSS_HARNESS.md",
+      "SPDXID": "SPDXRef-File-b7159479c41f1f250d6e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "78e36535545ef25bb53bd6d9927a47c9c09e3a642dd592135605fff589f4a21c"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/CROSS_PLATFORM_RELIABILITY.md",
+      "SPDXID": "SPDXRef-File-3f66ee0e8dd90f9079a0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc6fc98fcea4e36c84ca85a7735657f406b9eca2cd470f5ec398b8ef6e606443"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/EVIDENCE_ARCHITECTURE_V5_5.md",
+      "SPDXID": "SPDXRef-File-6683d43ecaf3af3867a2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f04ee556f4b1bff623240e35f11bfbf9eb595d546c17e217dc9167a51da2fca"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/EVIDENCE_MODEL.md",
+      "SPDXID": "SPDXRef-File-db400902d55fac13ff11",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa535cf278213bf6b31c399e610aced3d3b0d5f6641598e94f3b79250c199454"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/HARNESS_SECURITY.md",
+      "SPDXID": "SPDXRef-File-a5555a75f6639beb13a9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a67a0326036c09f3287eaba4a3a3d333fae04e5dc1d295ab4f67255fcb82a55a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/INSTALL_OWNERSHIP.md",
+      "SPDXID": "SPDXRef-File-7a3e4980f83a7894e5c8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e50592bb05d40e0e4fb7d24262614f43c30908af87ef963015f78abd56c9f36a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/MCP_SURFACE_PINNING.md",
+      "SPDXID": "SPDXRef-File-ebdd680da959f8b035c0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d516f2e2af7241f0212b059c4807adac366ece41ca4fd8827258d158a806d741"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/OPERATOR_COMMAND_PLANE.md",
+      "SPDXID": "SPDXRef-File-15d4680a814736603ebc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e699475d3e4bb4941c37a6f773f4593b1d219a9bd0e7f0b356469965db683fbe"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/PACKAGING_RELEASE.md",
+      "SPDXID": "SPDXRef-File-533337e7e438e114edb3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "179a8f8409645f562cf021a8c136badad86ad3cfbab9e13c3ada53bee37d4091"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/PRACTICAL_PRODUCT_LESSONS.md",
+      "SPDXID": "SPDXRef-File-5f67e2b54c7ca67f0806",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f229e79d9acd12134ba8945f55f83236a329f6e7abfa377cd211ddc2e0e4bc28"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/RELEASE_PROVENANCE.md",
+      "SPDXID": "SPDXRef-File-1ebf482347a4492389d5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f80ff52830d46d212f4e5b4dcd630ef23619c7b68fce7121de968a627b0b3df3"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SELF_IMPROVEMENT.md",
+      "SPDXID": "SPDXRef-File-bf06443c0ab8458d4cd3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eec505208e2679378786f9b66db6b52b7acfd2df71a0b6692607bc8fa5ab604b"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SKILLS_ARCHITECTURE.md",
+      "SPDXID": "SPDXRef-File-d31e7b959fa217a1a264",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31061bae904280d707a1afd2c61245d7ee1687df13d883ad063278d7d92446ed"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SKILL_QUARANTINE.md",
+      "SPDXID": "SPDXRef-File-fd01e379ee57b42f6be1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4361e3e2d2602b26c89c00a82b3579c8d60071d10c93d626d2f23dd3e61f3479"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SKILL_RUNTIME_ACCEPTANCE.md",
+      "SPDXID": "SPDXRef-File-f13210edca013ae33bcf",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "71b4c54f6cf3f25d3c1563e7f3af3aa402570a12edffa794d5c6743bd01c25c4"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SKILL_SECURITY_GATE.md",
+      "SPDXID": "SPDXRef-File-8c1670c6e1b58948fa7f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1f1593aa98ce870e76595b43374ac2d7f710594e3bd90a44fd10207f03d29af2"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/SOURCE_VS_INSTALLED_BOUNDARY.md",
+      "SPDXID": "SPDXRef-File-826e2c3ee4d5edb5585e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e041c76591bed03551332845b4e5813487f05baadce8ad6a510f2dcc5d2e5a99"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/TRUSTED_REPO_MAPPING.md",
+      "SPDXID": "SPDXRef-File-98c4379125a93ca8636b",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f7928a2127ffaa4e13ff19f19b2d555b24bacc4e598acef2b3c663b2e610d23"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/harness/VERIFIED_PROGRESS.md",
+      "SPDXID": "SPDXRef-File-99ee5550274f3015ba61",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ebdbddfd829e4fa8a726c878283cd5ef7190f9dbe48e486664b20e839917aa88"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/integrations/EXTERNAL_CAPABILITIES.md",
+      "SPDXID": "SPDXRef-File-fc250d1ccf81acf4538e",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2d9c9c75838bfc9936602031cebcad984d874031fd6ea401bab87e20acd3ad7a"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/SOURCES.md",
+      "SPDXID": "SPDXRef-File-4014b99767e9b325009a",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "078db440196d9d842f5525df642c6b33496878072a83c6c54a10fc69627afa47"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_3_SOURCES.md",
+      "SPDXID": "SPDXRef-File-ec73d7c1d8857525aef8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6972e8397aa00a9d21e4030b2b738801c92563650e6af1ff753f61cfe180f673"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_4_1_SOURCES.md",
+      "SPDXID": "SPDXRef-File-2ebef0f58b3dbe9554d3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59052c06f12da7544a0590c6e62c1af447a3a29e98ba1c778ff89b3f6cd616e7"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_4_2_SOURCES.md",
+      "SPDXID": "SPDXRef-File-f9d937d053d2844de84f",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2b82efc66cfcb01669f6ed4f7cb1be5c004e0ec8b44d85c336ae0948bfb6b6b0"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_4_3_SOURCES.md",
+      "SPDXID": "SPDXRef-File-96d6274121507b081f80",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f6583b818656210008407f174bb1eb6ace08cd67756bdcc662aa4dc928ea94b1"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_4_4_SOURCES.md",
+      "SPDXID": "SPDXRef-File-f0c73a1f7556a6354a5d",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8eb1dfa035bb38243950434a69a2b7374e344d22bf7428f9edf31b94264701e4"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_5_10_SOURCES.md",
+      "SPDXID": "SPDXRef-File-f131b78a4d99d6202f31",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ee8786c9299ac05fafaa8c7063f3dfb99cf2e35618dcfb06818bd8606a434365"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_5_3_SOURCES.md",
+      "SPDXID": "SPDXRef-File-27fde83c8e16498897b4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "20ef08efa08f94ecd0e0850dbb6375a56947d757850598f9a3c9c3cb648f441d"
+        }
+      ]
+    },
+    {
+      "fileName": "./docs/research/V5_5_4_SOURCES.md",
+      "SPDXID": "SPDXRef-File-e6e402ec0216aded4161",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1cfab47032ca46346397e0a4bca3edbf14d976f022c1e1c17bf3f965af74cee3"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/ai-router/router-policy.example.json",
+      "SPDXID": "SPDXRef-File-e887ff9e789285ba6532",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5b05a90cb4cccea85948c9e3ee5d6fbda03aa29d473cd697de429e816e4fcbff"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/ai-router/typescript-blueprint.md",
+      "SPDXID": "SPDXRef-File-0996226f0c23357509af",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f9f2c77e228030a7e483f901e866286e5681bc5b79d37948b4c63c9a98e656d"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/browser-flow/state-recovery-fixture.html",
+      "SPDXID": "SPDXRef-File-e4a05c01edce3d6c0962",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d58a9217a9154f3367b8c94a0aefea8e265de7b8871291d3846824dfbed06f1b"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/browser-flow/state-recovery.example.json",
+      "SPDXID": "SPDXRef-File-78e2eda1ceee287e91f2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "438c0086954b10ebb211239d9b94a5f60ae919f47309d2337ec750724dbd8493"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/prompt_brief_task.example.json",
+      "SPDXID": "SPDXRef-File-13012588c40f771ebab6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "29bb3a7ebc6376fa7f1f567b4b45556b08c6e43280e297837bcc6e8c35ec6d88"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/task-feature.example.json",
+      "SPDXID": "SPDXRef-File-80345a7cebd424312021",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "32b85c2171f725700b38de892cff9a0fb9174f116606ba5a1d4d043dde330431"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/task-release.example.json",
+      "SPDXID": "SPDXRef-File-3f57b11725a9adb90638",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7bfca047fc6a3178c851e285d76858df6fbd621091457b0a5906c09352c78652"
+        }
+      ]
+    },
+    {
+      "fileName": "./templates/ux-tokens.example.json",
+      "SPDXID": "SPDXRef-File-ecf0da0187ef1f460e5c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1c03e09a7e013e285fa4d0241fb84670f3ffaf4c01d4061bfb692e79d1b0ee71"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a1bbb0be0583dc761337"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-10fb4d82943c291fd991"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d60d8cf4f5b0a91a8dbb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-913e1390242130ac4e75"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1c6cabed998ebebc0930"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-503c29894bd7c5abaaea"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d499faebf162a5db43d8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a78d1a5f1ac11a616eb4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e2b9206de2fc58596c53"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d13e3cd508480d75c280"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-20931974def4dcca9f90"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e47d5c03e0632247c35c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-23c4cedf679c10180b02"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ced7d39b04843dc025e3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8213dab84f1987b15ec6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-be3793f82b873af3f84c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ab063fd8e4d21b631081"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7d5f9de0947a4e9a8a50"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-07c19d548d198dd0103c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a49b6b81c57586c77c32"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ce5a326c8f2a614274a8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2845b6ac46e0523dcac8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-23a504a51b686e68472f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-dfa054d3c450e627c382"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5da9786d7b89935e642a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-fa8604ab5b77de2a4b70"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8915c79f78a6d8aeebf9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8952d899d0d93f2ac7f3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e96922c840efdb16b07b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2c40ac9f95eea1ec55a1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-fe0b1953a6bde233db0a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c728c489b2416740d84d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-015ab8f075b02c4a76d8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5ee6140a928772049fb5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f4edb7e37ded258bdfcc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-31e8ed2e7b194116777d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b0c8c8dde66896a85142"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6f4a679866777300fbfe"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-782315cb06d4d038025e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2b9242e6084ee481f39c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1ecd4785facd8031c585"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-be0ba643056f788c349b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-df28d41b73bb8f9181eb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f75a00a77bfeee67c235"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-bd43dd10e14c76cb825a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a97803d4e66282d36bf0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0f70ad2c8341424da559"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-38b383a32d639ed7fe8d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-72e456a63140fb200103"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-22b3b7d1bd6822ca8305"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8c879512ce61be770fc2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e30d314f116cbdb4cf87"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-94074f4cd89e0245fc02"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4a18a83261add8e4bdac"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-cbeeb3ebfe3c6082a122"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-572b21891a7c35a6780c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-27f22d3b41a27962484b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e991ee848afe21c972e3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-791d0c80d2bd9252fe0f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-eb2a792ac4b2e82ab490"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5d9dbf65032766b48735"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5cdffee8c3d1d6401dbf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-139e0295fad5dab38950"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-938dbfc6116585e043db"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2ac67b13e3bfb024730d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-32749ab23d7435e11d54"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1699ccab42f3b28ca406"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d330098ff5708bec8ada"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b08e5a22c11e588d015e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0b1c71b98f1c3aed34f5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b032cd3fa7a87ce62210"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2e0c0a2cfbc0792abd6d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-060a5fe37ce6c8c5470a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d69c5411fefc2f081a18"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9be3affb84eb01e6aae0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-785c1cf5c8ff87ad3beb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d3b3efd39cf224f8cd03"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-14867462306736f9acd8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2974f3f56cbe063bdf39"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e4d7ba1ae5c0ebfc2314"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a17797cdc1f9305c4a23"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ccc089abc202e860fe07"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6571b22e8acfb8bccd1e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e03bc2d7a98d0fbdbbc1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0688884f0e2fe055ce72"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-97128877f0a2c4115781"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7dd5c577dac68e617d8b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-cd785f695aac37818020"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-66c598fac949c030fc8f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a55c326dac6eb0f53154"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-52d1f8a6ba763cc0259e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-020632841e029c1df857"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ec8e2618d08e1203fcab"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-00f34d18ff763d94e142"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7cb749884ae28a165e08"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e064c65dbd135f595ca4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0d13eadb6c76a78521e6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f25e2d6f662551f940b9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c18ba4bea854bf5bfdf6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-687da1b3e0555ee3fa22"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3846fd9e2ea6b8edbab1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b8b7f56ca72a38657914"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b84cc63dd928e8a5b233"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a7eefdbec61dc7737f73"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-71d19c35d5953eac7598"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9ca281c2d3afcb0380f4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d66d9f0487668bd81e4c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-dfbc81b752565ea3d4fa"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-55560f284d5529ea4f5c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-15bd04289c33860cc606"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ca98cef209a6b466dc67"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4385fafb0d73c77df607"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2a81f3e01032197f77d4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a62bcb47cf2b8fb95e5d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a257b802c00a61ff8dc7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-089a4cc4f202eae3cf74"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c7c673b0e8f60dfbec65"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e71a1d17a9a5b77b8032"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-455e0f743b9a729c42dd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-401eec26ff27fffe3c5f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-eecec63d6608a5a1bc67"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7deea20122aa1666546d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-135f91c9fce4cf230b25"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5897a0143c705f00bad2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1c89c0b6a18f94ec4801"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-378414b3c6ba02cbaaed"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e90e50ff895009d20f99"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-69200b97addb8f9c390f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a79d7100c922904ee014"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-02203bbe61e11c05c7a9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8f522c0c0f5f2fa1286e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-31ee0b978a161412574d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-18a31f808af2a2ccff11"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-965231d729a1f5491bb9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-394b273ce8211fa889d6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-87e8ab9e2354ce0e6a7d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1bbae7b45f290b5a8950"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-eebde78390a99d424ced"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3a0909af6df410423f62"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-63745cde84190a85c3a3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b825002f57b2cab31023"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-855c44316b35f72579db"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-46423ee4b0434e683840"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4b99b3747c23c96be51c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-892d461900fadfcce9f8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-cfc33e0fc694d7f8208f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-114dcfef58ec3f39f4a4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e10ec2132848c3536b66"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0c30a44b68d6b9918b11"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c717e7c051b7c5071381"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-64ef5d2a0f747c595528"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-285c178b1b6d9d5e51dd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7e52e1f6ca72f6d13b87"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-41fd14a23374adf93a01"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b45eed605351a09e69da"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4b75386b845d1031fa70"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e2b4dd1b05edd5f42840"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6fa96ea0d0fc8ddbfb04"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-80cb216e2b0f9d24be3a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-018129b7a975e03be002"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a54ff182c7e8acf56acf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-dfad03e025a6327163de"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-06572a96a58dc510037d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6ebdb617a8104a7756d0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-399080f41ccf73c6004e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-050c844ba9d2e184172a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b335630551682c19a781"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ebe090cc3ec88e9e50a2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7b60b8e351cbb80c4745"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-58378e7e757f4170071a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e92cfcc16f44ba5c0f02"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7f816d9b5107edb520b3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-283a73156ab0b11fe37f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4105abd5f824d7a644f0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-84f1ecf9cc99e7528606"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ba097fd73f9b3ed291d0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-36debdd400d2a83ba449"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9527ef71db991bd9a720"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c7109f997472fbb69d4a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-07693fa1306580c2493b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-61d6b80b6fe6391d6508"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-dbd86cf6d19a62345d1c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a6d1362b01cfd241cc1e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a5e47f81f8fb3d5234c0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a4b3b6e9a0db825bbb59"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-c67ddb6139fa3078e938"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1deae0588d1b0c8e4bc7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-81e95cff30e4b3fac0bf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ec1e15a655a4f1b29266"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-11b4d73144000afd857b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3f5aa15e7225742fec9a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-20b9ede2584b9836e509"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-583a43deaf58baebb352"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-de90985560d47afeb993"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1ab2acb6267cb9aeb6fc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-95105d9d988897b52592"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-260896d4ba0a1648d19e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f4f3add880771e21bf5b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ce55c8de2d3fd26b7867"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f46cbba5dd0a7d49a203"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ba8be9d205ac599c69fb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-31a95976fda9ac7567b2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a325fabc2320c4bf6dd9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-855eb80cc7923c3a6022"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1ec8c62b5cd552e9de6f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1ced038b231970f30272"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-081336e81219c77fa9a5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9b2c42b0e341fb054bd5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e7f5b2762e65e5563466"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-bcb5cff3764da634dc4a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-9d8643700592f48c3d97"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-778ab9cc5a4774ae3fe8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5a17ae1b40605cfbc9b2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-77251f7269da29cd85a3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ec2558f51af656820704"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-314bee1adc5a1b60b6f5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-97b9219da2cbcc99aa09"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d1b48c29d8c24188646d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-cf4288c3556d7922cf85"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-873fa94956aee8484bf2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5eef763848518e180b6d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-be97658b8df253bb41c2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3f4f351ecd97fb8e1bcb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7e611e4b5176ce6f59ea"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-932542dda7bb1b8d4e64"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-b7159479c41f1f250d6e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3f66ee0e8dd90f9079a0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-6683d43ecaf3af3867a2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-db400902d55fac13ff11"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-a5555a75f6639beb13a9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-7a3e4980f83a7894e5c8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ebdd680da959f8b035c0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-15d4680a814736603ebc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-533337e7e438e114edb3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-5f67e2b54c7ca67f0806"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-1ebf482347a4492389d5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-bf06443c0ab8458d4cd3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-d31e7b959fa217a1a264"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-fd01e379ee57b42f6be1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f13210edca013ae33bcf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-8c1670c6e1b58948fa7f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-826e2c3ee4d5edb5585e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-98c4379125a93ca8636b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-99ee5550274f3015ba61"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-fc250d1ccf81acf4538e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-4014b99767e9b325009a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ec73d7c1d8857525aef8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-2ebef0f58b3dbe9554d3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f9d937d053d2844de84f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-96d6274121507b081f80"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f0c73a1f7556a6354a5d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-f131b78a4d99d6202f31"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-27fde83c8e16498897b4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e6e402ec0216aded4161"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e887ff9e789285ba6532"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-0996226f0c23357509af"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-e4a05c01edce3d6c0962"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-78e2eda1ceee287e91f2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-13012588c40f771ebab6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-80345a7cebd424312021"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-3f57b11725a9adb90638"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-ecf0da0187ef1f460e5c"
+    }
+  ]
+}

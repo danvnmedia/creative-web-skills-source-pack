@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.6",
+  "canonical_baseline": "5.3.0",
+  "implementation_parent": "5.5.5",
+  "input_artifacts": [
+    {
+      "name": "Codex_Product_Harness_v5.3.zip",
+      "sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df",
+      "role": "canonical-contract-and-skill-byte-baseline"
+    },
+    {
+      "name": "Codex_Product_Harness_v5.5.5.zip",
+      "sha256": "b96580c4c3fe6ff2baff2753e955b360c17b43e71a282e0256de2bd2d6d67462",
+      "role": "implementation-parent"
+    }
+  ],
+  "not_inherited": [
+    "separate older noncanonical skill-first 5.6.0 branch"
+  ],
+  "traits": {
+    "harness_modification": true,
+    "security": true,
+    "skill_modification": false,
+    "user_facing_web": false,
+    "production_release": false
+  },
+  "no_external_code_vendored": true,
+  "canonical_skills_byte_preserved": 13,
+  "adopted_mechanisms": [
+    "fail-closed-analysis-completeness",
+    "auto-discovered-deterministic-regressions",
+    "full-catalog-skill-routing-contract",
+    "pinned-host-surface-drift-contract",
+    "opaque-executable-coverage-truth",
+    "python-reflective-sink-resolution",
+    "source-installed-regression-routing",
+    "copy-safe-temp-preflight",
+    "git-nul-stdout-diagnostics-separation",
+    "crlf-bom-frontmatter-structure",
+    "os-specific-runner-provenance",
+    "task-bound-prompt-brief-compiler",
+    "brief-context-contract-digest",
+    "non-authoritative-content-addressed-handoff"
+  ],
+  "prior_lineage": {
+    "path": ".ai/lineage/v5.5.5.json",
+    "sha256": "e4e9e16760fe6d1df4990df450c4dd96188f19227d42d228578cdcf994d81d28"
+  }
+}

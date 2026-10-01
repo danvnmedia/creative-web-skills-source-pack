@@ -4,38 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Kern One, an original interactive modular camera product story.">
-  <title>Kern One — A Camera You Can Read</title>
+  <title>Kern One &mdash; A Camera You Can Read</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=3">
+  <link rel="stylesheet" href="./style.css?v=4">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="./">KERN®</a>
+    <a class="brand" href="./">KERN&reg;</a>
     <p>Tools for deliberate seeing</p>
-    <a class="back" href="../">All field tests ↗</a>
+    <a class="back" href="../">All field tests &nearr;</a>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="./assets/camera.webp" alt="Kern One concept camera with a tactile black body, pale top plate, and optical lens" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="kicker">KERN / ONE &nbsp; &bull; &nbsp; A MODULAR IMAGE SYSTEM</p>
+        <h1 id="hero-title">Feel every<br><em>frame.</em></h1>
+        <p class="lede">An instrument that puts the decision back in your hands. Explore the body, separate its parts, and see how every detail earns its place.</p>
+        <a class="hero-link" href="#instrument">Explore the instrument <span aria-hidden="true">&darr;</span></a>
+      </div>
+      <span class="hero-edition" aria-hidden="true">FIELD STUDY 03 / 2026</span>
+    </section>
+
+    <section class="instrument" id="instrument" aria-labelledby="instrument-title">
+      <div class="instrument-heading"><p class="section-index">01 / Interactive instrument</p><h2 id="instrument-title">Take a closer<br><em>look.</em></h2><p>Drag to turn the camera. Separate its parts to understand the optical path.</p></div>
       <div class="scene" id="product-scene">
         <canvas aria-label="Interactive 3D model of the Kern One camera"></canvas>
-        <div class="product-poster" aria-hidden="true"><span></span><i></i><b></b></div>
+        <div class="product-poster" aria-hidden="true"></div>
         <div class="scene-grid" aria-hidden="true"></div>
+        <div class="viewfinder" aria-hidden="true"><i></i><span>1/250 &middot; f/5.6 &middot; ISO 200</span><b>MF / READY</b></div>
       </div>
-      <div class="viewfinder" aria-hidden="true"><i></i><span>1/250 · f/5.6 · ISO 200</span><b>MF / READY</b></div>
       <div class="shutter-flash" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <p class="kicker">120 / 35 modular image system</p>
-        <h1 id="hero-title">A camera<br>you can <em>read.</em></h1>
-        <p class="lede">No hidden modes. No decorative complexity. Kern One turns every photographic decision into a visible, tactile action.</p>
-      </div>
       <div class="scene-controls">
-        <button id="reset-view" type="button" title="Reset camera view" aria-label="Reset 3D camera view">↺</button>
+        <button id="reset-view" type="button" title="Reset camera view" aria-label="Reset 3D camera view">&#8634;</button>
         <button id="toggle-explode" type="button" aria-pressed="false">Exploded view</button>
-        <button id="capture" type="button" title="Trigger shutter" aria-label="Trigger camera shutter">◉</button>
+        <button id="capture" type="button" title="Trigger shutter" aria-label="Trigger camera shutter">&#9673;</button>
       </div>
       <p class="scene-status" aria-live="polite"><span></span><span id="scene-status">Loading 3D object</span></p>
       <p class="drag-note">Drag to inspect / scroll to disassemble</p>
@@ -74,7 +82,7 @@
     </section>
   </main>
 
-  <footer><h2>KERN® ONE</h2><p>Concept instrument / Original field test</p><a href="#hero-title">Top ↑</a></footer>
-  <script type="module" src="./app.js?v=5"></script>
+  <footer><h2>KERN&reg; ONE</h2><p>Concept instrument / Original field test</p><a href="#hero-title">Top &uarr;</a><small class="motion-note">Motion study / On-demand Three.js rendering, damped spring assembly and controls, shutter feedback, and progressive view-timeline anatomy. Reduced motion switches states immediately.</small></footer>
+  <script type="module" src="./app.js?v=8"></script>
 </body>
 </html>

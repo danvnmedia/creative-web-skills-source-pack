@@ -1,5 +1,6 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const root = process.cwd();
 const source = path.join(root, 'showcase-sites');
@@ -55,6 +56,14 @@ const skills = [
     capabilities: ['Core Web Vitals and critical-path review', 'Animation and scroll lifecycle checks', 'WebGL resource and render-loop analysis', 'Mobile, input, and reduced-motion evidence'],
     prompts: ['$motion-performance-auditor audit this site before launch and rank findings by user impact.', '$motion-performance-auditor inspect this Three.js route for frame-time and cleanup risks.'],
   },
+  {
+    slug: 'accessible-interaction-systems',
+    title: 'Accessible Interaction Systems',
+    eyebrow: 'Components / semantics / state',
+    description: 'Create distinctive reusable controls whose keyboard, touch, focus, and reduced-motion behavior remain coherent.',
+    capabilities: ['Semantic states and input parity', 'Visual tokens and component contracts', 'Motion with direct state fallback', 'Keyboard, touch, contrast, and mobile checks'],
+    prompts: ['$accessible-interaction-systems build an accessible gallery filter with a quiet view transition.', '$accessible-interaction-systems audit this component set for focus and touch parity.'],
+  },
 ];
 
 function escapeHtml(value) {
@@ -106,6 +115,13 @@ function renderSkill(skill, description) {
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(source, output, { recursive: true });
+const candidate = process.env.GITHUB_SHA || execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
+if (!/^[0-9a-f]{40}$/i.test(candidate)) throw new Error('A full Git revision is required for the Pages build');
+const hubPath = path.join(output, 'index.html');
+const hub = await readFile(hubPath, 'utf8');
+if (!hub.includes('name="build-revision" content="local-source"')) throw new Error('Hub revision marker is missing');
+await writeFile(hubPath, hub.replace('name="build-revision" content="local-source"', `name="build-revision" content="${candidate}"`), 'utf8');
+await writeFile(path.join(output, 'revision.json'), JSON.stringify({ revision: candidate }, null, 2) + '\n', 'utf8');
 await writeFile(path.join(output, '.nojekyll'), '', 'utf8');
 
 for (const skill of skills) {

@@ -1,0 +1,16 @@
+[
+  { "prompt": "Design an entire editorial product launch with scenes, budgets, and mobile variants", "expected": "creative-web-studio" },
+  { "prompt": "Write a concept and architecture for a multi-page immersive brand site", "expected": "creative-web-studio" },
+  { "prompt": "Fix scroll-linked type reveals and clean up their animation timelines", "expected": "motion-choreographer" },
+  { "prompt": "Add a purposeful spring transition between two page states", "expected": "motion-choreographer" },
+  { "prompt": "Build a WebGL product viewer with drag and an exploded camera view", "expected": "immersive-3d-web" },
+  { "prompt": "Reduce draw calls and dispose materials in a Three.js scene", "expected": "immersive-3d-web" },
+  { "prompt": "Create a GLSL refraction field behind semantic article content", "expected": "shader-web-art" },
+  { "prompt": "Debug a WebGL image displacement shader and its uniforms", "expected": "shader-web-art" },
+  { "prompt": "Study this website screenshot and recreate its design principles for our own brand", "expected": "creative-site-rebuilder" },
+  { "prompt": "Analyze this reference URL's interaction grammar without copying its assets", "expected": "creative-site-rebuilder" },
+  { "prompt": "Audit a motion-heavy page for frame pacing, keyboard access, and mobile overflow", "expected": "motion-performance-auditor" },
+  { "prompt": "Review a Three.js route for GPU leaks and reduced-motion failures", "expected": "motion-performance-auditor" },
+  { "prompt": "Design a reusable tab control with keyboard focus, selected state, and touch targets", "expected": "accessible-interaction-systems" },
+  { "prompt": "Refactor a dialog component's focus return, contrast, and state feedback", "expected": "accessible-interaction-systems" }
+]

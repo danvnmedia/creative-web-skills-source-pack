@@ -1,0 +1,204 @@
+{
+  "version": 12,
+  "completion_policy": {
+    "fresh_workspace_evidence_required": true,
+    "plans_are_not_evidence": true,
+    "generated_tests_must_be_executed": true,
+    "missing_evidence_is_failure": true,
+    "critical_user_flow_must_be_executed": true,
+    "mock_only_ai_verification_is_insufficient": true,
+    "unexpected_verification_mutation_is_failure": true,
+    "closure_manifest_required_after_candidate_verification": true,
+    "repeated_identical_failure_requires_hypothesis_change": true,
+    "learned_rules_require_provenance_and_human_promotion": true,
+    "inferred_commands_are_not_execution_truth": true,
+    "verified_progress_only_crosses_context_boundaries": true,
+    "skill_presence_is_not_skill_runtime_acceptance": true,
+    "skill_self_report_is_not_activation_evidence": true,
+    "borrowed_logged_in_browser_requires_lease": true,
+    "content_pinned_waivers_required": true,
+    "deterministic_retry_control_required": true,
+    "mcp_surface_changes_require_review": true,
+    "generic_project_files_are_never_blindly_owned_by_harness": true,
+    "install_apply_requires_fresh_plan_digest": true,
+    "source_release_and_installed_runtime_validation_are_separate": true,
+    "untrusted_skill_requires_security_gate": true,
+    "observed_output_never_becomes_verified_progress": true,
+    "compaction_resume_requires_checkpoint_reverification": true,
+    "canonical_task_identity_required": true,
+    "atomic_event_store_required": true,
+    "product_task_lifecycle_digests_separate": true,
+    "source_installed_command_routing_required": true,
+    "windows_acl_requires_native_adapter": true,
+    "leased_temp_cleanup_required": true,
+    "runtime_candidate_digest_separate": true,
+    "declarative_check_catalog_required": true,
+    "browser_host_capability_requires_receipt": true,
+    "incomplete_security_analysis_is_failure": true,
+    "deterministic_regressions_are_auto_discovered_for_release": true,
+    "skill_catalog_confusion_is_distinct_from_presence_or_self_report": true,
+    "unclassified_observed_host_capability_is_surface_drift": true,
+    "brief_is_not_permission_or_verified_progress": true
+  },
+  "trait_required_checks": {
+    "user_facing_web": [
+      "build",
+      "runtime-browser",
+      "critical-flow"
+    ],
+    "ai_integration": [
+      "ai-failure-matrix",
+      "ai-contract"
+    ],
+    "security_sensitive": [
+      "security-negative"
+    ],
+    "performance_sensitive": [
+      "performance"
+    ],
+    "production_release": [
+      "production-smoke",
+      "production-critical-flow"
+    ],
+    "external_runtime_dependencies": [
+      "external-probe"
+    ],
+    "stateful_user_workflow": [
+      "state-recovery"
+    ],
+    "large_binary_data": [
+      "capacity-degradation"
+    ],
+    "truthful_claims": [
+      "claim-contract"
+    ],
+    "harness_modification": [
+      "harness-security",
+      "surface-drift",
+      "package-contract",
+      "harness-self-test",
+      "skill-eval-contract",
+      "quarantine-contract",
+      "release-witness-contract",
+      "waiver-contract",
+      "control-decision-contract",
+      "mcp-surface-contract",
+      "install-collision-contract",
+      "source-installed-boundary",
+      "skill-security-contract",
+      "compaction-truth-contract",
+      "evidence-architecture-contract",
+      "cross-platform-reliability-contract",
+      "command-plane-contract",
+      "operational-lifecycle-contract",
+      "runtime-candidate-contract",
+      "check-catalog-contract",
+      "browser-capability-contract",
+      "skill-trigger-truth-contract",
+      "skill-eval-transaction-contract",
+      "plugin-containment-contract",
+      "operator-event-contract",
+      "mcp-client-abuse-contract",
+      "security-analysis-completeness-contract",
+      "deterministic-e2e-complete",
+      "skill-catalog-confusion-contract",
+      "host-surface-contract",
+      "regression-environment-contract",
+      "git-machine-output-contract",
+      "newline-structure-contract",
+      "prompt-brief-contract",
+      "upgrade-feedback-contract"
+    ],
+    "skill_modification": [
+      "skill-eval-live",
+      "skill-security-contract"
+    ],
+    "borrowed_browser_session": [
+      "browser-lease"
+    ],
+    "mcp_runtime": [
+      "mcp-surface-pin"
+    ]
+  },
+  "browser": {
+    "viewports": [
+      "390x844",
+      "1440x900"
+    ],
+    "fail_on_console_error": true,
+    "fail_on_page_error": true,
+    "fail_on_request_failed": true,
+    "fail_on_http_status_gte": 400,
+    "critical_http_allowlist_requires_reason": true,
+    "fresh_output_directory_required": true,
+    "durable_state_signal_required": true,
+    "fixed_sleep_is_not_state_evidence": true,
+    "screenshot_visual_review_required": true,
+    "mobile_overflow_and_overlap_checks_required": true
+  },
+  "release": {
+    "clean_source_worktree_before_candidate": true,
+    "exact_candidate_revision_required": true,
+    "closure_manifest_required": true,
+    "production_critical_flow_required": true,
+    "post_closure_exact_revision_probe_is_ephemeral": true,
+    "deploy_success_is_not_production_acceptance": true
+  },
+  "workspace_hygiene": {
+    "generated_residue_forbidden": [
+      "__pycache__",
+      "*.pyc",
+      "*.tmp",
+      "*.bak",
+      "*.orig",
+      ".DS_Store",
+      "Thumbs.db",
+      "desktop.ini"
+    ],
+    "untracked_env_files_fail": true,
+    "stale_browser_artifacts_fail": true
+  },
+  "external_dependencies": {
+    "probe_critical_runtime_urls": true,
+    "critical_dependency_requires_fallback_or_explicit_reliability_decision": true
+  },
+  "harness": {
+    "canonical_surface_policy": ".ai/SURFACE_OWNERSHIP.json",
+    "learning_policy": ".ai/LEARNING_POLICY.json",
+    "runtime_budget": ".ai/RUNTIME_BUDGET.json",
+    "ownership_manifest": ".ai/HARNESS_MANIFEST.json",
+    "auto_mutate_skills_from_learning": false,
+    "execution_policy": ".ai/EXECUTION_POLICY.json",
+    "skill_eval_policy": ".ai/SKILL_EVAL_POLICY.json",
+    "repo_map_runtime": ".ai/REPO_MAP.json",
+    "verified_checkpoint_root": ".ai/checkpoints",
+    "quarantine_policy": ".ai/QUARANTINE_POLICY.json",
+    "browser_lease_policy": ".ai/BROWSER_LEASE_POLICY.json",
+    "release_policy": ".ai/RELEASE_POLICY.json",
+    "waiver_policy": ".ai/WAIVER_POLICY.json",
+    "control_policy": ".ai/CONTROL_POLICY.json",
+    "mcp_policy": ".ai/MCP_POLICY.json",
+    "install_policy": ".ai/INSTALL_POLICY.json",
+    "source_distribution_marker": ".ai/SOURCE_DISTRIBUTION.json",
+    "skill_security_policy": ".ai/SKILL_SECURITY_POLICY.json",
+    "compaction_policy": ".ai/COMPACTION_POLICY.json",
+    "task_schema": ".ai/schemas/task.schema.json",
+    "fingerprint_policy": ".ai/FINGERPRINT_POLICY.json",
+    "check_catalog": ".ai/CHECK_CATALOG.json",
+    "browser_capability_policy": ".ai/BROWSER_CAPABILITY_POLICY.json",
+    "harness_security_policy": ".ai/HARNESS_SECURITY_POLICY.json",
+    "deterministic_e2e_policy": ".ai/DETERMINISTIC_E2E_POLICY.json",
+    "skill_catalog_eval_policy": ".ai/SKILL_CATALOG_EVAL_POLICY.json",
+    "host_surface_policy": ".ai/HOST_SURFACE_POLICY.json",
+    "prompt_brief_policy": ".ai/PROMPT_BRIEF_POLICY.json"
+  },
+  "profile_required_checks": {
+    "native": [],
+    "portable": [
+      "verified-progress"
+    ],
+    "audited": [
+      "verified-progress"
+    ]
+  }
+}

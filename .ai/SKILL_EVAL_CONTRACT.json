@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "script": ".ai/scripts/skill_eval_transaction.py",
+  "design": "answer-design.json pins matrix, selected split/cases, canonical tree, runtime, repetitions, variants and deterministic grader criteria",
+  "commit": "artifact-commit.json is written last and binds the exact complete file inventory",
+  "comparison": "same design, case, repetition; exactly with_skill and without_skill; all design cells required",
+  "grades": "text-predicate-v1 reruns deterministic criteria against committed output; judges cannot override deterministic failure",
+  "leakage_boundary": "design/labels/graders stay evaluator-private, never placed in runner workspace",
+  "ablation": "materialized file-removal ablation plus canonical-parent/tree hashes; no prompt-simulated ablation",
+  "capture": "process/provider/trace channels must be complete; fixture is never live evidence",
+  "remote_submission": "not implemented; no automatic retries or uncertain resubmission",
+  "hashes_prove_authorship": false,
+  "quality_thresholds_source": ".ai/SKILL_EVAL_POLICY.json",
+  "new_external_runtime_dependency": false
+}

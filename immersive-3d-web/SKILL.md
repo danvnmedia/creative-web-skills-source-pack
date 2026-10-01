@@ -1,6 +1,6 @@
 ---
 name: immersive-3d-web
-description: Architect, implement, optimize, or debug 3D web experiences using Three.js, React Three Fiber, Drei, glTF/GLB, Spline, Theatre.js, Rapier, post-processing, or optional WebGPU. Use for interactive 3D heroes, product configurators, spatial portfolios, scroll-driven camera scenes, model viewers, product explode/assemble sequences, 3D storytelling, scene optimization, or React/Next.js code where a real 3D scene is central. Do not use for purely DOM motion or shader-only image effects.
+description: Build or debug a real 3D web scene when viewpoint, depth, material, or object manipulation carries the idea. Covers Three.js and React Three Fiber architecture, assets, controls, and performance; use motion-choreographer for DOM-only motion and shader-web-art for GPU image effects without a 3D scene.
 ---
 
 # Immersive 3D Web

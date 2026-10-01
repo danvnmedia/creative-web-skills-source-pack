@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "export_spec": "Agent Plugins 1.0 skills-only",
+  "canonical_source": ".agents/skills",
+  "validator": ".ai/scripts/validate_agent_plugin.py",
+  "draft_reference": "Agent Plugins 1.1.0 working draft",
+  "host_1_1_conformance_claim": false,
+  "host_install_permission_sandbox_parity": false,
+  "containment": "reject every symlink, junction and reparse point before reading/copying; stricter than contained-link allowance",
+  "manifest": "closed authoring allowlist; unknown fields fail export (NOT the generic draft host-loader ignore rule)",
+  "extensions": "namespace validated, but no extensions emitted in skills-only export",
+  "discovery": "immediate child SKILL.md only; report invalid skills separately; release requires all 13 valid",
+  "lock": "exact inventory equality including added/deleted files, version identity and scope",
+  "output": "fresh destination only; never silently replace an existing export"
+}

@@ -1,0 +1,2213 @@
+{
+  "schema_version": 3,
+  "owner": "codex-product-harness",
+  "harness_version": "5.5.10",
+  "canonical_baseline": "5.3.0",
+  "source_plan_digest": "c3a9447cc96f35ffb1149ef45ec42d4397088cf1f398194cc0e8f2b76c19aeb5",
+  "records": {
+    ".ai/harness/CHANGELOG.md": {
+      "mode": "whole_file",
+      "source_path": "CHANGELOG.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "2499414cb272711729a4e6e54816541001b626bc3d5bcb2c8c86a453d61ffaef",
+      "created_by_harness": true,
+      "source_sha256": "2499414cb272711729a4e6e54816541001b626bc3d5bcb2c8c86a453d61ffaef"
+    },
+    ".ai/harness/INSTALL_HARNESS.py": {
+      "mode": "whole_file",
+      "source_path": "INSTALL_HARNESS.py",
+      "install_mode": "relocated",
+      "last_managed_sha256": "7f46ae8dd3126554c59969d5c3fd8f721563d250f452a07f9a8d9e5eefd5ab92",
+      "created_by_harness": true,
+      "source_sha256": "7f46ae8dd3126554c59969d5c3fd8f721563d250f452a07f9a8d9e5eefd5ab92"
+    },
+    ".ai/harness/README.md": {
+      "mode": "whole_file",
+      "source_path": "README.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "80024e4549b67c37597fd744d2d4da2b5763b442644b53d888e49e01b37376da",
+      "created_by_harness": true,
+      "source_sha256": "80024e4549b67c37597fd744d2d4da2b5763b442644b53d888e49e01b37376da"
+    },
+    ".ai/harness/SBOM.spdx.json": {
+      "mode": "whole_file",
+      "source_path": "SBOM.spdx.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "d9b4ef4d245ddec2b264a006ac4264803b585764a13a133f7f11c304dea28c93",
+      "created_by_harness": true,
+      "source_sha256": "d9b4ef4d245ddec2b264a006ac4264803b585764a13a133f7f11c304dea28c93"
+    },
+    ".ai/harness/START_HERE_PROMPT.md": {
+      "mode": "whole_file",
+      "source_path": "START_HERE_PROMPT.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "8d7aa242c578a8bf44b7a42150da4a109fe82aa83e51bf680d42e287adf92af8",
+      "created_by_harness": true,
+      "source_sha256": "8d7aa242c578a8bf44b7a42150da4a109fe82aa83e51bf680d42e287adf92af8"
+    },
+    ".ai/harness/VERSION": {
+      "mode": "whole_file",
+      "source_path": "VERSION",
+      "install_mode": "relocated",
+      "last_managed_sha256": "aa2ccc54f675c79b057453aad0ad4da08e1cf7b6a795f5405d1850a81b42d0d9",
+      "created_by_harness": true,
+      "source_sha256": "aa2ccc54f675c79b057453aad0ad4da08e1cf7b6a795f5405d1850a81b42d0d9"
+    },
+    ".ai/harness/docs/AI_INTEGRATION_TESTING.md": {
+      "mode": "whole_file",
+      "source_path": "docs/AI_INTEGRATION_TESTING.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "4291657d1c095d9885f44d156f30c39ae097be92dbc4974c950f9a9644ac43c0",
+      "created_by_harness": true,
+      "source_sha256": "4291657d1c095d9885f44d156f30c39ae097be92dbc4974c950f9a9644ac43c0"
+    },
+    ".ai/harness/docs/AI_PROVIDER_ROUTING.md": {
+      "mode": "whole_file",
+      "source_path": "docs/AI_PROVIDER_ROUTING.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "afc8af78da233f56ca5ca4e7d98189f4250889bfb2e0a090504c2f983cf890fa",
+      "created_by_harness": true,
+      "source_sha256": "afc8af78da233f56ca5ca4e7d98189f4250889bfb2e0a090504c2f983cf890fa"
+    },
+    ".ai/harness/docs/GEMINI_FREE_FIRST.md": {
+      "mode": "whole_file",
+      "source_path": "docs/GEMINI_FREE_FIRST.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "28c1440449d6a1d1aa3b173a031b5dda511a0e9138e57067700904f52a88aded",
+      "created_by_harness": true,
+      "source_sha256": "28c1440449d6a1d1aa3b173a031b5dda511a0e9138e57067700904f52a88aded"
+    },
+    ".ai/harness/docs/HARNESS_FEEDBACK_V5_5_7.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HARNESS_FEEDBACK_V5_5_7.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "0f794a0701bcfce49407153477fdf8adec0a2a16a2c4cbb3738563b30cbb8324",
+      "created_by_harness": true,
+      "source_sha256": "0f794a0701bcfce49407153477fdf8adec0a2a16a2c4cbb3738563b30cbb8324"
+    },
+    ".ai/harness/docs/HUONG_DAN_PROMPT_V5_5_6_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_PROMPT_V5_5_6_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "7d42670d5c6763bbeb22def05df2fb8e304f89b18c2bc8ab7377cb6dcb0f4eb5",
+      "created_by_harness": true,
+      "source_sha256": "7d42670d5c6763bbeb22def05df2fb8e304f89b18c2bc8ab7377cb6dcb0f4eb5"
+    },
+    ".ai/harness/docs/HUONG_DAN_V5_5_10_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_V5_5_10_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "26944d1856dae409efe6a4d4e708b1734bf6a6e92137d24325698937f655cd29",
+      "created_by_harness": true,
+      "source_sha256": "26944d1856dae409efe6a4d4e708b1734bf6a6e92137d24325698937f655cd29"
+    },
+    ".ai/harness/docs/HUONG_DAN_V5_5_5_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_V5_5_5_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "09fb79ab57400bb084c1decdba97d2795f09218807c391cdf4affd94e79b524f",
+      "created_by_harness": true,
+      "source_sha256": "09fb79ab57400bb084c1decdba97d2795f09218807c391cdf4affd94e79b524f"
+    },
+    ".ai/harness/docs/HUONG_DAN_V5_5_7_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_V5_5_7_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "3f7c8a6e63c58d5b3c46547e80066c892d6866238806ac83ab725834d0d89317",
+      "created_by_harness": true,
+      "source_sha256": "3f7c8a6e63c58d5b3c46547e80066c892d6866238806ac83ab725834d0d89317"
+    },
+    ".ai/harness/docs/HUONG_DAN_V5_5_8_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_V5_5_8_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "45da9df587917e9e9d8695de32e89a435959087571bd9cd81fdda8dede4aa9c8",
+      "created_by_harness": true,
+      "source_sha256": "45da9df587917e9e9d8695de32e89a435959087571bd9cd81fdda8dede4aa9c8"
+    },
+    ".ai/harness/docs/HUONG_DAN_V5_5_9_VI.md": {
+      "mode": "whole_file",
+      "source_path": "docs/HUONG_DAN_V5_5_9_VI.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "e8e11fbaab4598d31a3354cfe5bea40d783baac900a32cd27f3808c9f6fa0349",
+      "created_by_harness": true,
+      "source_sha256": "e8e11fbaab4598d31a3354cfe5bea40d783baac900a32cd27f3808c9f6fa0349"
+    },
+    ".ai/harness/docs/MIGRATION_FROM_ORIGINAL.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_FROM_ORIGINAL.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "cdfc6aeb9c0e679629586858227e44f63683f81a0ca657d05d692cc1ba885577",
+      "created_by_harness": true,
+      "source_sha256": "cdfc6aeb9c0e679629586858227e44f63683f81a0ca657d05d692cc1ba885577"
+    },
+    ".ai/harness/docs/MIGRATION_V3_TO_V4.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V3_TO_V4.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1ccea491f80e5490cdece13712a06d5176e94cf7bd531151f73d0cace77fe2a3",
+      "created_by_harness": true,
+      "source_sha256": "1ccea491f80e5490cdece13712a06d5176e94cf7bd531151f73d0cace77fe2a3"
+    },
+    ".ai/harness/docs/MIGRATION_V4_TO_V5.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V4_TO_V5.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "afe8d7aee603983b684cd772a54ae1d6c78153a608364923f849c44f21b6bbce",
+      "created_by_harness": true,
+      "source_sha256": "afe8d7aee603983b684cd772a54ae1d6c78153a608364923f849c44f21b6bbce"
+    },
+    ".ai/harness/docs/MIGRATION_V5_0_TO_V5_1.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_0_TO_V5_1.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "92c05b8f43c03fab16e5e6d372a8a416afff7d705737435442be12d9a8a8da3b",
+      "created_by_harness": true,
+      "source_sha256": "92c05b8f43c03fab16e5e6d372a8a416afff7d705737435442be12d9a8a8da3b"
+    },
+    ".ai/harness/docs/MIGRATION_V5_1_TO_V5_2.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_1_TO_V5_2.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "93e39ddf4104f4ebf762c162bfef6826657e441c6b523373d89897eb23bb62e5",
+      "created_by_harness": true,
+      "source_sha256": "93e39ddf4104f4ebf762c162bfef6826657e441c6b523373d89897eb23bb62e5"
+    },
+    ".ai/harness/docs/MIGRATION_V5_2_0_TO_V5_2_1.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_2_0_TO_V5_2_1.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "181d7e3f44d13028019ca88161c0ac7f8b94365468e9360f789bf7797c524e8e",
+      "created_by_harness": true,
+      "source_sha256": "181d7e3f44d13028019ca88161c0ac7f8b94365468e9360f789bf7797c524e8e"
+    },
+    ".ai/harness/docs/MIGRATION_V5_2_1_TO_V5_3.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_2_1_TO_V5_3.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "03d7a94c289ada585530ae8f7b9e6f800ad1e6e3d59f354c438b48761b2d7b22",
+      "created_by_harness": true,
+      "source_sha256": "03d7a94c289ada585530ae8f7b9e6f800ad1e6e3d59f354c438b48761b2d7b22"
+    },
+    ".ai/harness/docs/MIGRATION_V5_3_TO_V5_4_1.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_3_TO_V5_4_1.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "6ac998833bd8348c457794278b8a8d5f9aeb288605b187fcf8c65db0d36c54e9",
+      "created_by_harness": true,
+      "source_sha256": "6ac998833bd8348c457794278b8a8d5f9aeb288605b187fcf8c65db0d36c54e9"
+    },
+    ".ai/harness/docs/MIGRATION_V5_4_1_TO_V5_4_2.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_4_1_TO_V5_4_2.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "e7f0ecf8a3d1b8bc0f8afec6c83c2da78e7f28c23433f1c62b48b1338c9cf168",
+      "created_by_harness": true,
+      "source_sha256": "e7f0ecf8a3d1b8bc0f8afec6c83c2da78e7f28c23433f1c62b48b1338c9cf168"
+    },
+    ".ai/harness/docs/MIGRATION_V5_4_2_TO_V5_4_3.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_4_2_TO_V5_4_3.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "7da858813f6649d02bbdb46680d90347ef1a0eeca8aa603e69f557b338160a88",
+      "created_by_harness": true,
+      "source_sha256": "7da858813f6649d02bbdb46680d90347ef1a0eeca8aa603e69f557b338160a88"
+    },
+    ".ai/harness/docs/MIGRATION_V5_4_3_TO_V5_4_4.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_4_3_TO_V5_4_4.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "33f2bad0f38f7628a52fe9df49efecdf70f49110bdc817ec84b287406867fd2b",
+      "created_by_harness": true,
+      "source_sha256": "33f2bad0f38f7628a52fe9df49efecdf70f49110bdc817ec84b287406867fd2b"
+    },
+    ".ai/harness/docs/MIGRATION_V5_4_4_TO_V5_4_5.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_4_4_TO_V5_4_5.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "f494ab8543fc4feeeef9aa16a8a8b6c2bcb130ec0ae7221781cb8dfa1351805c",
+      "created_by_harness": true,
+      "source_sha256": "f494ab8543fc4feeeef9aa16a8a8b6c2bcb130ec0ae7221781cb8dfa1351805c"
+    },
+    ".ai/harness/docs/MIGRATION_V5_4_5_TO_V5_5_0.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_4_5_TO_V5_5_0.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "19e7a6db412ae31b175c5614458d248f29b51aad779a2a2d7c34718fe7f6a2ec",
+      "created_by_harness": true,
+      "source_sha256": "19e7a6db412ae31b175c5614458d248f29b51aad779a2a2d7c34718fe7f6a2ec"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_0_TO_V5_5_1.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_0_TO_V5_5_1.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "0a652faf507314bcecf9a5919ffb32164a53aaf41e3dc1921aff9bdcb19805a1",
+      "created_by_harness": true,
+      "source_sha256": "0a652faf507314bcecf9a5919ffb32164a53aaf41e3dc1921aff9bdcb19805a1"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_1_TO_V5_5_2.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_1_TO_V5_5_2.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1f0d4bc5a77acb15a55b5143c83c878dacaff64e2343c10de4174237602b808a",
+      "created_by_harness": true,
+      "source_sha256": "1f0d4bc5a77acb15a55b5143c83c878dacaff64e2343c10de4174237602b808a"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_2_TO_V5_5_3.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_2_TO_V5_5_3.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "9d9df19814c1e99bdb83bd128ebef5a5c92ced1442c665205e302eba749910bc",
+      "created_by_harness": true,
+      "source_sha256": "9d9df19814c1e99bdb83bd128ebef5a5c92ced1442c665205e302eba749910bc"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_3_TO_V5_5_4.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_3_TO_V5_5_4.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "85b5d32227eb396d3420743c7d91c1edcd31b19a2ee19a2e2527a0ec151ce57e",
+      "created_by_harness": true,
+      "source_sha256": "85b5d32227eb396d3420743c7d91c1edcd31b19a2ee19a2e2527a0ec151ce57e"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_4_TO_V5_5_5.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_4_TO_V5_5_5.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "07aa249053fd0f4e380e986c5bd7b18a24f890b6356e83c48f3b209ac25f43ce",
+      "created_by_harness": true,
+      "source_sha256": "07aa249053fd0f4e380e986c5bd7b18a24f890b6356e83c48f3b209ac25f43ce"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_5_TO_V5_5_6.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_5_TO_V5_5_6.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "c9a0b25dd3d0d0fad37502ff604f7a7add123029def79aef11908e5665f39479",
+      "created_by_harness": true,
+      "source_sha256": "c9a0b25dd3d0d0fad37502ff604f7a7add123029def79aef11908e5665f39479"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_6_TO_V5_5_7.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_6_TO_V5_5_7.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "6f3d2f38d49069e20874eac3190d81c07a67feab05d5fc28b2bf13028f9b551f",
+      "created_by_harness": true,
+      "source_sha256": "6f3d2f38d49069e20874eac3190d81c07a67feab05d5fc28b2bf13028f9b551f"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_8_TO_V5_5_9.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_8_TO_V5_5_9.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "f19e8b905b2cde583f325ecc352151db58224d76e4d6befd292ce775a2069ff0",
+      "created_by_harness": true,
+      "source_sha256": "f19e8b905b2cde583f325ecc352151db58224d76e4d6befd292ce775a2069ff0"
+    },
+    ".ai/harness/docs/MIGRATION_V5_5_9_TO_V5_5_10.md": {
+      "mode": "whole_file",
+      "source_path": "docs/MIGRATION_V5_5_9_TO_V5_5_10.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "a5c6699d51e7f5d04bc3b54cce74c3537d7fbca49f91aa94a0d1c5f3cca8fa4c",
+      "created_by_harness": true,
+      "source_sha256": "a5c6699d51e7f5d04bc3b54cce74c3537d7fbca49f91aa94a0d1c5f3cca8fa4c"
+    },
+    ".ai/harness/docs/PERFORMANCE_RELIABILITY.md": {
+      "mode": "whole_file",
+      "source_path": "docs/PERFORMANCE_RELIABILITY.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "74fd8038b5f66203e76044e405104b3a53f2723d3446d5a2bbaa1048353c3636",
+      "created_by_harness": true,
+      "source_sha256": "74fd8038b5f66203e76044e405104b3a53f2723d3446d5a2bbaa1048353c3636"
+    },
+    ".ai/harness/docs/PRODUCT_AUDIT_TEMPLATE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/PRODUCT_AUDIT_TEMPLATE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "a35da0c28ac4b78acc353e9e23798e48afb98c2827f74411a2332903eadef0b3",
+      "created_by_harness": true,
+      "source_sha256": "a35da0c28ac4b78acc353e9e23798e48afb98c2827f74411a2332903eadef0b3"
+    },
+    ".ai/harness/docs/PRODUCT_PLAYBOOK.md": {
+      "mode": "whole_file",
+      "source_path": "docs/PRODUCT_PLAYBOOK.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "06f1821af09965e646d038e6a89e7873db7caa16ca6ca9584c2d287341ddbb30",
+      "created_by_harness": true,
+      "source_sha256": "06f1821af09965e646d038e6a89e7873db7caa16ca6ca9584c2d287341ddbb30"
+    },
+    ".ai/harness/docs/PROMPT_BRIEF_V5_5_6.md": {
+      "mode": "whole_file",
+      "source_path": "docs/PROMPT_BRIEF_V5_5_6.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "b1a10fff84511229abd93524f32c0306fc3905c6587584667dc0739da65e003e",
+      "created_by_harness": true,
+      "source_sha256": "b1a10fff84511229abd93524f32c0306fc3905c6587584667dc0739da65e003e"
+    },
+    ".ai/harness/docs/PROMPT_MASTER_RESEARCH_V5_5_6.md": {
+      "mode": "whole_file",
+      "source_path": "docs/PROMPT_MASTER_RESEARCH_V5_5_6.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "94f0976729d8c4d048229c3f00aa4142277f8d45eed935f5adf60d705c1a8b3f",
+      "created_by_harness": true,
+      "source_sha256": "94f0976729d8c4d048229c3f00aa4142277f8d45eed935f5adf60d705c1a8b3f"
+    },
+    ".ai/harness/docs/QUALITY_CONTRACT.md": {
+      "mode": "whole_file",
+      "source_path": "docs/QUALITY_CONTRACT.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "58072bf28e10fec24aa9f0e5e58d71559da009aec44990b234acab90ee386e8a",
+      "created_by_harness": true,
+      "source_sha256": "58072bf28e10fec24aa9f0e5e58d71559da009aec44990b234acab90ee386e8a"
+    },
+    ".ai/harness/docs/RECORDER_STATUS_V5_5_8.md": {
+      "mode": "whole_file",
+      "source_path": "docs/RECORDER_STATUS_V5_5_8.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "6267456deb16ccc486adc2eda8b011d87ea28f87ab651b0a77cb9864c4046235",
+      "created_by_harness": true,
+      "source_sha256": "6267456deb16ccc486adc2eda8b011d87ea28f87ab651b0a77cb9864c4046235"
+    },
+    ".ai/harness/docs/RELEASE_RUNBOOK.md": {
+      "mode": "whole_file",
+      "source_path": "docs/RELEASE_RUNBOOK.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "4c45b26c4e86c1c48e150f399c0cede38a7d35ab8bdc264143290bb3b6f69ae7",
+      "created_by_harness": true,
+      "source_sha256": "4c45b26c4e86c1c48e150f399c0cede38a7d35ab8bdc264143290bb3b6f69ae7"
+    },
+    ".ai/harness/docs/RESEARCH_2026_09_15.md": {
+      "mode": "whole_file",
+      "source_path": "docs/RESEARCH_2026_09_15.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "b9a4014acae264119dbc94eb81c27854e41568bd497a3f90f4a82fee2edc81e2",
+      "created_by_harness": true,
+      "source_sha256": "b9a4014acae264119dbc94eb81c27854e41568bd497a3f90f4a82fee2edc81e2"
+    },
+    ".ai/harness/docs/RUNTIME_VERIFICATION.md": {
+      "mode": "whole_file",
+      "source_path": "docs/RUNTIME_VERIFICATION.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "d8c881b448d32bfdfa301870b7722eace440b0e03c6c387b8866e6f4ed022d88",
+      "created_by_harness": true,
+      "source_sha256": "d8c881b448d32bfdfa301870b7722eace440b0e03c6c387b8866e6f4ed022d88"
+    },
+    ".ai/harness/docs/SECURITY_BASELINE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/SECURITY_BASELINE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "add7a72e5f920797da29b4d94d1f8e09e6106505c24cfde4757fd3e26060f3a4",
+      "created_by_harness": true,
+      "source_sha256": "add7a72e5f920797da29b4d94d1f8e09e6106505c24cfde4757fd3e26060f3a4"
+    },
+    ".ai/harness/docs/SECURITY_COVERAGE_V5_5_4.md": {
+      "mode": "whole_file",
+      "source_path": "docs/SECURITY_COVERAGE_V5_5_4.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "b445a4453cf4047b0f15f9d78ff0f0cfe9df282092436e76c7ddcb81dcdfba34",
+      "created_by_harness": true,
+      "source_sha256": "b445a4453cf4047b0f15f9d78ff0f0cfe9df282092436e76c7ddcb81dcdfba34"
+    },
+    ".ai/harness/docs/TRUTH_COMPLETENESS_V5_5_3.md": {
+      "mode": "whole_file",
+      "source_path": "docs/TRUTH_COMPLETENESS_V5_5_3.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "43ba5be561d67cb4c6bfd3a2a05c322898b36f5b70d771347c1a695c8247b222",
+      "created_by_harness": true,
+      "source_sha256": "43ba5be561d67cb4c6bfd3a2a05c322898b36f5b70d771347c1a695c8247b222"
+    },
+    ".ai/harness/docs/TRUTH_HARDENING_V5_5_2.md": {
+      "mode": "whole_file",
+      "source_path": "docs/TRUTH_HARDENING_V5_5_2.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "7cdcf7321a5c2f171b10c25641819c085ba0ccd117858d9848d7fe4907509e0a",
+      "created_by_harness": true,
+      "source_sha256": "7cdcf7321a5c2f171b10c25641819c085ba0ccd117858d9848d7fe4907509e0a"
+    },
+    ".ai/harness/docs/UX_UI_BASELINE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/UX_UI_BASELINE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "c6f9b2ef090672713c3619311cfe99e79d8b16af7b0327622fa92adc96f4904b",
+      "created_by_harness": true,
+      "source_sha256": "c6f9b2ef090672713c3619311cfe99e79d8b16af7b0327622fa92adc96f4904b"
+    },
+    ".ai/harness/docs/WINDOWS_EXECUTION_V5_5_5.md": {
+      "mode": "whole_file",
+      "source_path": "docs/WINDOWS_EXECUTION_V5_5_5.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "ea881518c2cc0ff4e666f90be08a1b1a92bda4d0fd6d6c6ecfa932540d166923",
+      "created_by_harness": true,
+      "source_sha256": "ea881518c2cc0ff4e666f90be08a1b1a92bda4d0fd6d6c6ecfa932540d166923"
+    },
+    ".ai/harness/docs/harness/ADAPTIVE_EXECUTION.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/ADAPTIVE_EXECUTION.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "11ac9b3f32affd2ba425741e2ebe2daedb9f1ea29486949ca6b7753af113c5f6",
+      "created_by_harness": true,
+      "source_sha256": "11ac9b3f32affd2ba425741e2ebe2daedb9f1ea29486949ca6b7753af113c5f6"
+    },
+    ".ai/harness/docs/harness/AGENT_PLUGIN_EXPORT.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/AGENT_PLUGIN_EXPORT.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "baf9e9985f9dff26f07aac0f0ef0fc0a6956e9bcb58833ae4e0c1eed1a731d17",
+      "created_by_harness": true,
+      "source_sha256": "baf9e9985f9dff26f07aac0f0ef0fc0a6956e9bcb58833ae4e0c1eed1a731d17"
+    },
+    ".ai/harness/docs/harness/BROWSER_LEASE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/BROWSER_LEASE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "53a421993cc362ea2be0a785d4e72222ca08629856d5047d6c8a04ad54afd0f9",
+      "created_by_harness": true,
+      "source_sha256": "53a421993cc362ea2be0a785d4e72222ca08629856d5047d6c8a04ad54afd0f9"
+    },
+    ".ai/harness/docs/harness/CANDIDATE_CLOSURE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/CANDIDATE_CLOSURE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "28984c70a4eb3fe4f1b60091ca5859a8726a8d7ecb70ad3c6eaaeedcc43722ab",
+      "created_by_harness": true,
+      "source_sha256": "28984c70a4eb3fe4f1b60091ca5859a8726a8d7ecb70ad3c6eaaeedcc43722ab"
+    },
+    ".ai/harness/docs/harness/COMPACTION_TRUTH_BARRIER.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/COMPACTION_TRUTH_BARRIER.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "dee80fcad08a5d777bae748bddcf0ffdc3b5c7d1bdbcda624fc296aa58939273",
+      "created_by_harness": true,
+      "source_sha256": "dee80fcad08a5d777bae748bddcf0ffdc3b5c7d1bdbcda624fc296aa58939273"
+    },
+    ".ai/harness/docs/harness/COMPLETION_GATE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/COMPLETION_GATE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "b402f2436dea30da4dc7534c08bdfc44397af8e8dcf9ee30711b8d19bee928f7",
+      "created_by_harness": true,
+      "source_sha256": "b402f2436dea30da4dc7534c08bdfc44397af8e8dcf9ee30711b8d19bee928f7"
+    },
+    ".ai/harness/docs/harness/CONTENT_PINNED_WAIVERS.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/CONTENT_PINNED_WAIVERS.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1bc1bf3f72d1e56d9227914266d8f2c454b4873d9a9e7749ebf9637369480d8c",
+      "created_by_harness": true,
+      "source_sha256": "1bc1bf3f72d1e56d9227914266d8f2c454b4873d9a9e7749ebf9637369480d8c"
+    },
+    ".ai/harness/docs/harness/CONTROL_DECISIONS.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/CONTROL_DECISIONS.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "0db3a46425a5724ffbce1e8568de90d603f9e9594f065fb287003e4aeaf07d0e",
+      "created_by_harness": true,
+      "source_sha256": "0db3a46425a5724ffbce1e8568de90d603f9e9594f065fb287003e4aeaf07d0e"
+    },
+    ".ai/harness/docs/harness/CROSS_HARNESS.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/CROSS_HARNESS.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "78e36535545ef25bb53bd6d9927a47c9c09e3a642dd592135605fff589f4a21c",
+      "created_by_harness": true,
+      "source_sha256": "78e36535545ef25bb53bd6d9927a47c9c09e3a642dd592135605fff589f4a21c"
+    },
+    ".ai/harness/docs/harness/CROSS_PLATFORM_RELIABILITY.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/CROSS_PLATFORM_RELIABILITY.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "bc6fc98fcea4e36c84ca85a7735657f406b9eca2cd470f5ec398b8ef6e606443",
+      "created_by_harness": true,
+      "source_sha256": "bc6fc98fcea4e36c84ca85a7735657f406b9eca2cd470f5ec398b8ef6e606443"
+    },
+    ".ai/harness/docs/harness/EVIDENCE_ARCHITECTURE_V5_5.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/EVIDENCE_ARCHITECTURE_V5_5.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "4f04ee556f4b1bff623240e35f11bfbf9eb595d546c17e217dc9167a51da2fca",
+      "created_by_harness": true,
+      "source_sha256": "4f04ee556f4b1bff623240e35f11bfbf9eb595d546c17e217dc9167a51da2fca"
+    },
+    ".ai/harness/docs/harness/EVIDENCE_MODEL.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/EVIDENCE_MODEL.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "aa535cf278213bf6b31c399e610aced3d3b0d5f6641598e94f3b79250c199454",
+      "created_by_harness": true,
+      "source_sha256": "aa535cf278213bf6b31c399e610aced3d3b0d5f6641598e94f3b79250c199454"
+    },
+    ".ai/harness/docs/harness/HARNESS_SECURITY.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/HARNESS_SECURITY.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "a67a0326036c09f3287eaba4a3a3d333fae04e5dc1d295ab4f67255fcb82a55a",
+      "created_by_harness": true,
+      "source_sha256": "a67a0326036c09f3287eaba4a3a3d333fae04e5dc1d295ab4f67255fcb82a55a"
+    },
+    ".ai/harness/docs/harness/INSTALL_OWNERSHIP.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/INSTALL_OWNERSHIP.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "e50592bb05d40e0e4fb7d24262614f43c30908af87ef963015f78abd56c9f36a",
+      "created_by_harness": true,
+      "source_sha256": "e50592bb05d40e0e4fb7d24262614f43c30908af87ef963015f78abd56c9f36a"
+    },
+    ".ai/harness/docs/harness/MCP_SURFACE_PINNING.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/MCP_SURFACE_PINNING.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "d516f2e2af7241f0212b059c4807adac366ece41ca4fd8827258d158a806d741",
+      "created_by_harness": true,
+      "source_sha256": "d516f2e2af7241f0212b059c4807adac366ece41ca4fd8827258d158a806d741"
+    },
+    ".ai/harness/docs/harness/OPERATOR_COMMAND_PLANE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/OPERATOR_COMMAND_PLANE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "e699475d3e4bb4941c37a6f773f4593b1d219a9bd0e7f0b356469965db683fbe",
+      "created_by_harness": true,
+      "source_sha256": "e699475d3e4bb4941c37a6f773f4593b1d219a9bd0e7f0b356469965db683fbe"
+    },
+    ".ai/harness/docs/harness/PACKAGING_RELEASE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/PACKAGING_RELEASE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "179a8f8409645f562cf021a8c136badad86ad3cfbab9e13c3ada53bee37d4091",
+      "created_by_harness": true,
+      "source_sha256": "179a8f8409645f562cf021a8c136badad86ad3cfbab9e13c3ada53bee37d4091"
+    },
+    ".ai/harness/docs/harness/PRACTICAL_PRODUCT_LESSONS.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/PRACTICAL_PRODUCT_LESSONS.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "f229e79d9acd12134ba8945f55f83236a329f6e7abfa377cd211ddc2e0e4bc28",
+      "created_by_harness": true,
+      "source_sha256": "f229e79d9acd12134ba8945f55f83236a329f6e7abfa377cd211ddc2e0e4bc28"
+    },
+    ".ai/harness/docs/harness/RELEASE_PROVENANCE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/RELEASE_PROVENANCE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "f80ff52830d46d212f4e5b4dcd630ef23619c7b68fce7121de968a627b0b3df3",
+      "created_by_harness": true,
+      "source_sha256": "f80ff52830d46d212f4e5b4dcd630ef23619c7b68fce7121de968a627b0b3df3"
+    },
+    ".ai/harness/docs/harness/SELF_IMPROVEMENT.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SELF_IMPROVEMENT.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "eec505208e2679378786f9b66db6b52b7acfd2df71a0b6692607bc8fa5ab604b",
+      "created_by_harness": true,
+      "source_sha256": "eec505208e2679378786f9b66db6b52b7acfd2df71a0b6692607bc8fa5ab604b"
+    },
+    ".ai/harness/docs/harness/SKILLS_ARCHITECTURE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SKILLS_ARCHITECTURE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "31061bae904280d707a1afd2c61245d7ee1687df13d883ad063278d7d92446ed",
+      "created_by_harness": true,
+      "source_sha256": "31061bae904280d707a1afd2c61245d7ee1687df13d883ad063278d7d92446ed"
+    },
+    ".ai/harness/docs/harness/SKILL_QUARANTINE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SKILL_QUARANTINE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "4361e3e2d2602b26c89c00a82b3579c8d60071d10c93d626d2f23dd3e61f3479",
+      "created_by_harness": true,
+      "source_sha256": "4361e3e2d2602b26c89c00a82b3579c8d60071d10c93d626d2f23dd3e61f3479"
+    },
+    ".ai/harness/docs/harness/SKILL_RUNTIME_ACCEPTANCE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SKILL_RUNTIME_ACCEPTANCE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "71b4c54f6cf3f25d3c1563e7f3af3aa402570a12edffa794d5c6743bd01c25c4",
+      "created_by_harness": true,
+      "source_sha256": "71b4c54f6cf3f25d3c1563e7f3af3aa402570a12edffa794d5c6743bd01c25c4"
+    },
+    ".ai/harness/docs/harness/SKILL_SECURITY_GATE.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SKILL_SECURITY_GATE.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1f1593aa98ce870e76595b43374ac2d7f710594e3bd90a44fd10207f03d29af2",
+      "created_by_harness": true,
+      "source_sha256": "1f1593aa98ce870e76595b43374ac2d7f710594e3bd90a44fd10207f03d29af2"
+    },
+    ".ai/harness/docs/harness/SOURCE_VS_INSTALLED_BOUNDARY.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/SOURCE_VS_INSTALLED_BOUNDARY.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "e041c76591bed03551332845b4e5813487f05baadce8ad6a510f2dcc5d2e5a99",
+      "created_by_harness": true,
+      "source_sha256": "e041c76591bed03551332845b4e5813487f05baadce8ad6a510f2dcc5d2e5a99"
+    },
+    ".ai/harness/docs/harness/TRUSTED_REPO_MAPPING.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/TRUSTED_REPO_MAPPING.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "5f7928a2127ffaa4e13ff19f19b2d555b24bacc4e598acef2b3c663b2e610d23",
+      "created_by_harness": true,
+      "source_sha256": "5f7928a2127ffaa4e13ff19f19b2d555b24bacc4e598acef2b3c663b2e610d23"
+    },
+    ".ai/harness/docs/harness/VERIFIED_PROGRESS.md": {
+      "mode": "whole_file",
+      "source_path": "docs/harness/VERIFIED_PROGRESS.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "ebdbddfd829e4fa8a726c878283cd5ef7190f9dbe48e486664b20e839917aa88",
+      "created_by_harness": true,
+      "source_sha256": "ebdbddfd829e4fa8a726c878283cd5ef7190f9dbe48e486664b20e839917aa88"
+    },
+    ".ai/harness/docs/integrations/EXTERNAL_CAPABILITIES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/integrations/EXTERNAL_CAPABILITIES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "2d9c9c75838bfc9936602031cebcad984d874031fd6ea401bab87e20acd3ad7a",
+      "created_by_harness": true,
+      "source_sha256": "2d9c9c75838bfc9936602031cebcad984d874031fd6ea401bab87e20acd3ad7a"
+    },
+    ".ai/harness/docs/research/SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "078db440196d9d842f5525df642c6b33496878072a83c6c54a10fc69627afa47",
+      "created_by_harness": true,
+      "source_sha256": "078db440196d9d842f5525df642c6b33496878072a83c6c54a10fc69627afa47"
+    },
+    ".ai/harness/docs/research/V5_3_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_3_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "6972e8397aa00a9d21e4030b2b738801c92563650e6af1ff753f61cfe180f673",
+      "created_by_harness": true,
+      "source_sha256": "6972e8397aa00a9d21e4030b2b738801c92563650e6af1ff753f61cfe180f673"
+    },
+    ".ai/harness/docs/research/V5_4_1_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_4_1_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "59052c06f12da7544a0590c6e62c1af447a3a29e98ba1c778ff89b3f6cd616e7",
+      "created_by_harness": true,
+      "source_sha256": "59052c06f12da7544a0590c6e62c1af447a3a29e98ba1c778ff89b3f6cd616e7"
+    },
+    ".ai/harness/docs/research/V5_4_2_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_4_2_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "2b82efc66cfcb01669f6ed4f7cb1be5c004e0ec8b44d85c336ae0948bfb6b6b0",
+      "created_by_harness": true,
+      "source_sha256": "2b82efc66cfcb01669f6ed4f7cb1be5c004e0ec8b44d85c336ae0948bfb6b6b0"
+    },
+    ".ai/harness/docs/research/V5_4_3_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_4_3_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "f6583b818656210008407f174bb1eb6ace08cd67756bdcc662aa4dc928ea94b1",
+      "created_by_harness": true,
+      "source_sha256": "f6583b818656210008407f174bb1eb6ace08cd67756bdcc662aa4dc928ea94b1"
+    },
+    ".ai/harness/docs/research/V5_4_4_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_4_4_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "8eb1dfa035bb38243950434a69a2b7374e344d22bf7428f9edf31b94264701e4",
+      "created_by_harness": true,
+      "source_sha256": "8eb1dfa035bb38243950434a69a2b7374e344d22bf7428f9edf31b94264701e4"
+    },
+    ".ai/harness/docs/research/V5_5_10_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_5_10_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "ee8786c9299ac05fafaa8c7063f3dfb99cf2e35618dcfb06818bd8606a434365",
+      "created_by_harness": true,
+      "source_sha256": "ee8786c9299ac05fafaa8c7063f3dfb99cf2e35618dcfb06818bd8606a434365"
+    },
+    ".ai/harness/docs/research/V5_5_3_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_5_3_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "20ef08efa08f94ecd0e0850dbb6375a56947d757850598f9a3c9c3cb648f441d",
+      "created_by_harness": true,
+      "source_sha256": "20ef08efa08f94ecd0e0850dbb6375a56947d757850598f9a3c9c3cb648f441d"
+    },
+    ".ai/harness/docs/research/V5_5_4_SOURCES.md": {
+      "mode": "whole_file",
+      "source_path": "docs/research/V5_5_4_SOURCES.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1cfab47032ca46346397e0a4bca3edbf14d976f022c1e1c17bf3f965af74cee3",
+      "created_by_harness": true,
+      "source_sha256": "1cfab47032ca46346397e0a4bca3edbf14d976f022c1e1c17bf3f965af74cee3"
+    },
+    ".ai/harness/templates/ai-router/router-policy.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/ai-router/router-policy.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "5b05a90cb4cccea85948c9e3ee5d6fbda03aa29d473cd697de429e816e4fcbff",
+      "created_by_harness": true,
+      "source_sha256": "5b05a90cb4cccea85948c9e3ee5d6fbda03aa29d473cd697de429e816e4fcbff"
+    },
+    ".ai/harness/templates/ai-router/typescript-blueprint.md": {
+      "mode": "whole_file",
+      "source_path": "templates/ai-router/typescript-blueprint.md",
+      "install_mode": "relocated",
+      "last_managed_sha256": "9f9f2c77e228030a7e483f901e866286e5681bc5b79d37948b4c63c9a98e656d",
+      "created_by_harness": true,
+      "source_sha256": "9f9f2c77e228030a7e483f901e866286e5681bc5b79d37948b4c63c9a98e656d"
+    },
+    ".ai/harness/templates/browser-flow/state-recovery-fixture.html": {
+      "mode": "whole_file",
+      "source_path": "templates/browser-flow/state-recovery-fixture.html",
+      "install_mode": "relocated",
+      "last_managed_sha256": "d58a9217a9154f3367b8c94a0aefea8e265de7b8871291d3846824dfbed06f1b",
+      "created_by_harness": true,
+      "source_sha256": "d58a9217a9154f3367b8c94a0aefea8e265de7b8871291d3846824dfbed06f1b"
+    },
+    ".ai/harness/templates/browser-flow/state-recovery.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/browser-flow/state-recovery.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "438c0086954b10ebb211239d9b94a5f60ae919f47309d2337ec750724dbd8493",
+      "created_by_harness": true,
+      "source_sha256": "438c0086954b10ebb211239d9b94a5f60ae919f47309d2337ec750724dbd8493"
+    },
+    ".ai/harness/templates/prompt_brief_task.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/prompt_brief_task.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "29bb3a7ebc6376fa7f1f567b4b45556b08c6e43280e297837bcc6e8c35ec6d88",
+      "created_by_harness": true,
+      "source_sha256": "29bb3a7ebc6376fa7f1f567b4b45556b08c6e43280e297837bcc6e8c35ec6d88"
+    },
+    ".ai/harness/templates/task-feature.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/task-feature.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "32b85c2171f725700b38de892cff9a0fb9174f116606ba5a1d4d043dde330431",
+      "created_by_harness": true,
+      "source_sha256": "32b85c2171f725700b38de892cff9a0fb9174f116606ba5a1d4d043dde330431"
+    },
+    ".ai/harness/templates/task-release.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/task-release.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "7bfca047fc6a3178c851e285d76858df6fbd621091457b0a5906c09352c78652",
+      "created_by_harness": true,
+      "source_sha256": "7bfca047fc6a3178c851e285d76858df6fbd621091457b0a5906c09352c78652"
+    },
+    ".ai/harness/templates/ux-tokens.example.json": {
+      "mode": "whole_file",
+      "source_path": "templates/ux-tokens.example.json",
+      "install_mode": "relocated",
+      "last_managed_sha256": "1c03e09a7e013e285fa4d0241fb84670f3ffaf4c01d4061bfb692e79d1b0ee71",
+      "created_by_harness": true,
+      "source_sha256": "1c03e09a7e013e285fa4d0241fb84670f3ffaf4c01d4061bfb692e79d1b0ee71"
+    },
+    ".ai/harness/surfaces/AGENTS.md": {
+      "mode": "whole_file",
+      "source_path": "AGENTS.md",
+      "install_mode": "surface_snapshot",
+      "last_managed_sha256": "ef58cc32682a88cc2979439f85fec9c5fd6f3d07c4d697b9f8122a21004bb55f",
+      "created_by_harness": true,
+      "source_sha256": "74db887b53f61adb3f3f75b07fc3b478e85d512e1b943b6baf3a1f9a35429852"
+    },
+    "AGENTS.md": {
+      "mode": "managed_block",
+      "source_path": "AGENTS.md",
+      "snapshot_path": ".ai/harness/surfaces/AGENTS.md",
+      "marker_id": "agents",
+      "last_managed_sha256": "949a8ff8a58ae234dcd470d4a8df5dda6082fcd2b57392586965651591f5583d",
+      "container_created_by_harness": true,
+      "container_after_sha256": "949a8ff8a58ae234dcd470d4a8df5dda6082fcd2b57392586965651591f5583d"
+    },
+    ".ai/harness/surfaces/CLAUDE.md": {
+      "mode": "whole_file",
+      "source_path": "CLAUDE.md",
+      "install_mode": "surface_snapshot",
+      "last_managed_sha256": "62533baf0880f0d553e7e13f9b9d01e3de2cb5a4e5b8b25fa44d1967c062ca15",
+      "created_by_harness": true,
+      "source_sha256": "6621f4a67c976d965246349bd4962f4278a2f1daf2f2271450542ee847f858bb"
+    },
+    "CLAUDE.md": {
+      "mode": "managed_block",
+      "source_path": "CLAUDE.md",
+      "snapshot_path": ".ai/harness/surfaces/CLAUDE.md",
+      "marker_id": "claude",
+      "last_managed_sha256": "81cfd02d3f88878ecc20579a933aef957a403c5a72ec4a8a9f83609869d3a87a",
+      "container_created_by_harness": true,
+      "container_after_sha256": "81cfd02d3f88878ecc20579a933aef957a403c5a72ec4a8a9f83609869d3a87a"
+    },
+    ".ai/harness/surfaces/GEMINI.md": {
+      "mode": "whole_file",
+      "source_path": "GEMINI.md",
+      "install_mode": "surface_snapshot",
+      "last_managed_sha256": "df7955c8e98b79322a0f0858f13533d5b1a944cb13c049320c21fefc3f158797",
+      "created_by_harness": true,
+      "source_sha256": "c881d09e55974be317a212f9023fb6889e03be1d42bea5c4f09d9d33df085bba"
+    },
+    "GEMINI.md": {
+      "mode": "managed_block",
+      "source_path": "GEMINI.md",
+      "snapshot_path": ".ai/harness/surfaces/GEMINI.md",
+      "marker_id": "gemini",
+      "last_managed_sha256": "cd687555a4fa7e18e64ac9c6493c0c9a05c7b19814fd281f29bced8ebb9c4713",
+      "container_created_by_harness": true,
+      "container_after_sha256": "cd687555a4fa7e18e64ac9c6493c0c9a05c7b19814fd281f29bced8ebb9c4713"
+    },
+    ".ai/harness/surfaces/ANTIGRAVITY.md": {
+      "mode": "whole_file",
+      "source_path": "ANTIGRAVITY.md",
+      "install_mode": "surface_snapshot",
+      "last_managed_sha256": "34eb55de357d0998398610a5fba917dcc3d896cb1022242b4578a585077bd6d3",
+      "created_by_harness": true,
+      "source_sha256": "c00bc8340d0e96e8584eb66b7c7906bc76e2c63ecced4fb1126ceb853a732150"
+    },
+    "ANTIGRAVITY.md": {
+      "mode": "managed_block",
+      "source_path": "ANTIGRAVITY.md",
+      "snapshot_path": ".ai/harness/surfaces/ANTIGRAVITY.md",
+      "marker_id": "antigravity",
+      "last_managed_sha256": "3660e797d7dbaac6206046738a2e0b60b5372ac7ef7e7d098ff374209ee0702a",
+      "container_created_by_harness": true,
+      "container_after_sha256": "3660e797d7dbaac6206046738a2e0b60b5372ac7ef7e7d098ff374209ee0702a"
+    },
+    "docs/AI_INTEGRATION_TESTING.md": {
+      "mode": "managed_block",
+      "source_path": "docs/AI_INTEGRATION_TESTING.md",
+      "snapshot_path": ".ai/harness/docs/AI_INTEGRATION_TESTING.md",
+      "marker_id": "doc-ai-integration-testing",
+      "last_managed_sha256": "14ac17a917815c6d449384a18fff8bb55e325e2d1d54afd6ef34877a86309734",
+      "container_created_by_harness": true,
+      "container_after_sha256": "14ac17a917815c6d449384a18fff8bb55e325e2d1d54afd6ef34877a86309734"
+    },
+    "docs/RUNTIME_VERIFICATION.md": {
+      "mode": "managed_block",
+      "source_path": "docs/RUNTIME_VERIFICATION.md",
+      "snapshot_path": ".ai/harness/docs/RUNTIME_VERIFICATION.md",
+      "marker_id": "doc-runtime-verification",
+      "last_managed_sha256": "03f73ceaa219ca0f461a59dac2594dee376c92c6f85e8d488394cda8d118a2f3",
+      "container_created_by_harness": true,
+      "container_after_sha256": "03f73ceaa219ca0f461a59dac2594dee376c92c6f85e8d488394cda8d118a2f3"
+    },
+    "docs/GEMINI_FREE_FIRST.md": {
+      "mode": "managed_block",
+      "source_path": "docs/GEMINI_FREE_FIRST.md",
+      "snapshot_path": ".ai/harness/docs/GEMINI_FREE_FIRST.md",
+      "marker_id": "doc-gemini-free-first",
+      "last_managed_sha256": "69c94439bd73c4c5cf8578acde35bd7ccf974b9634a80f92eb006dd553e568d9",
+      "container_created_by_harness": true,
+      "container_after_sha256": "69c94439bd73c4c5cf8578acde35bd7ccf974b9634a80f92eb006dd553e568d9"
+    },
+    ".ai/HARNESS_MANIFEST.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/HARNESS_MANIFEST.json",
+      "install_mode": "control_manifest",
+      "last_managed_sha256": "a4b5781e62a8599bb519f9033146ecc4b40051e507cb7cd18a15a4e7df509c97",
+      "created_by_harness": true,
+      "source_sha256": "a4b5781e62a8599bb519f9033146ecc4b40051e507cb7cd18a15a4e7df509c97"
+    },
+    ".agents/rules/00-product-harness.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/rules/00-product-harness.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "f0896ba50f44e49b47699c535f56cfcf88991f7f110ebec7bc4e8eb14f7d0e18",
+      "created_by_harness": true,
+      "source_sha256": "f0896ba50f44e49b47699c535f56cfcf88991f7f110ebec7bc4e8eb14f7d0e18"
+    },
+    ".agents/skills/ai-integration-verification/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/ai-integration-verification/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "69999906b19cbbc80a709df0ebb554e4a22af205d6d36c7e45cfc5dc080daeef",
+      "created_by_harness": true,
+      "source_sha256": "69999906b19cbbc80a709df0ebb554e4a22af205d6d36c7e45cfc5dc080daeef"
+    },
+    ".agents/skills/ai-provider-routing/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/ai-provider-routing/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "6e8dedf0ad67005267b10e96ae2581313d2c3ee9124affbfe539791193c91d64",
+      "created_by_harness": true,
+      "source_sha256": "6e8dedf0ad67005267b10e96ae2581313d2c3ee9124affbfe539791193c91d64"
+    },
+    ".agents/skills/code-simplification/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/code-simplification/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3b4c239cea55049df8fff7665d1f7a82c20e8bf889c59f78edbeff6823e96ba9",
+      "created_by_harness": true,
+      "source_sha256": "3b4c239cea55049df8fff7665d1f7a82c20e8bf889c59f78edbeff6823e96ba9"
+    },
+    ".agents/skills/codebase-recon/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/codebase-recon/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "962fd20f4a44f7fdab9cce7eb5dc5d66473f2215081a778585fed3f67b242983",
+      "created_by_harness": true,
+      "source_sha256": "962fd20f4a44f7fdab9cce7eb5dc5d66473f2215081a778585fed3f67b242983"
+    },
+    ".agents/skills/feature-build/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/feature-build/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "af2aa58ff4674d220a7a732ac9b54b6c9eb082c37f2481c424dbc52411fdef4a",
+      "created_by_harness": true,
+      "source_sha256": "af2aa58ff4674d220a7a732ac9b54b6c9eb082c37f2481c424dbc52411fdef4a"
+    },
+    ".agents/skills/harness-improvement/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/harness-improvement/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "4257f09a337cfa3d926290e43c75dc9674fa2f56ed5ae6fc66b0b7bc2b07dbb7",
+      "created_by_harness": true,
+      "source_sha256": "4257f09a337cfa3d926290e43c75dc9674fa2f56ed5ae6fc66b0b7bc2b07dbb7"
+    },
+    ".agents/skills/performance-reliability/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/performance-reliability/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c6ea22a72134e6f9d49b707e244bdd18a7251e6510f0839f356e6abb2610855c",
+      "created_by_harness": true,
+      "source_sha256": "c6ea22a72134e6f9d49b707e244bdd18a7251e6510f0839f356e6abb2610855c"
+    },
+    ".agents/skills/product-discovery/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/product-discovery/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ec47844b61e99c55bd2a6508226bf2cb50bfaab619be6eb8cfa014c6d6ef9e72",
+      "created_by_harness": true,
+      "source_sha256": "ec47844b61e99c55bd2a6508226bf2cb50bfaab619be6eb8cfa014c6d6ef9e72"
+    },
+    ".agents/skills/release-acceptance/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/release-acceptance/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "66efb43af58a92cbe3a9574f48f21cecd466a8e79ed634187070e1f4eeafaac4",
+      "created_by_harness": true,
+      "source_sha256": "66efb43af58a92cbe3a9574f48f21cecd466a8e79ed634187070e1f4eeafaac4"
+    },
+    ".agents/skills/runtime-verification/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/runtime-verification/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "153265b995d8709e920943b2fb8eba7bbb25ddcb61dad293e5921c1426183d7d",
+      "created_by_harness": true,
+      "source_sha256": "153265b995d8709e920943b2fb8eba7bbb25ddcb61dad293e5921c1426183d7d"
+    },
+    ".agents/skills/security-hardening/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/security-hardening/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5b344f34e5ef9bcc98119453c5361037aceeaf47352cea901cc80ef1596a0cc8",
+      "created_by_harness": true,
+      "source_sha256": "5b344f34e5ef9bcc98119453c5361037aceeaf47352cea901cc80ef1596a0cc8"
+    },
+    ".agents/skills/systematic-debugging/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/systematic-debugging/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "948d7b33ffede09e56f01924965ad54aedf70fd93bce60537e3eff11e41e65b7",
+      "created_by_harness": true,
+      "source_sha256": "948d7b33ffede09e56f01924965ad54aedf70fd93bce60537e3eff11e41e65b7"
+    },
+    ".agents/skills/ui-ux-design/SKILL.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/skills/ui-ux-design/SKILL.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "6b9c8fa5134573a20b46a73435c1cfb91e4574c2d042c873a593ed978eee8aba",
+      "created_by_harness": true,
+      "source_sha256": "6b9c8fa5134573a20b46a73435c1cfb91e4574c2d042c873a593ed978eee8aba"
+    },
+    ".agents/workflows/brief-task.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/workflows/brief-task.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7f256a2feccec4cf536b187ecd7526021d5f68c044ef9abb42fbfed90cfc5c37",
+      "created_by_harness": true,
+      "source_sha256": "7f256a2feccec4cf536b187ecd7526021d5f68c044ef9abb42fbfed90cfc5c37"
+    },
+    ".agents/workflows/ship.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/workflows/ship.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "44727351f1a624d56b79bed3d55502b8b34f8e3ce9affb2210cac9c9c66d5541",
+      "created_by_harness": true,
+      "source_sha256": "44727351f1a624d56b79bed3d55502b8b34f8e3ce9affb2210cac9c9c66d5541"
+    },
+    ".agents/workflows/start-task.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/workflows/start-task.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "cc4d390cd414a34c7c5b294b41f1995f892d1bc67305b7c1d4ff80cdeed93fca",
+      "created_by_harness": true,
+      "source_sha256": "cc4d390cd414a34c7c5b294b41f1995f892d1bc67305b7c1d4ff80cdeed93fca"
+    },
+    ".agents/workflows/verify-runtime.md": {
+      "mode": "whole_file",
+      "source_path": ".agents/workflows/verify-runtime.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "b4e5c4baaee326545eaee735e31e83d2b020c2474f504475cf184dfe69f8ce7b",
+      "created_by_harness": true,
+      "source_sha256": "b4e5c4baaee326545eaee735e31e83d2b020c2474f504475cf184dfe69f8ce7b"
+    },
+    ".ai/AGENT_PLUGIN_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/AGENT_PLUGIN_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "99af22b170aec856b53ca062cc62a97afcaa0ffe3cb15093cd0c660b463c0350",
+      "created_by_harness": true,
+      "source_sha256": "99af22b170aec856b53ca062cc62a97afcaa0ffe3cb15093cd0c660b463c0350"
+    },
+    ".ai/AI_PROVIDER_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/AI_PROVIDER_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ad078a753a847b6cd070ed81ae0fda83723d5befc94f23616fb9cdd4b65574de",
+      "created_by_harness": true,
+      "source_sha256": "ad078a753a847b6cd070ed81ae0fda83723d5befc94f23616fb9cdd4b65574de"
+    },
+    ".ai/BROWSER_CAPABILITY_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/BROWSER_CAPABILITY_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "6c9bfd519475e36d38911b190b5b7de7f72f7ce21024f5473dcaa4afb89dcd20",
+      "created_by_harness": true,
+      "source_sha256": "6c9bfd519475e36d38911b190b5b7de7f72f7ce21024f5473dcaa4afb89dcd20"
+    },
+    ".ai/BROWSER_LEASE_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/BROWSER_LEASE_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "0e5c5c55deb39f42e5d077583dabb10c85513fd00ff8edfb7fcecf3e0accea74",
+      "created_by_harness": true,
+      "source_sha256": "0e5c5c55deb39f42e5d077583dabb10c85513fd00ff8edfb7fcecf3e0accea74"
+    },
+    ".ai/CANONICAL_SKILL_HASHES.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/CANONICAL_SKILL_HASHES.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "f2c5f6acbdd217ae0e1983de05b1448182b78995cfad8951b08a61f73fb8d8e6",
+      "created_by_harness": true,
+      "source_sha256": "f2c5f6acbdd217ae0e1983de05b1448182b78995cfad8951b08a61f73fb8d8e6"
+    },
+    ".ai/CHECK_CATALOG.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/CHECK_CATALOG.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "1ae4ee1e69e39cf0b08bea5be575b56b91c33dc77cdcbd28af4f578f4a041010",
+      "created_by_harness": true,
+      "source_sha256": "1ae4ee1e69e39cf0b08bea5be575b56b91c33dc77cdcbd28af4f578f4a041010"
+    },
+    ".ai/COMMANDS.json": {
+      "mode": "mutable_seed",
+      "source_path": ".ai/COMMANDS.json",
+      "install_mode": "mutable_seed",
+      "last_seed_sha256": "c148ecfb1318645ca5c33dabe238ca73d12bacfa3cae4df950daf960e23731a0",
+      "source_sha256": "c148ecfb1318645ca5c33dabe238ca73d12bacfa3cae4df950daf960e23731a0",
+      "last_observed_sha256": "c148ecfb1318645ca5c33dabe238ca73d12bacfa3cae4df950daf960e23731a0",
+      "created_by_harness": true,
+      "runtime_modified": false
+    },
+    ".ai/COMMAND_COMPATIBILITY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/COMMAND_COMPATIBILITY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5496a261df63fa33a39707fb159e3be36e7592ac92fc22ad20b7cd4c4a5def4c",
+      "created_by_harness": true,
+      "source_sha256": "5496a261df63fa33a39707fb159e3be36e7592ac92fc22ad20b7cd4c4a5def4c"
+    },
+    ".ai/COMPACTION_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/COMPACTION_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5859044fdbde1c1a3a445f19a39cd23576e9cc515eb365c6704b28df80f5c68b",
+      "created_by_harness": true,
+      "source_sha256": "5859044fdbde1c1a3a445f19a39cd23576e9cc515eb365c6704b28df80f5c68b"
+    },
+    ".ai/CONTROL_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/CONTROL_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "51a8b77f203e441837b3fe15ea5f2000db4737dc8c0ca359a764f9b1ad697777",
+      "created_by_harness": true,
+      "source_sha256": "51a8b77f203e441837b3fe15ea5f2000db4737dc8c0ca359a764f9b1ad697777"
+    },
+    ".ai/DECISIONS.md": {
+      "mode": "mutable_seed",
+      "source_path": ".ai/DECISIONS.md",
+      "install_mode": "mutable_seed",
+      "last_seed_sha256": "58447d111b45d4c86de0fd314e9a2408f36f380a515640b15fe0a1c9ab5c6978",
+      "source_sha256": "58447d111b45d4c86de0fd314e9a2408f36f380a515640b15fe0a1c9ab5c6978",
+      "last_observed_sha256": "58447d111b45d4c86de0fd314e9a2408f36f380a515640b15fe0a1c9ab5c6978",
+      "created_by_harness": true,
+      "runtime_modified": false
+    },
+    ".ai/DETERMINISTIC_E2E_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/DETERMINISTIC_E2E_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5238891a4cda18536b823e1ca29a45ee38d3b3280c408bb01b050b3adc9c0e96",
+      "created_by_harness": true,
+      "source_sha256": "5238891a4cda18536b823e1ca29a45ee38d3b3280c408bb01b050b3adc9c0e96"
+    },
+    ".ai/EXECUTION_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/EXECUTION_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ef211f4bb2919598aa24418332360f4e04ef0613386961094471b00761a1788b",
+      "created_by_harness": true,
+      "source_sha256": "ef211f4bb2919598aa24418332360f4e04ef0613386961094471b00761a1788b"
+    },
+    ".ai/FINGERPRINT_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/FINGERPRINT_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "993bb3d22ff385d6baa692e5cf35439b39d2968268420495a164a25142a5c76b",
+      "created_by_harness": true,
+      "source_sha256": "993bb3d22ff385d6baa692e5cf35439b39d2968268420495a164a25142a5c76b"
+    },
+    ".ai/HANDOFF_TEMPLATE.md": {
+      "mode": "whole_file",
+      "source_path": ".ai/HANDOFF_TEMPLATE.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ce3a22f7a886c4f2534bd33dac4b9bf90cbf77dfb698266762f8c61f8c02f23f",
+      "created_by_harness": true,
+      "source_sha256": "ce3a22f7a886c4f2534bd33dac4b9bf90cbf77dfb698266762f8c61f8c02f23f"
+    },
+    ".ai/HARNESS_SECURITY_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/HARNESS_SECURITY_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "60761a556199adf01ac4f08d65e62b966d71ae5e69e4f218f6179af61a511347",
+      "created_by_harness": true,
+      "source_sha256": "60761a556199adf01ac4f08d65e62b966d71ae5e69e4f218f6179af61a511347"
+    },
+    ".ai/HOST_SURFACE_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/HOST_SURFACE_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "42d8f52cbb8cca7e8cb9a8324db5b6d3ddee44926c8be79c89cfb64463507f50",
+      "created_by_harness": true,
+      "source_sha256": "42d8f52cbb8cca7e8cb9a8324db5b6d3ddee44926c8be79c89cfb64463507f50"
+    },
+    ".ai/INSTALL_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/INSTALL_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "35947b5ea4305c832cfb7feeadb07e6ec4fcd641c20346da9226bebb3b365948",
+      "created_by_harness": true,
+      "source_sha256": "35947b5ea4305c832cfb7feeadb07e6ec4fcd641c20346da9226bebb3b365948"
+    },
+    ".ai/KNOWN_LEGACY_SURFACE_HASHES.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/KNOWN_LEGACY_SURFACE_HASHES.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "60643478b867be52f34866b8266dffadd2de8756c267056b82fb5f0113e34139",
+      "created_by_harness": true,
+      "source_sha256": "60643478b867be52f34866b8266dffadd2de8756c267056b82fb5f0113e34139"
+    },
+    ".ai/LEARNING_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/LEARNING_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c1e57af736f5a4015e11a1aa5a0e2168c5261ea710472b4896200cc27e3bdda2",
+      "created_by_harness": true,
+      "source_sha256": "c1e57af736f5a4015e11a1aa5a0e2168c5261ea710472b4896200cc27e3bdda2"
+    },
+    ".ai/MCP_ADVERSARIAL_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/MCP_ADVERSARIAL_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "6e1fe5a8cda9ccb24999ed63152f525ee0090fcd572f1fe46768433e84c94f58",
+      "created_by_harness": true,
+      "source_sha256": "6e1fe5a8cda9ccb24999ed63152f525ee0090fcd572f1fe46768433e84c94f58"
+    },
+    ".ai/MCP_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/MCP_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "31394d7d4004e2f51eb3561daf8ad8e1cc73f161af47b1ad26fa78af1f489aa2",
+      "created_by_harness": true,
+      "source_sha256": "31394d7d4004e2f51eb3561daf8ad8e1cc73f161af47b1ad26fa78af1f489aa2"
+    },
+    ".ai/OPERATOR_EVENT_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/OPERATOR_EVENT_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "9addb50d977a3d0368b2d72c65ffe37967d67232b2336795b802a01fe331692a",
+      "created_by_harness": true,
+      "source_sha256": "9addb50d977a3d0368b2d72c65ffe37967d67232b2336795b802a01fe331692a"
+    },
+    ".ai/PROJECT.md": {
+      "mode": "mutable_seed",
+      "source_path": ".ai/PROJECT.md",
+      "install_mode": "mutable_seed",
+      "last_seed_sha256": "c58f1d7445c14e038b1fc6653b92e0f418a6c14ffba59762503dda98fbfdd16f",
+      "source_sha256": "c58f1d7445c14e038b1fc6653b92e0f418a6c14ffba59762503dda98fbfdd16f",
+      "last_observed_sha256": "c58f1d7445c14e038b1fc6653b92e0f418a6c14ffba59762503dda98fbfdd16f",
+      "created_by_harness": true,
+      "runtime_modified": false
+    },
+    ".ai/PROMPT_BRIEF_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/PROMPT_BRIEF_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8883e24635126e916efde5c7c5556ec589427ad97bfe26b984d666d62ca3e959",
+      "created_by_harness": true,
+      "source_sha256": "8883e24635126e916efde5c7c5556ec589427ad97bfe26b984d666d62ca3e959"
+    },
+    ".ai/QUALITY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/QUALITY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5e4e243e2c92b9028cf09c956fe22d5b1426ad49063486f7a2159acd7acf6390",
+      "created_by_harness": true,
+      "source_sha256": "5e4e243e2c92b9028cf09c956fe22d5b1426ad49063486f7a2159acd7acf6390"
+    },
+    ".ai/QUARANTINE_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/QUARANTINE_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ca39b5f80b28080277559f9fe68783f9fae4c8596572b930d8ee9c8685083020",
+      "created_by_harness": true,
+      "source_sha256": "ca39b5f80b28080277559f9fe68783f9fae4c8596572b930d8ee9c8685083020"
+    },
+    ".ai/RELEASE_LINEAGE.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/RELEASE_LINEAGE.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8fcae50cadbdb75583ec66618e3be0cf968b9196d60287af9617dad2c9a88afc",
+      "created_by_harness": true,
+      "source_sha256": "8fcae50cadbdb75583ec66618e3be0cf968b9196d60287af9617dad2c9a88afc"
+    },
+    ".ai/RELEASE_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/RELEASE_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "1639e056fc2b697914140619d4a2dd1e1f8f1cfb2428533b2126be460c21e014",
+      "created_by_harness": true,
+      "source_sha256": "1639e056fc2b697914140619d4a2dd1e1f8f1cfb2428533b2126be460c21e014"
+    },
+    ".ai/RESUME.md": {
+      "mode": "mutable_seed",
+      "source_path": ".ai/RESUME.md",
+      "install_mode": "mutable_seed",
+      "last_seed_sha256": "175540cc641460c7bc2a17df3efae4d720f4218992d4c77793223769c1bd7aeb",
+      "source_sha256": "175540cc641460c7bc2a17df3efae4d720f4218992d4c77793223769c1bd7aeb",
+      "last_observed_sha256": "175540cc641460c7bc2a17df3efae4d720f4218992d4c77793223769c1bd7aeb",
+      "created_by_harness": true,
+      "runtime_modified": false
+    },
+    ".ai/RUNTIME_BUDGET.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/RUNTIME_BUDGET.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "06d04517010e81578fd969416d25fe368335b604d45380436c5532c8f4c9851d",
+      "created_by_harness": true,
+      "source_sha256": "06d04517010e81578fd969416d25fe368335b604d45380436c5532c8f4c9851d"
+    },
+    ".ai/SKILL_CATALOG_EVAL_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SKILL_CATALOG_EVAL_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "914a3e2f98577b8a2c176c5518ad6338edbb9025b4b2e1359e96493e3b559422",
+      "created_by_harness": true,
+      "source_sha256": "914a3e2f98577b8a2c176c5518ad6338edbb9025b4b2e1359e96493e3b559422"
+    },
+    ".ai/SKILL_EVAL_CONTRACT.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SKILL_EVAL_CONTRACT.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7228898eb0dc653768010526bf56cd570255c1577e21b5bcf2e8ac306b04c77e",
+      "created_by_harness": true,
+      "source_sha256": "7228898eb0dc653768010526bf56cd570255c1577e21b5bcf2e8ac306b04c77e"
+    },
+    ".ai/SKILL_EVAL_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SKILL_EVAL_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ae19508be20cdb3096af79fffe2c57aa58945b6bba5ed3c53f7030d6c8dcc441",
+      "created_by_harness": true,
+      "source_sha256": "ae19508be20cdb3096af79fffe2c57aa58945b6bba5ed3c53f7030d6c8dcc441"
+    },
+    ".ai/SKILL_RUNTIME_ACCEPTANCE.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SKILL_RUNTIME_ACCEPTANCE.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "eebb8b854b37033cd8d88bdbd2ac6b78547c0cdd0deeb411782ec6608fc7818b",
+      "created_by_harness": true,
+      "source_sha256": "eebb8b854b37033cd8d88bdbd2ac6b78547c0cdd0deeb411782ec6608fc7818b"
+    },
+    ".ai/SKILL_SECURITY_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SKILL_SECURITY_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "9d2ed1576197d8e7f786f75e704a228c881fc3708de41c2c7b82ed12d4335987",
+      "created_by_harness": true,
+      "source_sha256": "9d2ed1576197d8e7f786f75e704a228c881fc3708de41c2c7b82ed12d4335987"
+    },
+    ".ai/STATE.json": {
+      "mode": "mutable_seed",
+      "source_path": ".ai/STATE.json",
+      "install_mode": "mutable_seed",
+      "last_seed_sha256": "9dc327ccf936492714ec34361bc59f97927cfe5ad30aa7630286ac6847f29659",
+      "source_sha256": "9dc327ccf936492714ec34361bc59f97927cfe5ad30aa7630286ac6847f29659",
+      "last_observed_sha256": "9dc327ccf936492714ec34361bc59f97927cfe5ad30aa7630286ac6847f29659",
+      "created_by_harness": true,
+      "runtime_modified": false
+    },
+    ".ai/SURFACE_OWNERSHIP.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/SURFACE_OWNERSHIP.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "55e12d90a08df491f7cce24ea9a0f6e70fe0718144c7df4d149dcffe1a13680a",
+      "created_by_harness": true,
+      "source_sha256": "55e12d90a08df491f7cce24ea9a0f6e70fe0718144c7df4d149dcffe1a13680a"
+    },
+    ".ai/TASK_TEMPLATE.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/TASK_TEMPLATE.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "02ed0334027e5e7fa3971590bda4f73e58e70a93decc20cfc1eb7de45edaf990",
+      "created_by_harness": true,
+      "source_sha256": "02ed0334027e5e7fa3971590bda4f73e58e70a93decc20cfc1eb7de45edaf990"
+    },
+    ".ai/TRAIT_SKILL_MAP.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/TRAIT_SKILL_MAP.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5a6874e35ad3aba477d664f9381ae900cc88e3bed1c0e48327376e43c38055f2",
+      "created_by_harness": true,
+      "source_sha256": "5a6874e35ad3aba477d664f9381ae900cc88e3bed1c0e48327376e43c38055f2"
+    },
+    ".ai/WAIVER_POLICY.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/WAIVER_POLICY.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "65a48e00f9b6a9eebd3b48e354419da3f2dcc1e8b6563d7dc6887b36100804c4",
+      "created_by_harness": true,
+      "source_sha256": "65a48e00f9b6a9eebd3b48e354419da3f2dcc1e8b6563d7dc6887b36100804c4"
+    },
+    ".ai/checkpoints/README.md": {
+      "mode": "whole_file",
+      "source_path": ".ai/checkpoints/README.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7f454a129b29eea1a6e75fbb78d6ebd4289d3201e01d1c18c897bd3eb3d658ae",
+      "created_by_harness": true,
+      "source_sha256": "7f454a129b29eea1a6e75fbb78d6ebd4289d3201e01d1c18c897bd3eb3d658ae"
+    },
+    ".ai/evals/canonical-v53-skills.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/evals/canonical-v53-skills.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "258319abf84cc37aed07430877a884c495537ee6f35acc7a117c2ad9af61030e",
+      "created_by_harness": true,
+      "source_sha256": "258319abf84cc37aed07430877a884c495537ee6f35acc7a117c2ad9af61030e"
+    },
+    ".ai/evals/skill-catalog-routing.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/evals/skill-catalog-routing.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "136a989a515a0047d90d0671c49f098ede4248688ed44455900534e59ab55863",
+      "created_by_harness": true,
+      "source_sha256": "136a989a515a0047d90d0671c49f098ede4248688ed44455900534e59ab55863"
+    },
+    ".ai/evals/skill-routing.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/evals/skill-routing.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "4e6b97907eede673f1e67a9b30563267260b35bed455e41fd8fa099290e71391",
+      "created_by_harness": true,
+      "source_sha256": "4e6b97907eede673f1e67a9b30563267260b35bed455e41fd8fa099290e71391"
+    },
+    ".ai/evidence/README.md": {
+      "mode": "whole_file",
+      "source_path": ".ai/evidence/README.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "35569550023aa4abb0410dffe08ca4f859d23ed866467a8f25f09743caee80e8",
+      "created_by_harness": true,
+      "source_sha256": "35569550023aa4abb0410dffe08ca4f859d23ed866467a8f25f09743caee80e8"
+    },
+    ".ai/lessons/README.md": {
+      "mode": "whole_file",
+      "source_path": ".ai/lessons/README.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "a4b7712ccc3c8036dc9dff4d974fa9f1633c9bf4a25a56b94f10c1ca361df2b8",
+      "created_by_harness": true,
+      "source_sha256": "a4b7712ccc3c8036dc9dff4d974fa9f1633c9bf4a25a56b94f10c1ca361df2b8"
+    },
+    ".ai/lineage/v5.5.5.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.5.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "e4e9e16760fe6d1df4990df450c4dd96188f19227d42d228578cdcf994d81d28",
+      "created_by_harness": true,
+      "source_sha256": "e4e9e16760fe6d1df4990df450c4dd96188f19227d42d228578cdcf994d81d28"
+    },
+    ".ai/lineage/v5.5.6.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.6.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3d8403b6bbfc70f8fc3a277af18380ca7845870f27279cf7e8d637cfab928c71",
+      "created_by_harness": true,
+      "source_sha256": "3d8403b6bbfc70f8fc3a277af18380ca7845870f27279cf7e8d637cfab928c71"
+    },
+    ".ai/lineage/v5.5.7.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.7.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8d1f5f2d5a761023c54337ef5b6227699ec0dda88a67c46ecdc3784c9b96f97a",
+      "created_by_harness": true,
+      "source_sha256": "8d1f5f2d5a761023c54337ef5b6227699ec0dda88a67c46ecdc3784c9b96f97a"
+    },
+    ".ai/lineage/v5.5.8.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.8.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7adf56acbfff0fbf3805ed4c1e2aa120d48d4e878bdd6aa80169845d84bdae67",
+      "created_by_harness": true,
+      "source_sha256": "7adf56acbfff0fbf3805ed4c1e2aa120d48d4e878bdd6aa80169845d84bdae67"
+    },
+    ".ai/lineage/v5.5.9-provider-policy.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.9-provider-policy.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "e2ac55bcc32b2c7e6fa194e6d14673882eddb0488b42ad06b5fc76a3f9f71190",
+      "created_by_harness": true,
+      "source_sha256": "e2ac55bcc32b2c7e6fa194e6d14673882eddb0488b42ad06b5fc76a3f9f71190"
+    },
+    ".ai/lineage/v5.5.9.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/lineage/v5.5.9.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "635c0871413c9b14a211a57d29a89b9aa6a618c6cacd739679df73a05c48158a",
+      "created_by_harness": true,
+      "source_sha256": "635c0871413c9b14a211a57d29a89b9aa6a618c6cacd739679df73a05c48158a"
+    },
+    ".ai/schemas/prompt_context.schema.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/schemas/prompt_context.schema.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "fd16766778321e9797a674de7b1e5716d50f4488d9723f39cb5c661465d301f3",
+      "created_by_harness": true,
+      "source_sha256": "fd16766778321e9797a674de7b1e5716d50f4488d9723f39cb5c661465d301f3"
+    },
+    ".ai/schemas/task.schema.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/schemas/task.schema.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "19d5797a3bf3f59f69b3d8936f35474ced319cbbf52130e000995f2a76a9d9c3",
+      "created_by_harness": true,
+      "source_sha256": "19d5797a3bf3f59f69b3d8936f35474ced319cbbf52130e000995f2a76a9d9c3"
+    },
+    ".ai/schemas/ux-tokens.schema.json": {
+      "mode": "whole_file",
+      "source_path": ".ai/schemas/ux-tokens.schema.json",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "97cea7081c97895efd1126c07052ffb50e7d50012ba487d75358b480c565281f",
+      "created_by_harness": true,
+      "source_sha256": "97cea7081c97895efd1126c07052ffb50e7d50012ba487d75358b480c565281f"
+    },
+    ".ai/scripts/_common.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/_common.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "dd56bb294b85358a52d4a1fb44db5810ad35754be76222707b2713cde10ffded",
+      "created_by_harness": true,
+      "source_sha256": "dd56bb294b85358a52d4a1fb44db5810ad35754be76222707b2713cde10ffded"
+    },
+    ".ai/scripts/_truth.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/_truth.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "94b5f367ffe484bee5fcb3f81d04cb7a7d1ea0f5dabaffd518e6c8c189fdfe02",
+      "created_by_harness": true,
+      "source_sha256": "94b5f367ffe484bee5fcb3f81d04cb7a7d1ea0f5dabaffd518e6c8c189fdfe02"
+    },
+    ".ai/scripts/accept_release.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/accept_release.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "85a496a072a1df3e4f6591905b17ed6115a8d60b0241edcb7252c6575ca43eb6",
+      "created_by_harness": true,
+      "source_sha256": "85a496a072a1df3e4f6591905b17ed6115a8d60b0241edcb7252c6575ca43eb6"
+    },
+    ".ai/scripts/bootstrap_project.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/bootstrap_project.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c908771dcdbc4ce00e0acccd1c545be24eac316fbad0433f8ed0eba047a2dc07",
+      "created_by_harness": true,
+      "source_sha256": "c908771dcdbc4ce00e0acccd1c545be24eac316fbad0433f8ed0eba047a2dc07"
+    },
+    ".ai/scripts/browser_capability.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/browser_capability.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "def61309ec842d27fb66676e33a95be6110b93eb25e0597bdeb6b79229d8ee0b",
+      "created_by_harness": true,
+      "source_sha256": "def61309ec842d27fb66676e33a95be6110b93eb25e0597bdeb6b79229d8ee0b"
+    },
+    ".ai/scripts/browser_flow.mjs": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/browser_flow.mjs",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "9e464716fbd6a4d0e8927357a0a84723e2ec7c133f04f1626c6b6b2b43bd98a8",
+      "created_by_harness": true,
+      "source_sha256": "9e464716fbd6a4d0e8927357a0a84723e2ec7c133f04f1626c6b6b2b43bd98a8"
+    },
+    ".ai/scripts/browser_lease.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/browser_lease.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c1d3df109a902e249a114ed1c6b2bd9ec4ef156dcfadff8449e004b7f04db4e1",
+      "created_by_harness": true,
+      "source_sha256": "c1d3df109a902e249a114ed1c6b2bd9ec4ef156dcfadff8449e004b7f04db4e1"
+    },
+    ".ai/scripts/browser_smoke.mjs": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/browser_smoke.mjs",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "bea7072827f4ed9860b3b23ca1fae27a2bee228879e91587035269e7e1b7baf6",
+      "created_by_harness": true,
+      "source_sha256": "bea7072827f4ed9860b3b23ca1fae27a2bee228879e91587035269e7e1b7baf6"
+    },
+    ".ai/scripts/build_manifest.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/build_manifest.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "a2c600bdad0b146d4f1493a864254b692338693292c31c4cc185acb959b22d2f",
+      "created_by_harness": true,
+      "source_sha256": "a2c600bdad0b146d4f1493a864254b692338693292c31c4cc185acb959b22d2f"
+    },
+    ".ai/scripts/build_sbom.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/build_sbom.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "b2569023685cdd54d0e577a0ba95cd23ca71ca54c13b2e4073a81c2f67bb55b7",
+      "created_by_harness": true,
+      "source_sha256": "b2569023685cdd54d0e577a0ba95cd23ca71ca54c13b2e4073a81c2f67bb55b7"
+    },
+    ".ai/scripts/candidate_preflight.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/candidate_preflight.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "bc816e8b8fd9f5ec9a4f6240829f2844ed148b000de1d18f79d44df7218e6431",
+      "created_by_harness": true,
+      "source_sha256": "bc816e8b8fd9f5ec9a4f6240829f2844ed148b000de1d18f79d44df7218e6431"
+    },
+    ".ai/scripts/checkpoint_reverify.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/checkpoint_reverify.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "6319c39b8393851d57357e356526c93c45a99e4540d1de04f9b46d3ed8c72b41",
+      "created_by_harness": true,
+      "source_sha256": "6319c39b8393851d57357e356526c93c45a99e4540d1de04f9b46d3ed8c72b41"
+    },
+    ".ai/scripts/close_task.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/close_task.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c07a86e58a88818eb49a1a4e2dde2d14d69b547870f3471bc3876ee89001e177",
+      "created_by_harness": true,
+      "source_sha256": "c07a86e58a88818eb49a1a4e2dde2d14d69b547870f3471bc3876ee89001e177"
+    },
+    ".ai/scripts/command_runtime.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/command_runtime.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ede5fb2a5e2167fdd9f01d8bf50e3d503373cf75d6b4a7443f5ad1f0eff5fa67",
+      "created_by_harness": true,
+      "source_sha256": "ede5fb2a5e2167fdd9f01d8bf50e3d503373cf75d6b4a7443f5ad1f0eff5fa67"
+    },
+    ".ai/scripts/completion_report.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/completion_report.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "f9d5d4cf004d3be58634d2164fcbc7d1dc5c01ecb509e7cae23fc8bd55e3bb77",
+      "created_by_harness": true,
+      "source_sha256": "f9d5d4cf004d3be58634d2164fcbc7d1dc5c01ecb509e7cae23fc8bd55e3bb77"
+    },
+    ".ai/scripts/control_decision.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/control_decision.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "229cd6e61fb6b391c1edce414913af60e2504291bac856b43f028f5a441e9c3d",
+      "created_by_harness": true,
+      "source_sha256": "229cd6e61fb6b391c1edce414913af60e2504291bac856b43f028f5a441e9c3d"
+    },
+    ".ai/scripts/deterministic_regression_gate.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/deterministic_regression_gate.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "11eb05c1a03ff5e8bf7b452ff1f2fe29aa6f66ddeea710f3670846dd5fadd30d",
+      "created_by_harness": true,
+      "source_sha256": "11eb05c1a03ff5e8bf7b452ff1f2fe29aa6f66ddeea710f3670846dd5fadd30d"
+    },
+    ".ai/scripts/evidence_gate.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/evidence_gate.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "aa707c28375b8402f7ceb73f8640aa4210c82d13c130f97fcd117a4f1ff4a9c5",
+      "created_by_harness": true,
+      "source_sha256": "aa707c28375b8402f7ceb73f8640aa4210c82d13c130f97fcd117a4f1ff4a9c5"
+    },
+    ".ai/scripts/evidence_status.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/evidence_status.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "1ee5e4f04a4b658690797772e6197f4871b168fdafd3f32aacd9cedd7e11edcb",
+      "created_by_harness": true,
+      "source_sha256": "1ee5e4f04a4b658690797772e6197f4871b168fdafd3f32aacd9cedd7e11edcb"
+    },
+    ".ai/scripts/execution_profile.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/execution_profile.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7afc7c0ac6a49320e72838a9a3a57cb7fa4315f398a894a3ac488204acffc80a",
+      "created_by_harness": true,
+      "source_sha256": "7afc7c0ac6a49320e72838a9a3a57cb7fa4315f398a894a3ac488204acffc80a"
+    },
+    ".ai/scripts/export_agent_plugin.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/export_agent_plugin.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "474ab0674cbbb811a02a3edcc5807bf9438c33de32d1aaca42a4aee10acfd149",
+      "created_by_harness": true,
+      "source_sha256": "474ab0674cbbb811a02a3edcc5807bf9438c33de32d1aaca42a4aee10acfd149"
+    },
+    ".ai/scripts/harness.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/harness.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "ba42333672ef3157768e3098b3c1c49867908b6f1fd40bd96666d01b44f89269",
+      "created_by_harness": true,
+      "source_sha256": "ba42333672ef3157768e3098b3c1c49867908b6f1fd40bd96666d01b44f89269"
+    },
+    ".ai/scripts/harness_doctor.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/harness_doctor.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "2786a80cc17cd095f3b7fe835a52a96ddf0989628a6a967db8b5ad3c76db5b1c",
+      "created_by_harness": true,
+      "source_sha256": "2786a80cc17cd095f3b7fe835a52a96ddf0989628a6a967db8b5ad3c76db5b1c"
+    },
+    ".ai/scripts/harness_ownership.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/harness_ownership.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "999cd5a9dabac18ee0c5fc01de886fc42a11559d8740f2318b4eb46a13bef3e7",
+      "created_by_harness": true,
+      "source_sha256": "999cd5a9dabac18ee0c5fc01de886fc42a11559d8740f2318b4eb46a13bef3e7"
+    },
+    ".ai/scripts/harness_security.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/harness_security.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "36a6f2f2f51c61ee89dc540a5d8dc3d4b4ec66392fdc20c70f49c5830dd5837c",
+      "created_by_harness": true,
+      "source_sha256": "36a6f2f2f51c61ee89dc540a5d8dc3d4b4ec66392fdc20c70f49c5830dd5837c"
+    },
+    ".ai/scripts/host_surface_contract.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/host_surface_contract.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "d0282ccdaf0a3b125c781f7212d54c2a483f08b93c50b1961f5d574e2f153371",
+      "created_by_harness": true,
+      "source_sha256": "d0282ccdaf0a3b125c781f7212d54c2a483f08b93c50b1961f5d574e2f153371"
+    },
+    ".ai/scripts/install_plan.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/install_plan.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "0de9fd5f57f2dfcf472cb2d321b7da6310011d4bcc41df9f3df59ad3740aed9e",
+      "created_by_harness": true,
+      "source_sha256": "0de9fd5f57f2dfcf472cb2d321b7da6310011d4bcc41df9f3df59ad3740aed9e"
+    },
+    ".ai/scripts/install_preflight.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/install_preflight.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5cfd023263116857bb2b9f0cdb6c377fdf17b54989652b8e07f8b750e4c46b97",
+      "created_by_harness": true,
+      "source_sha256": "5cfd023263116857bb2b9f0cdb6c377fdf17b54989652b8e07f8b750e4c46b97"
+    },
+    ".ai/scripts/install_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/install_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "672ad4e2a1de16b934902cfbc0fc014c977d874284535ee3f92bc7b5335074db",
+      "created_by_harness": true,
+      "source_sha256": "672ad4e2a1de16b934902cfbc0fc014c977d874284535ee3f92bc7b5335074db"
+    },
+    ".ai/scripts/lesson_candidate.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/lesson_candidate.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5cfe41693252bb1e3db1659a89138f91abfd23d5e9f8ed92642ca7c648794e0c",
+      "created_by_harness": true,
+      "source_sha256": "5cfe41693252bb1e3db1659a89138f91abfd23d5e9f8ed92642ca7c648794e0c"
+    },
+    ".ai/scripts/lifecycle_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/lifecycle_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3141f1b74a9d5a00e83b5c6667502d075057428bd629db8b15d427cba4b38c33",
+      "created_by_harness": true,
+      "source_sha256": "3141f1b74a9d5a00e83b5c6667502d075057428bd629db8b15d427cba4b38c33"
+    },
+    ".ai/scripts/loop_guard.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/loop_guard.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "e3d384cc95c4fc063423a2f4cfd66ed1f16397e29fd3535618fd6f7dcc21edf2",
+      "created_by_harness": true,
+      "source_sha256": "e3d384cc95c4fc063423a2f4cfd66ed1f16397e29fd3535618fd6f7dcc21edf2"
+    },
+    ".ai/scripts/mcp_adversarial_fixture.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/mcp_adversarial_fixture.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "f6cd744d9ed18b60d5774fc35f8133dc429a4cc9f59b2789cf781e440a939657",
+      "created_by_harness": true,
+      "source_sha256": "f6cd744d9ed18b60d5774fc35f8133dc429a4cc9f59b2789cf781e440a939657"
+    },
+    ".ai/scripts/mcp_client_regression.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/mcp_client_regression.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "a214be59d2e01880b658f65b2186bd42ef917a87a5d64d16dd991a7ed0195cc3",
+      "created_by_harness": true,
+      "source_sha256": "a214be59d2e01880b658f65b2186bd42ef917a87a5d64d16dd991a7ed0195cc3"
+    },
+    ".ai/scripts/mcp_surface_pin.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/mcp_surface_pin.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "40ba026bb540f7ac1f372a574898d21fb3e401a3ad2abbee86b41131a44b4fd1",
+      "created_by_harness": true,
+      "source_sha256": "40ba026bb540f7ac1f372a574898d21fb3e401a3ad2abbee86b41131a44b4fd1"
+    },
+    ".ai/scripts/operator_events.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/operator_events.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c3be53f77fd380f27c82331ed2dd0de35c640bb63a12fe8c4928bb35745e2496",
+      "created_by_harness": true,
+      "source_sha256": "c3be53f77fd380f27c82331ed2dd0de35c640bb63a12fe8c4928bb35745e2496"
+    },
+    ".ai/scripts/package_release.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/package_release.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8a3854e7728df8ae3bb896dc84644567132fed8d44ff3d861ae7cba1b04339be",
+      "created_by_harness": true,
+      "source_sha256": "8a3854e7728df8ae3bb896dc84644567132fed8d44ff3d861ae7cba1b04339be"
+    },
+    ".ai/scripts/probe_urls.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/probe_urls.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5ead0d09e1d872f2aba5968aec31fb5a5578269a4c963e989eb340cbf56213ae",
+      "created_by_harness": true,
+      "source_sha256": "5ead0d09e1d872f2aba5968aec31fb5a5578269a4c963e989eb340cbf56213ae"
+    },
+    ".ai/scripts/prompt_brief.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/prompt_brief.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5c648a34415f3ff626d5f5d3dbcc731f0723db168fad6e8722c7cff94371f217",
+      "created_by_harness": true,
+      "source_sha256": "5c648a34415f3ff626d5f5d3dbcc731f0723db168fad6e8722c7cff94371f217"
+    },
+    ".ai/scripts/provider_policy_lint.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/provider_policy_lint.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "0247ce81c90bcb38576695c07c2ab345d5d451f4b1fc1f251c555153e5e07879",
+      "created_by_harness": true,
+      "source_sha256": "0247ce81c90bcb38576695c07c2ab345d5d451f4b1fc1f251c555153e5e07879"
+    },
+    ".ai/scripts/provider_route_budget.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/provider_route_budget.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "38fe9c8607f6d6d58269e0098734babe5475bb2b5b48b1bab64995c179ed0832",
+      "created_by_harness": true,
+      "source_sha256": "38fe9c8607f6d6d58269e0098734babe5475bb2b5b48b1bab64995c179ed0832"
+    },
+    ".ai/scripts/quarantine_scan.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/quarantine_scan.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3854aeceb2ae89d60b3917fb4fdf3468b7f5465e017141a4e712a4a5183d71e8",
+      "created_by_harness": true,
+      "source_sha256": "3854aeceb2ae89d60b3917fb4fdf3468b7f5465e017141a4e712a4a5183d71e8"
+    },
+    ".ai/scripts/record_evidence.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/record_evidence.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "80d1b744c5207887d6b672566dfe1b832a2e1eb83ff1c16a7ef08f1e07b2bdba",
+      "created_by_harness": true,
+      "source_sha256": "80d1b744c5207887d6b672566dfe1b832a2e1eb83ff1c16a7ef08f1e07b2bdba"
+    },
+    ".ai/scripts/release_doctor.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/release_doctor.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8b5ccb0eddeac7c59656b587d1fc9b8dbde8fc6edcdbd3b424bb0ed602bf97ac",
+      "created_by_harness": true,
+      "source_sha256": "8b5ccb0eddeac7c59656b587d1fc9b8dbde8fc6edcdbd3b424bb0ed602bf97ac"
+    },
+    ".ai/scripts/release_witness.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/release_witness.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "240f2fe4688aed0d5c990a9d3e95735dcf8299aa05569156c2064187d99866d5",
+      "created_by_harness": true,
+      "source_sha256": "240f2fe4688aed0d5c990a9d3e95735dcf8299aa05569156c2064187d99866d5"
+    },
+    ".ai/scripts/repo_mapping.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/repo_mapping.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "dfe81d48ef4cdc28d86d4f5a8eb3fd03869f84b048ed26123d5921777be371dc",
+      "created_by_harness": true,
+      "source_sha256": "dfe81d48ef4cdc28d86d4f5a8eb3fd03869f84b048ed26123d5921777be371dc"
+    },
+    ".ai/scripts/runtime_control_state.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/runtime_control_state.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "effe613bb900bec7eb724d239f5c79f80492813081127574282c2ff093bbc1c4",
+      "created_by_harness": true,
+      "source_sha256": "effe613bb900bec7eb724d239f5c79f80492813081127574282c2ff093bbc1c4"
+    },
+    ".ai/scripts/scan_external_urls.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/scan_external_urls.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "63c8e224914124d1ba2f4cdf148d402b10b36fa11a94b1d696f78cbb5fbf81ce",
+      "created_by_harness": true,
+      "source_sha256": "63c8e224914124d1ba2f4cdf148d402b10b36fa11a94b1d696f78cbb5fbf81ce"
+    },
+    ".ai/scripts/self_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/self_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "45bc7899897d07f17238fca96647371d353cdad97c5540572dedd4959bbaf094",
+      "created_by_harness": true,
+      "source_sha256": "45bc7899897d07f17238fca96647371d353cdad97c5540572dedd4959bbaf094"
+    },
+    ".ai/scripts/self_test_extended.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/self_test_extended.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "146c7d3d1e555bf40a5fb7a12a9f22b65d2796afcfd75ae9bd70f8ae9165e233",
+      "created_by_harness": true,
+      "source_sha256": "146c7d3d1e555bf40a5fb7a12a9f22b65d2796afcfd75ae9bd70f8ae9165e233"
+    },
+    ".ai/scripts/skill_catalog_eval.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_catalog_eval.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c154868b59dadeb3212fad7a7812a3f9af79c531cb607f04306a63b2c8105f07",
+      "created_by_harness": true,
+      "source_sha256": "c154868b59dadeb3212fad7a7812a3f9af79c531cb607f04306a63b2c8105f07"
+    },
+    ".ai/scripts/skill_eval.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_eval.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "c488864273cce44401a842dc0c9af4f1b14f951dd01e27c51ed770698c61b7cd",
+      "created_by_harness": true,
+      "source_sha256": "c488864273cce44401a842dc0c9af4f1b14f951dd01e27c51ed770698c61b7cd"
+    },
+    ".ai/scripts/skill_eval_acceptance.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_eval_acceptance.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "47b80a706ba753dec62ebd809fc806b3e5b59697826ad59acb406a154fffbe9a",
+      "created_by_harness": true,
+      "source_sha256": "47b80a706ba753dec62ebd809fc806b3e5b59697826ad59acb406a154fffbe9a"
+    },
+    ".ai/scripts/skill_eval_transaction.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_eval_transaction.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "414a6603a6d55f138c545f8970e90713b83caf18e1a409baf6739fd44d9a9c96",
+      "created_by_harness": true,
+      "source_sha256": "414a6603a6d55f138c545f8970e90713b83caf18e1a409baf6739fd44d9a9c96"
+    },
+    ".ai/scripts/skill_security_gate.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_security_gate.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "65f45c575422a9f0c6ac6ef78899ae3427957bfb0d6f80ce77fdd25fc03fa4b1",
+      "created_by_harness": true,
+      "source_sha256": "65f45c575422a9f0c6ac6ef78899ae3427957bfb0d6f80ce77fdd25fc03fa4b1"
+    },
+    ".ai/scripts/skill_trigger_eval.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/skill_trigger_eval.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8d88185cc718b3f21e0c8383175d0f3cb77c866864c8d316c1d1ba69d7873f19",
+      "created_by_harness": true,
+      "source_sha256": "8d88185cc718b3f21e0c8383175d0f3cb77c866864c8d316c1d1ba69d7873f19"
+    },
+    ".ai/scripts/surface_drift.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/surface_drift.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "0a3dde06132bc752c602fc3adc4c464e2eb724427d3d1946c3434c59bee3995f",
+      "created_by_harness": true,
+      "source_sha256": "0a3dde06132bc752c602fc3adc4c464e2eb724427d3d1946c3434c59bee3995f"
+    },
+    ".ai/scripts/task_guidance.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/task_guidance.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "17cccdcb6bc4f739eec26ea2a651e4df2af5b7de73fb9d8a325d755bffbbd68b",
+      "created_by_harness": true,
+      "source_sha256": "17cccdcb6bc4f739eec26ea2a651e4df2af5b7de73fb9d8a325d755bffbbd68b"
+    },
+    ".ai/scripts/task_transition.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/task_transition.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "72a25dbdc060f8e293f6cc8e3793831c9d31a60dda6e6769d74a4acfc79b6e59",
+      "created_by_harness": true,
+      "source_sha256": "72a25dbdc060f8e293f6cc8e3793831c9d31a60dda6e6769d74a4acfc79b6e59"
+    },
+    ".ai/scripts/v53_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v53_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "655f1daf82e22e2345d3b591a853499f38c6ccdffa955fe43cd39f462c8004c4",
+      "created_by_harness": true,
+      "source_sha256": "655f1daf82e22e2345d3b591a853499f38c6ccdffa955fe43cd39f462c8004c4"
+    },
+    ".ai/scripts/v541_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v541_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5502194ee77eb05ef8a996c7ef8e3790b0e25d52f914f49b79168404f4580bf3",
+      "created_by_harness": true,
+      "source_sha256": "5502194ee77eb05ef8a996c7ef8e3790b0e25d52f914f49b79168404f4580bf3"
+    },
+    ".ai/scripts/v542_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v542_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "11a0d43e30095a115ae26c62e3f0cfc31f6f44fa78e201987a23186230d78bf0",
+      "created_by_harness": true,
+      "source_sha256": "11a0d43e30095a115ae26c62e3f0cfc31f6f44fa78e201987a23186230d78bf0"
+    },
+    ".ai/scripts/v543_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v543_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "d807b4f54a646639858048791544390f1b48d6092d9bc31dd3663c5c9dc9acbc",
+      "created_by_harness": true,
+      "source_sha256": "d807b4f54a646639858048791544390f1b48d6092d9bc31dd3663c5c9dc9acbc"
+    },
+    ".ai/scripts/v544_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v544_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3ef55aca3f265739a80cda66ff8e463daf7d4c8ba71b3b48fcbd8fa6f93cac5d",
+      "created_by_harness": true,
+      "source_sha256": "3ef55aca3f265739a80cda66ff8e463daf7d4c8ba71b3b48fcbd8fa6f93cac5d"
+    },
+    ".ai/scripts/v545_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v545_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "4b39f47f2582c04d18ecae7e3cbb8b49a444db35d81b5aecf2528794fcd4b957",
+      "created_by_harness": true,
+      "source_sha256": "4b39f47f2582c04d18ecae7e3cbb8b49a444db35d81b5aecf2528794fcd4b957"
+    },
+    ".ai/scripts/v550_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v550_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "93a82db6381b5d4406041ae109c3496260ef969594055d5b858b51c8a6838747",
+      "created_by_harness": true,
+      "source_sha256": "93a82db6381b5d4406041ae109c3496260ef969594055d5b858b51c8a6838747"
+    },
+    ".ai/scripts/v550_snapshot_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v550_snapshot_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8971ca14141d688e84b3ec721778215398c06501a9acc63e90559c146d340b28",
+      "created_by_harness": true,
+      "source_sha256": "8971ca14141d688e84b3ec721778215398c06501a9acc63e90559c146d340b28"
+    },
+    ".ai/scripts/v5510_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v5510_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7cc5275bd3dc26b5aa232d53f031065bc88193349d19fdbf37706dcbd058757a",
+      "created_by_harness": true,
+      "source_sha256": "7cc5275bd3dc26b5aa232d53f031065bc88193349d19fdbf37706dcbd058757a"
+    },
+    ".ai/scripts/v551_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v551_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "578d97e3fdd69b878c525e246bc877472268444407fd64c1ee9ba836c799eaa9",
+      "created_by_harness": true,
+      "source_sha256": "578d97e3fdd69b878c525e246bc877472268444407fd64c1ee9ba836c799eaa9"
+    },
+    ".ai/scripts/v552_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v552_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "86e3325a683859f17d3f9b865dcb6ae6ece1b4bc7df21977ffaf6ede97710d5a",
+      "created_by_harness": true,
+      "source_sha256": "86e3325a683859f17d3f9b865dcb6ae6ece1b4bc7df21977ffaf6ede97710d5a"
+    },
+    ".ai/scripts/v553_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v553_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7dc752c36e9154f3d28073200bf69344f7170ef8291069028a0b743e95f31051",
+      "created_by_harness": true,
+      "source_sha256": "7dc752c36e9154f3d28073200bf69344f7170ef8291069028a0b743e95f31051"
+    },
+    ".ai/scripts/v554_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v554_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "0aea3f7f1a25a0e0ac9ba7c93c3b6bebc7769543c55d61c6cf4a52c02c25905b",
+      "created_by_harness": true,
+      "source_sha256": "0aea3f7f1a25a0e0ac9ba7c93c3b6bebc7769543c55d61c6cf4a52c02c25905b"
+    },
+    ".ai/scripts/v555_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v555_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "59dc91672ac2491215cb9f71ea88d3e6cde5d617d860ed5cbbbbade4344e6b70",
+      "created_by_harness": true,
+      "source_sha256": "59dc91672ac2491215cb9f71ea88d3e6cde5d617d860ed5cbbbbade4344e6b70"
+    },
+    ".ai/scripts/v556_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v556_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7011d1db15fa12778eadb9270a003a9e647fbc6aeecd32c58247e1b39844875b",
+      "created_by_harness": true,
+      "source_sha256": "7011d1db15fa12778eadb9270a003a9e647fbc6aeecd32c58247e1b39844875b"
+    },
+    ".ai/scripts/v557_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v557_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "e80a76ec35a52ed2ddd6af03235597cf92c22931246aae0999d5e81f6d85874e",
+      "created_by_harness": true,
+      "source_sha256": "e80a76ec35a52ed2ddd6af03235597cf92c22931246aae0999d5e81f6d85874e"
+    },
+    ".ai/scripts/v558_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v558_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "a479d07a70de35b1d96a02510eda793f115bd517dd9f4e5978faa63cfb96bddf",
+      "created_by_harness": true,
+      "source_sha256": "a479d07a70de35b1d96a02510eda793f115bd517dd9f4e5978faa63cfb96bddf"
+    },
+    ".ai/scripts/v559_regression_test.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/v559_regression_test.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "788ff977cc73181ec6a66da640e0190de4055b7db247f9f653e3aa72fb21fedc",
+      "created_by_harness": true,
+      "source_sha256": "788ff977cc73181ec6a66da640e0190de4055b7db247f9f653e3aa72fb21fedc"
+    },
+    ".ai/scripts/validate_agent_plugin.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/validate_agent_plugin.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "7d037d5f74b1a169543a2ccae1f527a97be54fd63a262b62c4ef124b7e85fb1a",
+      "created_by_harness": true,
+      "source_sha256": "7d037d5f74b1a169543a2ccae1f527a97be54fd63a262b62c4ef124b7e85fb1a"
+    },
+    ".ai/scripts/validate_harness.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/validate_harness.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "8ec9a259f11c8c8238a70c93e73eaaf20735290a2dca38a361da8bea137e71be",
+      "created_by_harness": true,
+      "source_sha256": "8ec9a259f11c8c8238a70c93e73eaaf20735290a2dca38a361da8bea137e71be"
+    },
+    ".ai/scripts/validate_task.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/validate_task.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "10dae5425d4eeda7b00172928ded5d25934b84d91d08a315b69179b5c4165f14",
+      "created_by_harness": true,
+      "source_sha256": "10dae5425d4eeda7b00172928ded5d25934b84d91d08a315b69179b5c4165f14"
+    },
+    ".ai/scripts/verified_checkpoint.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/verified_checkpoint.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "4b7c53bd6d224f0e2d44c738efa13d4cffad6ca868276afdbcce9010e672ce5f",
+      "created_by_harness": true,
+      "source_sha256": "4b7c53bd6d224f0e2d44c738efa13d4cffad6ca868276afdbcce9010e672ce5f"
+    },
+    ".ai/scripts/verify_all.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/verify_all.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "eee3b74dead820ebe56adeebb2f9b64202c08e5e73a5938c2f202e64b0a5abcc",
+      "created_by_harness": true,
+      "source_sha256": "eee3b74dead820ebe56adeebb2f9b64202c08e5e73a5938c2f202e64b0a5abcc"
+    },
+    ".ai/scripts/verify_installation.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/verify_installation.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "5b692d06f89edf884aa4619a7e85d868964b5fba773c1a955e4da9dff07e30d9",
+      "created_by_harness": true,
+      "source_sha256": "5b692d06f89edf884aa4619a7e85d868964b5fba773c1a955e4da9dff07e30d9"
+    },
+    ".ai/scripts/verify_package.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/verify_package.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "227a8bdccb4ca67af0125ee33c05ee4b3ce00ea0636abf8939f7b90602bfec67",
+      "created_by_harness": true,
+      "source_sha256": "227a8bdccb4ca67af0125ee33c05ee4b3ce00ea0636abf8939f7b90602bfec67"
+    },
+    ".ai/scripts/with_server.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/with_server.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "1976a43e54c283a31b8bd03ab63e02283322910dd7f79d26a764910776652911",
+      "created_by_harness": true,
+      "source_sha256": "1976a43e54c283a31b8bd03ab63e02283322910dd7f79d26a764910776652911"
+    },
+    ".ai/scripts/workspace_hygiene.py": {
+      "mode": "whole_file",
+      "source_path": ".ai/scripts/workspace_hygiene.py",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "4b72e57ef7351412a1d1be9aa74c6b92d084dd40995ccb825132c68816de46c1",
+      "created_by_harness": true,
+      "source_sha256": "4b72e57ef7351412a1d1be9aa74c6b92d084dd40995ccb825132c68816de46c1"
+    },
+    ".ai/tasks/README.md": {
+      "mode": "whole_file",
+      "source_path": ".ai/tasks/README.md",
+      "install_mode": "managed_exact",
+      "last_managed_sha256": "3807100c488ec9329fb5e6c8ab1031c6b7336b0b5f26dc74bd96bd36097a1fda",
+      "created_by_harness": true,
+      "source_sha256": "3807100c488ec9329fb5e6c8ab1031c6b7336b0b5f26dc74bd96bd36097a1fda"
+    },
+    ".gitattributes": {
+      "mode": "managed_block",
+      "source_path": ".ai/INSTALL_POLICY.json",
+      "snapshot_path": "",
+      "marker_id": "git-attributes",
+      "last_managed_sha256": "f441bdb889b899454bf8d70b1e9fadfee3ff4b7a5365101567908930f797ef91",
+      "container_created_by_harness": false,
+      "container_after_sha256": "e36c3fe27840e68d4f12285483e846ff8bb75abe8facda6fce5e7cf15ac465a7"
+    }
+  },
+  "legacy_state_schema_migrated_from": null,
+  "install_policy_sha256": "35947b5ea4305c832cfb7feeadb07e6ec4fcd641c20346da9226bebb3b365948"
+}

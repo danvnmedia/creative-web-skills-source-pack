@@ -1,0 +1,25 @@
+{
+  "gemini_credential_groups": [
+    {
+      "id": "project-a",
+      "project_id_env": "GEMINI_PROJECT_ID_A",
+      "key_envs": [
+        "GEMINI_API_KEY_A1",
+        "GEMINI_API_KEY_A2"
+      ],
+      "tier": "free"
+    }
+  ],
+  "fallbacks": [
+    {
+      "provider": "deepseek",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "model_env": "DEEPSEEK_MODEL",
+      "capabilities": [
+        "text",
+        "code",
+        "reasoning"
+      ]
+    }
+  ]
+}

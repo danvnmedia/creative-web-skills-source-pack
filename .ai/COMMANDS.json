@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "detected_framework": null,
+  "commands": {
+    "install": null,
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "lint": "npm run lint",
+    "typecheck": null,
+    "test": "npm run test",
+    "test_unit": null,
+    "test_integration": null,
+    "test_e2e": null,
+    "security": null,
+    "performance": null
+  },
+  "runtime": {
+    "start_url": null,
+    "health_url": null,
+    "port": null
+  },
+  "notes": "Populate only with commands that actually exist in this repository. v5.3 bootstrap enables observed package scripts only; inferred commands/runtime hints remain disabled in .ai/REPO_MAP.json until verified. v5.3: only observed repository scripts are auto-enabled; inferred command/runtime hints stay in .ai/REPO_MAP.json until confirmed."
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "require_human_approval": true,
+  "required_fields": [
+    "check",
+    "reason",
+    "owner",
+    "approved_at",
+    "expires_at",
+    "finding_id",
+    "accepted_finding_sha256",
+    "accepted_scope"
+  ],
+  "finding_digest_fields": [
+    "id",
+    "check",
+    "severity",
+    "component",
+    "attack_path",
+    "evidence_refs"
+  ],
+  "stale_on_finding_change": true,
+  "expiry_is_fail_closed": true,
+  "closure_revalidates_expiry": true,
+  "notes": "A waiver accepts one concrete finding for a bounded time. Changing severity, component, attack path, evidence scope, or the finding digest invalidates the waiver."
+}

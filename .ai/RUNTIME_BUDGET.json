@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "evidence": {
+    "same_failure_stop_after": 3,
+    "max_attempts_per_check": 6,
+    "output_tail_lines": 40
+  },
+  "learning": {
+    "max_recent_observations": 50,
+    "minimum_seconds_between_identical_observations": 30
+  },
+  "automation": {
+    "reentrancy_forbidden": true,
+    "hard_stop_required": true,
+    "bounded_retry_required": true
+  },
+  "control_decision": {
+    "max_runtime_records_per_task": 100,
+    "decision_records_are_runtime_state": true
+  }
+}

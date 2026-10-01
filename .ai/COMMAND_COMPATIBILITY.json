@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "script": "validate_harness.py",
+      "kind": "source_only",
+      "installed_alternative": "python .ai/scripts/verify_installation.py --root .",
+      "reason": "Source distribution validation is not installed verification."
+    },
+    {
+      "script": "verify_package.py",
+      "kind": "explicit_source_path",
+      "installed_alternative": "python .ai/scripts/verify_installation.py --root .",
+      "reason": "Keep --path <trusted-source-or-zip> for archive verification; never package-check the installed product root."
+    },
+    {
+      "script": "package_release.py",
+      "kind": "source_only",
+      "installed_alternative": null,
+      "reason": "Build a Harness release only from a canonical source distribution, outside the product root."
+    },
+    {
+      "script": "self_test_extended.py",
+      "kind": "source_only",
+      "installed_alternative": "python .ai/scripts/self_test.py --context installed",
+      "reason": "Full source regressions are not product repository tests."
+    },
+    {
+      "script": "deterministic_regression_gate.py",
+      "kind": "source_only",
+      "installed_alternative": "python .ai/scripts/self_test.py --context installed",
+      "reason": "Run full regressions in a source tree with scratch outside that tree."
+    },
+    {
+      "script": "self_test.py",
+      "kind": "context_sensitive",
+      "installed_alternative": "python .ai/scripts/self_test.py --context installed",
+      "reason": "Supported in both contexts. Review explicit --context source or ambiguous orchestration."
+    }
+  ]
+}

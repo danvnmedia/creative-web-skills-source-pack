@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "executor_order": [
+    "connected-browser",
+    "project-local-playwright",
+    "approved-transient-playwright",
+    "unavailable"
+  ],
+  "connected_browser_receipts_root": ".ai/checkpoints/browser-capabilities",
+  "connected_browser_receipt_requires": [
+    "schema_version",
+    "executor",
+    "available",
+    "issued_at",
+    "expires_at",
+    "attested_by",
+    "receipt_sha256"
+  ],
+  "allow_transient_playwright": false,
+  "transient_requires_owner_policy": true,
+  "borrowed_logged_in_session_requires_lease": true,
+  "notes": [
+    "Environment variables are declarations, not host receipts.",
+    "Receipt self-hash proves content integrity only, not cryptographic authority; browser acceptance still requires real runtime evidence.",
+    "Project-local Playwright is reproducible capability; transient Playwright is opt-in and may require network access."
+  ]
+}

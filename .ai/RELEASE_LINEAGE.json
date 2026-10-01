@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.10",
+  "canonical_baseline": "5.3.0",
+  "implementation_parent": "5.5.9",
+  "input_artifacts": [
+    {
+      "name": "Codex_Product_Harness_v5.3.zip",
+      "sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df",
+      "role": "canonical-contract-and-skill-byte-baseline"
+    },
+    {
+      "name": "Codex_Product_Harness_v5.5.9.zip",
+      "sha256": "9d8e99b8f2767b0db218ff0d987645dc840fbc6318acec9323877e965d379e95",
+      "role": "implementation-parent"
+    }
+  ],
+  "not_inherited": [
+    "separate older noncanonical skill-first 5.6.0 branch"
+  ],
+  "traits": {
+    "harness_modification": true,
+    "security": true,
+    "skill_modification": false,
+    "user_facing_web": false,
+    "production_release": false
+  },
+  "no_external_code_vendored": true,
+  "canonical_skills_byte_preserved": 13,
+  "adopted_mechanisms": [
+    "fail-closed-analysis-completeness",
+    "auto-discovered-deterministic-regressions",
+    "full-catalog-skill-routing-contract",
+    "pinned-host-surface-drift-contract",
+    "opaque-executable-coverage-truth",
+    "python-reflective-sink-resolution",
+    "source-installed-regression-routing",
+    "copy-safe-temp-preflight",
+    "git-nul-stdout-diagnostics-separation",
+    "crlf-bom-frontmatter-structure",
+    "os-specific-runner-provenance",
+    "task-bound-prompt-brief-compiler",
+    "brief-context-contract-digest",
+    "non-authoritative-content-addressed-handoff",
+    "bounded-install-command-reference-audit",
+    "ci-install-state-portability-warning",
+    "exact-path-git-byte-preservation",
+    "explicit-prior-hash-eol-repair",
+    "closure-receipt-not-runtime-candidate",
+    "actionable-release-lifecycle-errors",
+    "bounded-local-server-identity",
+    "conservative-windows-command-resolution",
+    "schema-owned-mode-enum",
+    "advisory-trait-skill-map",
+    "optional-project-ux-token-validation",
+    "process-success-before-failure-keyword-heuristics",
+    "release-doctor-read-only-preflight",
+    "early-revision-marker-readiness",
+    "compact-evidence-summary-mode",
+    "authorized-capacity-failover-policy-v2",
+    "actual-target-budget-recheck",
+    "paid-fallback-zero-cost-bypass-guard",
+    "fallback-graph-preflight-contract"
+  ],
+  "prior_lineage": {
+    "path": ".ai/lineage/v5.5.9.json",
+    "sha256": "635c0871413c9b14a211a57d29a89b9aa6a618c6cacd739679df73a05c48158a"
+  }
+}

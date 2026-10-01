@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "baseline_version": "5.3.0",
+  "release_family": "5.4",
+  "principles": {
+    "exact_artifact_hash_required": true,
+    "spdx_sbom_required": true,
+    "release_witness_required": true,
+    "signature_is_optional_but_must_be_truthfully_labeled": true,
+    "embedded_public_key_without_external_trust_is_not_identity_proof": true,
+    "reextract_and_verify_exact_exports": true,
+    "runtime_state_excluded_from_source_identity": true,
+    "source_distribution_marker_required": true,
+    "installed_product_repo_is_not_release_source": true,
+    "product_repo_residue_must_not_weaken_source_artifact_rules": true,
+    "skill_supply_chain_gate_required": true,
+    "compaction_truth_contract_required": true
+  }
+}

@@ -1,7 +1,7 @@
 # Creative Web Skills Pack
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-f2c94c.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/skills-6-7c3aed.svg)
+![Skills](https://img.shields.io/badge/skills-7-7c3aed.svg)
 ![Showcases](https://img.shields.io/badge/showcases-4-0f766e.svg)
 [![Live showcase](https://img.shields.io/badge/live-showcase-d7ff3f.svg)](https://danvnmedia.github.io/creative-web-skills-source-pack/)
 
@@ -21,6 +21,7 @@ The pack is designed for ChatGPT and Codex workflows that need a coherent creati
 | [`shader-web-art`](shader-web-art/) | GLSL/WebGL, image effects, particles, displacement, refraction, DOM-to-canvas sync, and optional WebGPU. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/shader-web-art/) |
 | [`creative-site-rebuilder`](creative-site-rebuilder/) | Analyze a URL, screenshot, recording, or existing frontend and rebuild its principles into an original implementation. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/creative-site-rebuilder/) |
 | [`motion-performance-auditor`](motion-performance-auditor/) | Audit motion, WebGL, accessibility, responsiveness, Core Web Vitals risk, cleanup, and mobile behavior. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/motion-performance-auditor/) |
+| [`accessible-interaction-systems`](accessible-interaction-systems/) | Build reusable controls with semantic states, keyboard/touch parity, focus, contrast, and restrained feedback. | [Open ↗](https://danvnmedia.github.io/creative-web-skills-source-pack/accessible-interaction-systems/) |
 
 Use the narrowest skill that owns the task. Start with `creative-web-studio` when a request spans concept, implementation, motion, 3D, and QA.
 
@@ -32,7 +33,7 @@ This layout follows the official [OpenAI guide for building and loading skills](
 
 ### User-wide installation
 
-Clone or download this repository, open a terminal in its root, and copy the six skill folders into your user skill directory.
+Clone or download this repository, open a terminal in its root, and copy the seven skill folders into your user skill directory.
 
 PowerShell:
 
@@ -46,7 +47,8 @@ Copy-Item -Recurse -Force -Destination $skillHome -Path @(
   'immersive-3d-web',
   'shader-web-art',
   'creative-site-rebuilder',
-  'motion-performance-auditor'
+  'motion-performance-auditor',
+  'accessible-interaction-systems'
 )
 ```
 
@@ -61,6 +63,7 @@ cp -R \
   shader-web-art \
   creative-site-rebuilder \
   motion-performance-auditor \
+  accessible-interaction-systems \
   "$HOME/.agents/skills/"
 ```
 
@@ -111,38 +114,53 @@ The repository includes four original field tests that exercise the pack's princ
 | [**Morrow Archive**](https://danvnmedia.github.io/creative-web-skills-source-pack/morrow-archive/) | Editorial composition, image choreography, keyboard navigation, restrained reveals | Complete still layout with all content visible under reduced motion |
 | [**Pelagic Signals**](https://danvnmedia.github.io/creative-web-skills-source-pack/pelagic-signals/) | Semantic content over an interactive WebGL contour field | CSS field and fully readable content when WebGL is unavailable |
 | [**Kern One**](https://danvnmedia.github.io/creative-web-skills-source-pack/kern-one/) | Three.js product assembly, drag, exploded view, adaptive DPR | Product-specific static poster and explicit 3D status |
-| [**Asme**](https://danvnmedia.github.io/creative-web-skills-source-pack/asme-hero/) | React/TypeScript video hero, cancellable RAF fades, liquid-glass controls | Readable cinematic composition if video playback is unavailable |
+| [**Asme**](https://danvnmedia.github.io/creative-web-skills-source-pack/asme-hero/) | React/TypeScript travel atlas with locally stored landscape photography, field-note selection, and a day/night View Transition | Readable, still photographic composition under reduced motion |
 
-See [`SHOWCASE-INDEX.md`](SHOWCASE-INDEX.md) for the complete reference index and [`showcase-sites/README.md`](showcase-sites/README.md) for the interaction checklist.
+See [`SHOWCASE-INDEX.md`](SHOWCASE-INDEX.md) for the complete reference index, [`showcase-sites/README.md`](showcase-sites/README.md) for the interaction checklist, and [the visual redesign and QA report](docs/SHOWCASE-REDESIGN-2026-09-30.md) for the latest local evidence. This upgrade has an [install record](docs/HARNESS-INSTALL-2026-09-30.md), [prioritized audit](docs/AUDIT-2026-09-30.md), [repository research](docs/REPOSITORY-RESEARCH-2026-09-30.md), [skill changelog](docs/SKILLS-CHANGELOG-2026-09-30.md), and [browser QA record](docs/SHOWCASE-QA-2026-09-30.md).
 
 ### Run locally
 
 Requirements:
 
-- Node.js 22 or newer for the React showcase build
+- Node.js 22 or newer for the React showcase build and root commands
 - Python 3 only if you want to run the bundled static auditor
 
 PowerShell:
 
 ```powershell
+npm.cmd ci
 npm.cmd ci --prefix showcase-apps/asme-hero
-npm.cmd run build --prefix showcase-apps/asme-hero
-npx.cmd --yes serve showcase-sites -l 4173
+npm.cmd run build
+npm.cmd run lint
+npm.cmd run test
+npm.cmd run dev
 ```
 
 macOS/Linux:
 
 ```bash
+npm ci
 npm ci --prefix showcase-apps/asme-hero
-npm run build --prefix showcase-apps/asme-hero
-npx --yes serve showcase-sites -l 4173
+npm run build
+npm run lint
+npm run test
+npm run dev
 ```
 
-Open `http://localhost:4173`.
+Open `http://127.0.0.1:4173`. The root `dev` server serves `.pages-dist`, so build first after editing a source demo.
+
+For 15 hub and demo checks across desktop, mobile, and reduced motion, install the Playwright Chromium binary and run QA while the local server is running in another terminal. Pass a new empty output directory each time:
+
+```powershell
+npx.cmd playwright install chromium
+npm.cmd run qa:browser -- .ai/evidence/browser/local-run-01
+```
+
+The report and screenshots stay local under `.ai/evidence/browser/` and are ignored by Git. The script checks interactions, image loading, overflow, console and page errors, and local resource failures.
 
 ### Publish with GitHub Pages
 
-The included [Pages workflow](.github/workflows/pages.yml) rebuilds Asme, generates browsable pages for all six skills, and publishes the complete portal on every push to `main`.
+The included [Pages workflow](.github/workflows/pages.yml) rebuilds Asme, generates browsable pages for all seven skills, and publishes the complete portal on every push to `main`.
 
 After pushing the repository:
 
@@ -179,6 +197,7 @@ The scanner discovers review candidates; it does not replace browser profiling, 
 ├── shader-web-art/                # GPU effects and shader workflows
 ├── creative-site-rebuilder/      # Reference analysis and original rebuilds
 ├── motion-performance-auditor/   # Performance/accessibility audit + scanner
+├── accessible-interaction-systems/ # Accessible component contracts and examples
 ├── showcase-apps/                # Showcase source applications
 ├── showcase-sites/               # Static showcase hub and field tests
 └── .github/workflows/pages.yml   # GitHub Pages build/deploy workflow
@@ -208,7 +227,7 @@ All changes to `main` go through pull requests and required CI checks. Please fo
 
 ## Third-party services and media
 
-The showcase loads some fonts, libraries, photography, and video from third-party CDNs. Those external resources remain subject to their respective owners' terms and are not relicensed by this repository. The MIT License applies to the source code and documentation committed here.
+The showcase's photographic assets were generated for this repository and stored locally as optimized WebP files. Google Fonts and Kern's pinned Three.js module remain third-party network dependencies. Those services retain their own terms; the source code and documentation follow the repository's MIT License. See the [asset provenance and QA note](docs/SHOWCASE-REDESIGN-2026-09-30.md).
 
 ## License
 

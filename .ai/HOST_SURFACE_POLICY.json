@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "distribution_version": "5.5.5",
+  "allowed_dispositions": [
+    "supported",
+    "pass_through",
+    "blocked",
+    "unavailable"
+  ],
+  "principles": {
+    "machine_readable_observation_required": true,
+    "unknown_observed_capability_is_failure": true,
+    "stale_mapping_is_reported": true,
+    "host_specific_capability_never_implies_parity": true,
+    "network_fetch_is_out_of_scope": true
+  }
+}

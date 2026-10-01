@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "default_scope": "project",
+  "auto_mutate_skills": false,
+  "capture": {
+    "redact_secrets": true,
+    "store_code_snippets": false,
+    "max_observations_per_candidate": 50
+  },
+  "promotion": {
+    "project": {
+      "min_observations": 2,
+      "min_average_confidence": 0.75,
+      "human_approval_required": true
+    },
+    "global": {
+      "min_observations": 3,
+      "min_distinct_projects": 2,
+      "min_average_confidence": 0.8,
+      "human_approval_required": true
+    }
+  },
+  "paths": {
+    "candidates": ".ai/lessons/candidates",
+    "curated": ".ai/lessons/curated"
+  }
+}

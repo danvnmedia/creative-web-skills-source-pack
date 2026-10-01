@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "principles": {
+    "presence_is_not_activation": true,
+    "self_report_is_not_activation_telemetry": true,
+    "deterministic_graders_before_model_judges": true,
+    "positive_and_negative_trigger_cases_required": true,
+    "paired_with_without_skill_eval_required_for_causal_value_claims": true,
+    "answer_keys_must_not_be_exposed_to_runner": true,
+    "source_tree_success_is_not_exact_export_success": true,
+    "budget_metrics_must_be_measured_not_guessed": true,
+    "append_only_audit_for_causal_acceptance": true,
+    "full_catalog_confusion_is_distinct_from_isolated_trigger_eval": true
+  },
+  "activation_acceptance": {
+    "accepted_telemetry": [
+      "native",
+      "trace"
+    ],
+    "rejected_as_proof": [
+      "self_report",
+      "inferred",
+      "unavailable"
+    ],
+    "min_runs_per_case": 2,
+    "min_should_trigger_rate": 0.8,
+    "max_should_not_trigger_rate": 0.1,
+    "unbound_native_or_trace_labels_are_not_proof": true
+  },
+  "causal_acceptance": {
+    "min_paired_runs_per_case": 2,
+    "required_runtime_identity_fields": [
+      "agent",
+      "model",
+      "reasoning_effort",
+      "cli_version",
+      "source_revision"
+    ],
+    "required_metrics": [
+      "input_tokens",
+      "output_tokens",
+      "duration_seconds",
+      "billing_class"
+    ],
+    "billing_classes": [
+      "metered",
+      "free",
+      "local"
+    ],
+    "max_quality_regression": 0.0,
+    "min_quality_lift": 0.05,
+    "min_efficiency_improvement_ratio": 0.05,
+    "budget": {
+      "max_runs_per_case": 5,
+      "max_tokens_per_run": 100000,
+      "max_duration_seconds_per_run": 900,
+      "max_cost_usd_per_run": 5.0,
+      "max_total_suite_tokens": 1500000,
+      "max_total_suite_duration_seconds": 14400,
+      "max_total_suite_cost_usd": 25.0
+    },
+    "artifact_policy": {
+      "loader_or_export_change_requires_exact_artifact_arm": true,
+      "accepted_artifact_origins": [
+        "source",
+        "reextracted-zip",
+        "published-package"
+      ],
+      "exact_artifact_origins": [
+        "reextracted-zip",
+        "published-package"
+      ]
+    }
+  },
+  "split_policy": {
+    "supported": [
+      "tune",
+      "holdout",
+      "holdback"
+    ],
+    "do_not_ship_private_holdback_prompts_to_runner": true,
+    "report_split_separately": true
+  },
+  "external_interop": {
+    "compatible_references": [
+      "adewale/skill-eval-harness",
+      "tardigrde/agent-skill-eval",
+      "aws-samples/sample-agent-skill-eval",
+      "triggerdotdev/skills-evals"
+    ],
+    "required_dependency": false
+  },
+  "paths": {
+    "matrix": ".ai/evals/skill-routing.json",
+    "runs": ".ai/evidence/skill-eval-runs.jsonl",
+    "causal_audit": ".ai/evidence/skill-causal-audit.jsonl"
+  },
+  "runtime_acceptance_contract": ".ai/SKILL_RUNTIME_ACCEPTANCE.json",
+  "transaction_contract": ".ai/SKILL_EVAL_CONTRACT.json",
+  "catalog_confusion": {
+    "policy": ".ai/SKILL_CATALOG_EVAL_POLICY.json",
+    "matrix": ".ai/evals/skill-catalog-routing.json",
+    "deterministic_matrix_validation_is_not_live_activation_proof": true,
+    "trusted_telemetry_required_for_scoring": true
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "use": "diagnosis-only; no automatic deletion or ownership adoption",
+  "entries": [
+    {
+      "version": "5.3.0",
+      "path": "AGENTS.md",
+      "sha256": "28a110edb7b2aa3253c425d468a103cf2459cb9ba9037524128df5ea013f898f",
+      "trailing_eol_insensitive_sha256": "df0e48a1cf9a8b8595a8450f2fcbf47dbc80249feb6af8e1b8d8e7b0e8dcdd2e",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "CLAUDE.md",
+      "sha256": "47627cf2ac61c5fd6420f72dced2cc6a2cb0a4f7bf54e8c8a8c734ec9f69e232",
+      "trailing_eol_insensitive_sha256": "2d8faa12bf2106ff6d2d33c1c959fc4228e9b30d49e5e2b4f42036fbd4c6fee1",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "GEMINI.md",
+      "sha256": "b6fd8e0d864acc0131ce006366b49476bbfb1aac9377c4a3aa6d15c936d6abca",
+      "trailing_eol_insensitive_sha256": "b9be48e25c9e644c3c625cdedfc3403879a02febfbd7345660a870a7972b3bab",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "ANTIGRAVITY.md",
+      "sha256": "194837ffd465cdac39534a28f61a909ae5971d8d1dcb5ac072f66b3abbaf5235",
+      "trailing_eol_insensitive_sha256": "e23164e2fe9da8825e6cc116dce3ca1e682e02fec49ec949850e05a8e1c0de72",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "docs/AI_INTEGRATION_TESTING.md",
+      "sha256": "4291657d1c095d9885f44d156f30c39ae097be92dbc4974c950f9a9644ac43c0",
+      "trailing_eol_insensitive_sha256": "ae76e61f1f6db34600cd66da2ade42ce644bfd3ff41d0df20e8466805a7e4a9a",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "docs/GEMINI_FREE_FIRST.md",
+      "sha256": "28c1440449d6a1d1aa3b173a031b5dda511a0e9138e57067700904f52a88aded",
+      "trailing_eol_insensitive_sha256": "7d47bcdbc34ee7a62254afedb3229da7e590a8dee83507c8364e3be3b86b7c39",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.3.0",
+      "path": "docs/RUNTIME_VERIFICATION.md",
+      "sha256": "d8c881b448d32bfdfa301870b7722eace440b0e03c6c387b8866e6f4ed022d88",
+      "trailing_eol_insensitive_sha256": "d8b430f2f593342d5db812b323e777bb6e35cc097204d0525c59af0ebcaa2225",
+      "archive_sha256": "e3d6a063ad779d635ebde718c7f25a872d482361f52c0d504cf331ed667a49df"
+    },
+    {
+      "version": "5.5.6",
+      "path": "AGENTS.md",
+      "sha256": "1a5240252bf46138d6917474d2f2b09b5f6d7c36520f34d1bb40aefa9e067353",
+      "trailing_eol_insensitive_sha256": "99967c2804b593ed50cb26bbc6885449fc0376dfc3c52eb11b83ba0b6edcf9ba",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "CLAUDE.md",
+      "sha256": "6621f4a67c976d965246349bd4962f4278a2f1daf2f2271450542ee847f858bb",
+      "trailing_eol_insensitive_sha256": "18cfa69accbe9ffd8ae2736a1269b066bc134d0e5a97a5032741e325b67aafa7",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "GEMINI.md",
+      "sha256": "c881d09e55974be317a212f9023fb6889e03be1d42bea5c4f09d9d33df085bba",
+      "trailing_eol_insensitive_sha256": "bccf423596198a38242e5003847bc1a1e62690d29fc98611e7c61924b2723f3b",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "ANTIGRAVITY.md",
+      "sha256": "c00bc8340d0e96e8584eb66b7c7906bc76e2c63ecced4fb1126ceb853a732150",
+      "trailing_eol_insensitive_sha256": "e03430eda960cedd0c3d7668714befb8dba7f99e90754fee92b06e1cdcbeace6",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "docs/AI_INTEGRATION_TESTING.md",
+      "sha256": "4291657d1c095d9885f44d156f30c39ae097be92dbc4974c950f9a9644ac43c0",
+      "trailing_eol_insensitive_sha256": "ae76e61f1f6db34600cd66da2ade42ce644bfd3ff41d0df20e8466805a7e4a9a",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "docs/GEMINI_FREE_FIRST.md",
+      "sha256": "28c1440449d6a1d1aa3b173a031b5dda511a0e9138e57067700904f52a88aded",
+      "trailing_eol_insensitive_sha256": "7d47bcdbc34ee7a62254afedb3229da7e590a8dee83507c8364e3be3b86b7c39",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    },
+    {
+      "version": "5.5.6",
+      "path": "docs/RUNTIME_VERIFICATION.md",
+      "sha256": "d8c881b448d32bfdfa301870b7722eace440b0e03c6c387b8866e6f4ed022d88",
+      "trailing_eol_insensitive_sha256": "d8b430f2f593342d5db812b323e777bb6e35cc097204d0525c59af0ebcaa2225",
+      "archive_sha256": "f470013849aea59b3b4709849343b8d3555c8ae188df1d47035903ca5f43f0ab"
+    }
+  ]
+}

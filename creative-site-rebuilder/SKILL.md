@@ -1,7 +1,6 @@
 ---
 name: creative-site-rebuilder
-description: >-
-  Analyze a reference website, screenshots, screen recording, or existing frontend and rebuild its interaction/design logic into an original implementation. Use for “make something like this URL,” redesigning an existing site, reproducing motion behavior from observation, migrating a creative site to React/Next.js, extracting reusable layout/motion patterns, or converting screenshots into a coded experience. Preserve IP boundaries: do not copy proprietary source code, paid prompt text, copyrighted assets, or distinctive protected expression verbatim.
+description: Analyze a reference URL, screenshot, recording, or existing frontend and rebuild its design logic into an original site. Use for reference-led reconstruction; use creative-web-studio for a new whole-site concept without a reference. Preserve third-party IP boundaries.
 ---
 
 # Creative Site Rebuilder
