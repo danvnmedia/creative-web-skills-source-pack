@@ -9,6 +9,49 @@ const explodeButton = document.querySelector('#toggle-explode');
 const captureButton = document.querySelector('#capture');
 const hero = document.querySelector('.instrument');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const opticalVideo = document.querySelector('#optical-video');
+const filmToggle = document.querySelector('#film-toggle');
+let filmInView = false;
+let filmPausedByUser = false;
+
+function syncFilmButton() {
+  const playing = !opticalVideo.paused;
+  filmToggle.setAttribute('aria-pressed', String(playing));
+  filmToggle.setAttribute('aria-label', playing ? 'Pause optical film' : 'Play optical film');
+  filmToggle.innerHTML = `${playing ? 'Pause film' : 'Play film'} <span aria-hidden="true">${playing ? '&#10074;&#10074;' : '&#9654;'}</span>`;
+}
+
+async function playFilm() {
+  if (reducedMotion || document.hidden || !filmInView || filmPausedByUser) return;
+  try { await opticalVideo.play(); } catch { /* Poster and manual control remain available. */ }
+  syncFilmButton();
+}
+
+if (reducedMotion) {
+  filmToggle.disabled = true;
+  filmToggle.textContent = 'Motion reduced';
+  filmToggle.setAttribute('aria-label', 'Optical film paused for reduced motion');
+} else {
+  filmToggle.addEventListener('click', async () => {
+    if (opticalVideo.paused) {
+      filmPausedByUser = false;
+      await playFilm();
+    } else {
+      filmPausedByUser = true;
+      opticalVideo.pause();
+      syncFilmButton();
+    }
+  });
+  new IntersectionObserver(([entry]) => {
+    filmInView = entry.isIntersecting;
+    if (filmInView) playFilm();
+    else { opticalVideo.pause(); syncFilmButton(); }
+  }, { threshold: .35 }).observe(opticalVideo);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { opticalVideo.pause(); syncFilmButton(); }
+    else playFilm();
+  });
+}
 const supportsWebGL = (() => {
   try { return Boolean(document.createElement('canvas').getContext('webgl2') || document.createElement('canvas').getContext('webgl')); } catch { return false; }
 })();

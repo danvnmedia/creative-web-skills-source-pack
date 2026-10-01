@@ -1,5 +1,5 @@
 const canvas = document.querySelector('#ocean-field');
-const fallback = document.querySelector('.fallback-field');
+const image = document.querySelector('.field-image');
 const status = document.querySelector('#render-status');
 const modeButtons = [...document.querySelectorAll('[data-mode]')];
 const metricLabel = document.querySelector('#metric-label');
@@ -20,12 +20,13 @@ const modes = [
 
 let gl;
 let program;
+let texture;
 let animationFrame;
 let startTime = performance.now();
 let activeMode = 0;
 let fieldVisible = true;
-let impulse = 0;
-let renderScale = Math.min(window.devicePixelRatio || 1, window.innerWidth < 720 ? 1 : 1.25);
+let impulse = -1;
+let renderScale = Math.min(window.devicePixelRatio || 1, window.innerWidth < 720 ? .95 : 1.15);
 let lastRenderAt = 0;
 let sampledFrames = 0;
 let sampledTime = 0;
@@ -39,41 +40,44 @@ const vertexSource = `
 `;
 const fragmentSource = `
   precision highp float;
+  uniform sampler2D uTexture;
   uniform vec2 uResolution;
   uniform vec2 uPointer;
   uniform float uTime;
   uniform float uMode;
   uniform float uImpulse;
 
-  float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
-  float noise(vec2 p) {
-    vec2 i = floor(p), f = fract(p);
-    f = f * f * (3.0 - 2.0 * f);
-    return mix(mix(hash(i), hash(i + vec2(1.,0.)), f.x), mix(hash(i + vec2(0.,1.)), hash(i + vec2(1.)), f.x), f.y);
-  }
-  float fbm(vec2 p) {
-    float value = 0.0, amplitude = .52;
-    for (int i = 0; i < 5; i++) { value += amplitude * noise(p); p = p * 2.03 + 7.1; amplitude *= .48; }
-    return value;
-  }
   void main() {
     vec2 uv = gl_FragCoord.xy / uResolution;
-    vec2 p = (gl_FragCoord.xy * 2.0 - uResolution) / min(uResolution.x, uResolution.y);
-    float time = uTime * .08;
-    float pointerDistance = distance(uv, uPointer);
-    float disturbance = .16 / (.12 + pointerDistance);
-    vec2 flow = vec2(fbm(p * 1.5 + time), fbm(p * 1.45 - time + 8.2));
-    float field = fbm(p * 2.2 + flow * 2.4 + disturbance * .08);
-    float contour = smoothstep(.025, 0.0, abs(fract(field * 7.0 + uMode * .13) - .5) - .47);
-    vec3 deep = vec3(.009, .035, .075);
-    vec3 mint = vec3(.13, .75, .92);
-    vec3 coral = vec3(1.0, .39, .28);
-    vec3 color = mix(deep, uMode < .5 ? mint : coral, smoothstep(.5, .88, field) * .32);
-    if (uMode > 1.5) color = mix(deep, vec3(.72, .88, .43), smoothstep(.45, .86, field) * .3);
-    color += contour * (uMode < .5 ? mint : vec3(1.0,.72,.57)) * .22;
-    color += smoothstep(.22, 0.0, distance(uv, uPointer)) * vec3(.15,.5,.38) * .2;
-    float impulseRing = smoothstep(.035, 0.0, abs(pointerDistance - uImpulse * .46)) * (1.0 - uImpulse);
-    color += impulseRing * vec3(.42,1.0,.82) * 1.4;
+    float aspect = uResolution.x / uResolution.y;
+    vec2 p = (uv - .5) * vec2(aspect, 1.0);
+    float t = uTime;
+    float swell = sin(p.x * 11.0 + p.y * 4.0 - t * .72);
+    float crossSwell = sin(p.y * 17.0 - p.x * 3.0 + sin(p.x * 6.0 + t * .43) * 1.5 + t * .61);
+    vec2 warp = vec2(swell * .008 + crossSwell * .004, sin(p.x * 8.0 + t * .5) * .007 + crossSwell * .003);
+    vec2 fromPointer = (uv - uPointer) * vec2(aspect, 1.0);
+    float pointerDistance = length(fromPointer);
+    float influence = exp(-pointerDistance * pointerDistance * 25.0);
+    warp += normalize(fromPointer + vec2(.0001)) * influence * sin(pointerDistance * 38.0 - t * 4.0) * .013;
+    float ring = 0.0;
+    if (uImpulse >= 0.0) {
+      ring = exp(-pow((pointerDistance - uImpulse * .57) * 45.0, 2.0)) * (1.0 - uImpulse);
+      warp += normalize(fromPointer + vec2(.0001)) * ring * .03;
+    }
+    vec3 color = texture2D(uTexture, clamp(uv + warp, .001, .999)).rgb;
+    float luminance = dot(color, vec3(.2126, .7152, .0722));
+    float ribbons = pow(max(0.0, sin(p.x * 26.0 + sin(p.y * 13.0 - t * .8) * 2.2 - t * 1.2)), 18.0);
+    float glint = ribbons * smoothstep(.12, .48, luminance) * .1;
+    vec3 signal = vec3(.35, .95, 1.0);
+    if (uMode > .5 && uMode < 1.5) {
+      color = mix(color, vec3(.13, .022, .048) + luminance * vec3(1.8, .58, .22), .64);
+      signal = vec3(1.0, .58, .34);
+    } else if (uMode > 1.5) {
+      color = mix(color, vec3(.055, .035, .19) + luminance * vec3(.94, .78, 1.35), .58);
+      signal = vec3(.72, .72, 1.0);
+    }
+    color += signal * (glint + ring * .65 + influence * .018);
+    color *= 1.0 - .2 * smoothstep(.28, .8, length(p));
     gl_FragColor = vec4(color, 1.0);
   }
 `;
@@ -95,14 +99,23 @@ function initWebGL() {
   gl.linkProgram(program);
   if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
   gl.useProgram(program);
-  uniforms = Object.fromEntries(['uResolution', 'uPointer', 'uTime', 'uMode', 'uImpulse'].map((name) => [name, gl.getUniformLocation(program, name)]));
+  uniforms = Object.fromEntries(['uTexture', 'uResolution', 'uPointer', 'uTime', 'uMode', 'uImpulse'].map((name) => [name, gl.getUniformLocation(program, name)]));
+  texture = gl.createTexture();
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, texture);
+  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
+  gl.uniform1i(uniforms.uTexture, 0);
   const buffer = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, -1,1, 1,-1, 1,1]), gl.STATIC_DRAW);
   const position = gl.getAttribLocation(program, 'aPosition');
   gl.enableVertexAttribArray(position);
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
-  fallback.hidden = true;
   status.textContent = reducedMotion ? 'Field paused / reduced motion' : 'Simulated field / WebGL';
   resize();
   render();
@@ -119,6 +132,7 @@ function resize() {
 
 function render(now = startTime) {
   if (!gl) return;
+  const delta = lastRenderAt ? Math.min(.05, (now - lastRenderAt) / 1000) : .016;
   if (!reducedMotion && lastRenderAt && now - lastRenderAt < 100) {
     sampledTime += now - lastRenderAt;
     sampledFrames += 1;
@@ -138,7 +152,10 @@ function render(now = startTime) {
   gl.uniform1f(uniforms.uMode, activeMode);
   gl.uniform1f(uniforms.uImpulse, impulse);
   gl.drawArrays(gl.TRIANGLES, 0, 6);
-  if (impulse > 0) impulse = Math.max(0, impulse - .018);
+  if (impulse >= 0) {
+    impulse += delta / 1.1;
+    if (impulse >= 1) impulse = -1;
+  }
   if (!reducedMotion && fieldVisible && !document.hidden) animationFrame = requestAnimationFrame(render);
 }
 
@@ -167,7 +184,7 @@ canvas.addEventListener('pointermove', (event) => {
 }, { passive: true });
 
 canvas.addEventListener('pointerdown', () => {
-  impulse = .01;
+  impulse = reducedMotion ? -1 : 0;
   field.classList.remove('is-pulsing');
   requestAnimationFrame(() => field.classList.add('is-pulsing'));
   restartRender();
@@ -175,6 +192,7 @@ canvas.addEventListener('pointerdown', () => {
 
 modeButtons.forEach((button) => button.addEventListener('click', () => {
   activeMode = Number(button.dataset.mode);
+  field.dataset.mode = button.dataset.mode;
   modeButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
   const mode = modes[activeMode];
   const updateMetric = () => {
@@ -199,9 +217,15 @@ document.addEventListener('visibilitychange', () => {
 });
 window.addEventListener('resize', () => { resize(); restartRender(); }, { passive: true });
 
-try { initWebGL(); } catch (error) {
-  canvas.hidden = true;
-  fallback.hidden = false;
-  status.textContent = 'Static field / WebGL unavailable';
-  console.warn(error);
+async function boot() {
+  try {
+    await image.decode();
+    initWebGL();
+  } catch (error) {
+    canvas.hidden = true;
+    status.textContent = 'Static field / WebGL unavailable';
+    console.warn(error);
+  }
 }
+
+boot();

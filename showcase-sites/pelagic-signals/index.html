@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500&family=Syne:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=4">
+  <link rel="stylesheet" href="./style.css?v=5">
 </head>
 <body>
   <header class="topbar">
@@ -20,8 +20,8 @@
 
   <main>
     <section class="field" aria-labelledby="field-title">
+      <img class="field-image" src="./assets/ocean-vortex.webp" alt="" fetchpriority="high" aria-hidden="true">
       <canvas id="ocean-field" aria-hidden="true"></canvas>
-      <div class="fallback-field" aria-hidden="true"></div>
       <div class="field-grid" aria-hidden="true"></div>
       <div class="depth-probe" aria-hidden="true">
         <i></i>
@@ -29,8 +29,14 @@
       </div>
       <div class="field-copy">
         <p class="eyebrow">Open-ocean observatory / simulated field</p>
-        <h1 id="field-title">The water<br>is <em>speaking.</em></h1>
+        <h1 id="field-title">The ocean<br>has a <em>pulse.</em></h1>
         <p class="lede">A speculative field study of current, thermal, and salinity patterns across the North Atlantic. Values shown here are illustrative.</p>
+      </div>
+      <div class="mode-control" role="group" aria-label="Ocean data layer">
+        <p>Choose a signal <span>01—03</span></p>
+        <button type="button" aria-pressed="true" data-mode="0"><span>01</span> Current <i aria-hidden="true">↗</i></button>
+        <button type="button" aria-pressed="false" data-mode="1"><span>02</span> Thermal <i aria-hidden="true">↗</i></button>
+        <button type="button" aria-pressed="false" data-mode="2"><span>03</span> Salinity <i aria-hidden="true">↗</i></button>
       </div>
       <div class="field-status" aria-live="polite">
         <span class="pulse"></span><span id="render-status">Initializing field</span>
@@ -42,14 +48,10 @@
 
     <section class="reading" id="reading" aria-labelledby="reading-title">
       <div class="reading-intro">
-        <p>Observation 1437</p>
-        <h2 id="reading-title">One body.<br>Three readings.</h2>
+        <p>Observation 1437 / Active layer</p>
+        <h2 id="reading-title">What moves<br>beneath.</h2>
       </div>
-      <div class="mode-control" role="group" aria-label="Ocean data layer">
-        <button type="button" aria-pressed="true" data-mode="0"><span>01</span> Current</button>
-        <button type="button" aria-pressed="false" data-mode="1"><span>02</span> Thermal</button>
-        <button type="button" aria-pressed="false" data-mode="2"><span>03</span> Salinity</button>
-      </div>
+      <p class="reading-instruction">The image is a simulated field. Switch the signal above to see its texture, color and reading change together.</p>
       <div class="metric" aria-live="polite">
         <p id="metric-label">Surface velocity</p>
         <strong id="metric-value">1.84</strong><span id="metric-unit">m/s</span>
@@ -68,7 +70,7 @@
     </section>
   </main>
 
-  <footer><p>Pelagic Signals</p><p>Field study / 2026</p><a href="#field-title">Surface ↑</a><small class="motion-note">Motion study / Shader flow pauses offscreen, pointer feedback uses transforms, and reading changes use View Transitions where supported. Reduced motion freezes the field.</small></footer>
-  <script src="./app.js?v=4"></script>
+  <footer><p>Pelagic Signals</p><p>Field study / 2026</p><a href="#field-title">Surface ↑</a><small class="motion-note">Motion study / A first-party ocean texture is refracted by a WebGL current field; pointer movement and clicks disturb the surface. Rendering pauses offscreen, reading changes use View Transitions where supported, and reduced motion freezes the field.</small></footer>
+  <script src="./app.js?v=5"></script>
 </body>
 </html>

@@ -37,6 +37,18 @@ async function checkFlow(page, route, reduced) {
     if (reduced) assert.match(await page.locator('#render-status').innerText(), /paused|unavailable/i);
   }
   if (route === 'kern-one') {
+    await page.locator('#optical-film').scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => document.querySelector('#optical-video')?.readyState >= 2, null, { timeout: 12000 });
+    if (reduced) {
+      assert.equal(await page.locator('#optical-video').evaluate((video) => video.paused), true);
+      assert.equal(await page.locator('#film-toggle').isDisabled(), true);
+    } else {
+      await page.waitForFunction(() => !document.querySelector('#optical-video')?.paused, null, { timeout: 12000 });
+      await page.getByRole('button', { name: 'Pause optical film' }).click();
+      assert.equal(await page.locator('#optical-video').evaluate((video) => video.paused), true);
+      await page.getByRole('button', { name: 'Play optical film' }).click();
+      assert.equal(await page.locator('#optical-video').evaluate((video) => video.paused), false);
+    }
     await page.locator('#product-scene').scrollIntoViewIfNeeded();
     await page.waitForFunction(() => /Realtime|Static object|3D ready/.test(document.querySelector('#scene-status')?.textContent || ''), null, { timeout: 12000 });
     await page.locator('#reset-view').click();

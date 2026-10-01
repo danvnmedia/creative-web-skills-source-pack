@@ -86,7 +86,7 @@ a { color: inherit; }
   filter: saturate(.68) contrast(1.06);
   transition: transform 900ms cubic-bezier(.2,.7,.2,1), filter 500ms ease;
 }
-#field-preview { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pelagic-ocean { position:absolute; inset:0; background:url("./pelagic-signals/assets/ocean-vortex.webp") center/cover no-repeat; filter:saturate(1.1); transition:transform 900ms cubic-bezier(.2,.7,.2,1),filter 500ms ease; }
 .kern-object { position:absolute; inset:0; background:url("./kern-one/assets/camera.webp") center/cover no-repeat; transition:transform 900ms cubic-bezier(.2,.7,.2,1); }
 .asme-photo { position:absolute; inset:0; background:url("./asme-hero/assets/coast.webp") center/cover no-repeat; transition:transform 900ms cubic-bezier(.2,.7,.2,1); }
 .asme-preview-shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.68),rgba(0,0,0,.03) 45%,rgba(0,0,0,.48)); }
@@ -98,8 +98,11 @@ a { color: inherit; }
 .project-meta h2 { margin: 0; font: 300 clamp(30px, 4vw, 62px)/1 "Newsreader", serif; }
 .open-mark { font-size: 32px; transition: transform 300ms ease; }
 .project-link:hover .art-photo { transform: scale(1.035); filter: saturate(1) contrast(1); }
+.project-link:hover .pelagic-ocean { transform:scale(1.04); filter:saturate(1.28); }
 .project-link:hover .kern-object,.project-link:hover .asme-photo { transform:scale(1.04); }
 .project-link:hover .open-mark { transform: translate(5px, -5px); }
+.can-reveal .project { opacity:0; transform:translateY(30px); transition:opacity 700ms ease,transform 900ms cubic-bezier(.2,.7,.2,1); }
+.can-reveal .project.is-visible { opacity:1; transform:none; }
 footer { display: flex; justify-content: space-between; padding: 28px 3vw; border-top: 1px solid var(--line); font: 10px "DM Mono", monospace; text-transform: uppercase; }
 @media (max-width: 720px) {
   .masthead { align-items:flex-start; }
@@ -123,5 +126,6 @@ footer { display: flex; justify-content: space-between; padding: 28px 3vw; borde
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .can-reveal .project { opacity:1; transform:none; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }

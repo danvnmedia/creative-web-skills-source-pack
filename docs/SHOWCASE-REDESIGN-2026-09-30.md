@@ -1,5 +1,13 @@
 # Showcase redesign after visual feedback - 2026-09-30
 
+## Follow-up: ocean artwork and optical film
+
+The live visual review found that Pelagic still read like a topographic map. Its field now uses an original luminous ocean vortex artwork in `showcase-sites/pelagic-signals/assets/ocean-vortex.webp`. The WebGL layer refracts that image as a slow swell, adds controlled glints and a pointer impulse, and changes color with the three visible mode buttons. The still image remains visible if WebGL cannot start or motion is reduced. The hub preview now shows the same artwork in place of the obsolete contour canvas; its script was refactored into viewport-triggered card reveals. The artwork was generated with the built-in image tool using this prompt: “Stylized-concept experimental ocean visualization hero; breathtaking top-down abstract deep ocean, luminous cobalt and turquoise vortex with folded liquid silk and silver caustic highlights; dynamic vortex on the right two thirds and dark left negative space for typography; no horizon, land, boats, people, text, logo, watermark, map contours, brown terrain, or UI.” The PNG was converted to local WebP; no external imagery was copied.
+
+Kern now has a cinematic optical film between its campaign hero and interactive specimen. `showcase-sites/kern-one/film-stage.js` defines the original Three.js scene: glass, titanium, graphite, copper and precision rings that separate and reassemble on a deterministic four-second cycle. `scripts/render-kern-film.mjs` captures 96 Chromium frames and uses FFmpeg to export `assets/optical-sequence.mp4` (H.264, 1280×720, 24 fps) and `assets/optical-poster.webp`. The film is self-hosted; it plays only while in view, has a keyboard-reachable pause control, and stays on its poster under `prefers-reduced-motion`. Its source scene remains available for reproducible edits. No stock footage or third-party video was copied.
+
+These additions respond to the user's visual feedback and request for a substantial 3D video section. The rendered film is an editorial optical study; the camera specimen remains an interactive stylization, so neither is presented as a manufacturing-accurate product model.
+
 ## Why this pass happened
 
 The first implementation passed technical smoke checks but did not meet the expected visual quality. Screenshot review showed three concrete problems: Morrow's text obscured its photography, Kern's simple 3D blocks were used as the primary product image, and Asme's CSS landscapes looked schematic. The direction chosen for this pass was **bold experimental web**. Each showcase retains a distinct visual idea and a usable interaction.
