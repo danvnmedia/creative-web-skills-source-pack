@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=4">
+  <link rel="stylesheet" href="./style.css?v=5">
 </head>
 <body>
   <header class="topbar">
@@ -26,13 +26,26 @@
         <p class="kicker">KERN / ONE &nbsp; &bull; &nbsp; A MODULAR IMAGE SYSTEM</p>
         <h1 id="hero-title">Feel every<br><em>frame.</em></h1>
         <p class="lede">An instrument that puts the decision back in your hands. Explore the body, separate its parts, and see how every detail earns its place.</p>
-        <a class="hero-link" href="#instrument">Explore the instrument <span aria-hidden="true">&darr;</span></a>
+        <a class="hero-link" href="#optical-film">Enter the optical system <span aria-hidden="true">&darr;</span></a>
       </div>
       <span class="hero-edition" aria-hidden="true">FIELD STUDY 03 / 2026</span>
     </section>
 
+    <section class="optical-film" id="optical-film" aria-labelledby="film-title">
+      <video id="optical-video" muted loop playsinline preload="metadata" poster="./assets/optical-poster.webp" aria-label="A cinematic 3D animation of the Kern optical lens separating into precision components">
+        <source src="./assets/optical-sequence.mp4" type="video/mp4">
+      </video>
+      <div class="film-shade" aria-hidden="true"></div>
+      <div class="film-copy">
+        <p class="section-index">01 / The optical path</p>
+        <h2 id="film-title">See what<br><em>makes seeing.</em></h2>
+        <p>Glass, graphite, titanium. An optical system that opens itself up and lets the light through.</p>
+      </div>
+      <div class="film-bottom"><span>3D OPTICAL STUDY &nbsp; / &nbsp; 00:04 LOOP</span><button id="film-toggle" type="button" aria-label="Play optical film" aria-pressed="false">Play film <span aria-hidden="true">&#9654;</span></button></div>
+    </section>
+
     <section class="instrument" id="instrument" aria-labelledby="instrument-title">
-      <div class="instrument-heading"><p class="section-index">01 / Interactive instrument</p><h2 id="instrument-title">Take a closer<br><em>look.</em></h2><p>Drag to turn the camera. Separate its parts to understand the optical path.</p></div>
+      <div class="instrument-heading"><p class="section-index">02 / Interactive instrument</p><h2 id="instrument-title">Take a closer<br><em>look.</em></h2><p>Drag to turn the camera. Separate its parts to understand the optical path.</p></div>
       <div class="scene" id="product-scene">
         <canvas aria-label="Interactive 3D model of the Kern One camera"></canvas>
         <div class="product-poster" aria-hidden="true"></div>
@@ -50,14 +63,14 @@
     </section>
 
     <section class="manifesto" aria-labelledby="manifesto-title">
-      <p class="section-index">01 / Position</p>
+      <p class="section-index">03 / Position</p>
       <h2 id="manifesto-title">Less interface.<br><em>More instrument.</em></h2>
       <p>Every surface has one job. Every control reports its state. The object teaches the hand before the manual teaches the mind.</p>
     </section>
 
     <section class="anatomy" id="anatomy" aria-labelledby="anatomy-title">
       <div class="anatomy-heading">
-        <p class="section-index">02 / Anatomy</p>
+        <p class="section-index">04 / Anatomy</p>
         <h2 id="anatomy-title">Four parts.<br>One line of sight.</h2>
       </div>
       <ol>
@@ -70,7 +83,7 @@
 
     <section class="specification" aria-labelledby="spec-title">
       <div>
-        <p class="section-index">03 / Resolution</p>
+        <p class="section-index">05 / Resolution</p>
         <h2 id="spec-title">Keep the<br>decision.</h2>
       </div>
       <dl>
@@ -82,7 +95,7 @@
     </section>
   </main>
 
-  <footer><h2>KERN&reg; ONE</h2><p>Concept instrument / Original field test</p><a href="#hero-title">Top &uarr;</a><small class="motion-note">Motion study / On-demand Three.js rendering, damped spring assembly and controls, shutter feedback, and progressive view-timeline anatomy. Reduced motion switches states immediately.</small></footer>
-  <script type="module" src="./app.js?v=8"></script>
+  <footer><h2>KERN&reg; ONE</h2><p>Concept instrument / Original field test</p><a href="#hero-title">Top &uarr;</a><small class="motion-note">Motion study / Original rendered Three.js optical film with viewport-aware playback; on-demand interactive 3D, spring assembly, shutter feedback, and view-timeline anatomy. Reduced motion shows a still poster and immediate state changes.</small></footer>
+  <script type="module" src="./app.js?v=9"></script>
 </body>
 </html>
