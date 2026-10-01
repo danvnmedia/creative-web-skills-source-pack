@@ -8,6 +8,8 @@ After the Pelagic and Kern visual changes, `npm.cmd run build`, `npm.cmd run lin
 
 The test does not measure sustained frame rate on physical hardware. The film is a 24 fps pre-rendered H.264 asset; the interactive scene remains rendered on demand. Live Pages acceptance for this follow-up is reported separately after the PR is merged and `/revision.json` matches the new commit.
 
+PR [#8](https://github.com/danvnmedia/creative-web-skills-source-pack/pull/8) merged as `349ecbd11cac54d1ea551c0137bc71024b56671b`; [main CI](https://github.com/danvnmedia/creative-web-skills-source-pack/actions/runs/36808670580) and [Pages deployment](https://github.com/danvnmedia/creative-web-skills-source-pack/actions/runs/36808670565) succeeded, and the public `/revision.json` matched that SHA. The first live browser run reported 12/15 because Chromium canceled an MP4 range request (`net::ERR_ABORTED`) in each Kern variant after the media was buffered. There were no HTTP errors, and the film loaded and played in the normal-motion cases. The QA script now records these exact, expected video aborts separately after its media playback assertion, while still failing on any other local request failure. The live rerun at `.ai/evidence/browser/TASK-CREATIVE-003-live-media-audit/` passed **15/15** with three recorded expected media aborts and zero page, console, or HTTP errors.
+
 ## Live release QA
 
 PR [#7](https://github.com/danvnmedia/creative-web-skills-source-pack/pull/7) merged as `3b40c5da13f096a0549683a73ce7ae922774e837`. [GitHub Pages workflow](https://github.com/danvnmedia/creative-web-skills-source-pack/actions/runs/36804754384) succeeded, and the public `/revision.json` returned that exact SHA with HTTP 200.
