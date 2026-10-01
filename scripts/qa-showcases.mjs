@@ -73,7 +73,7 @@ for (const variant of variants) {
   for (const route of routes) {
     const routeName = route || 'hub';
     const page = await context.newPage();
-    const result = { route: routeName, variant: variant.name, heading: null, scrollWidth: null, consoleErrors: [], pageErrors: [], httpErrors: [], requestFailures: [], screenshot: null, passed: false, error: null };
+    const result = { route: routeName, variant: variant.name, heading: null, scrollWidth: null, consoleErrors: [], pageErrors: [], httpErrors: [], requestFailures: [], expectedMediaAborts: [], screenshot: null, passed: false, error: null };
     page.on('console', (message) => { if (message.type() === 'error') result.consoleErrors.push(message.text()); });
     page.on('pageerror', (error) => result.pageErrors.push(String(error)));
     page.on('response', (response) => { if (response.status() >= 400) result.httpErrors.push({ url: response.url(), status: response.status(), local: response.url().startsWith(baseUrl) }); });
@@ -97,7 +97,13 @@ for (const variant of variants) {
       assert.equal(result.pageErrors.length, 0, `page errors: ${result.pageErrors.join('; ')}`);
       assert.equal(result.consoleErrors.length, 0, `console errors: ${result.consoleErrors.join('; ')}`);
       assert.equal(result.httpErrors.filter((entry) => entry.local).length, 0, 'local HTTP error');
-      assert.equal(result.requestFailures.filter((entry) => entry.local).length, 0, 'local request failure');
+      // Chromium can cancel a video range request after enough bytes were buffered.
+      // checkFlow already proved the film loaded and, when motion is allowed, played.
+      const expectedMediaAbort = (entry) => route === 'kern-one'
+        && entry.url === `${baseUrl}/kern-one/assets/optical-sequence.mp4`
+        && entry.failure === 'net::ERR_ABORTED';
+      result.expectedMediaAborts = result.requestFailures.filter(expectedMediaAbort);
+      assert.equal(result.requestFailures.filter((entry) => entry.local && !expectedMediaAbort(entry)).length, 0, 'local request failure');
       result.passed = true;
     } catch (error) { result.error = String(error); report.summary.failures++; }
     report.results.push(result);
